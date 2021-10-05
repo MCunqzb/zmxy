@@ -1,0 +1,13 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zaomengxiyou:source_64"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:sourcebig",
+    "count": 8
+  }
+}

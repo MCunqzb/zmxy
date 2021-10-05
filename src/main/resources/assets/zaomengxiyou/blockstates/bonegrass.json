@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "zaomengxiyou:block/bonegrass"
+    },
+    "half=lower": {
+      "model": "zaomengxiyou:block/bonegrass_bottom"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "zmxy2bgm_record",
+    "name": "造梦西游2-界面音乐",
+    "description": "造梦西游2-界面音乐",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:zmxy2"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

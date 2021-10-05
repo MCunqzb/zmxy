@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "§2东海幡旗",
+    "splashName": "Splash §2东海幡旗",
+    "lingeringName": "Lingering §2东海幡旗",
+    "arrowName": "Arrow of §2东海幡旗",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Dhfqxg"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

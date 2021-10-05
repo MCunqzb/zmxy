@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Underghost"
+      },
+      {
+        "value": "CUSTOM:Underghostpalace"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Underruck"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Underruck"
+    },
+    "airColor": {
+      "value": -2973185,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:Chainblock"
+    },
+    "portalParticles": {
+      "value": "SOUL"
+    },
+    "portalLuminance": 14,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Ghostpalace Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "texture": "bianhuaqiu",
+    "portalTexture": "ghostpalacepao",
+    "enablePortal": true
+  }
+}

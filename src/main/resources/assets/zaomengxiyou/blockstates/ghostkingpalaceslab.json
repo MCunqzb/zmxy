@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/ghostkingpalaceslab"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/ghostkingpalaceslab_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/ghostkingpalaceslab_full"
+    }
+  }
+}

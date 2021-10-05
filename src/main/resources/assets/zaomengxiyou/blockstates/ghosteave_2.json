@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/ghosteave_2"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/ghosteave_2_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/ghosteave_2_full"
+    }
+  }
+}

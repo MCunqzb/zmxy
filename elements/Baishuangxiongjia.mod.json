@@ -1,0 +1,70 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "bsxjxj",
+    "enableLeggings": true,
+    "textureLeggings": "bsxjkt",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "BaishuangxiongjiaXiongJiaShiJianMeiYouXiKe"
+    },
+    "onLeggingsTick": {
+      "name": "BaishuangxiongjiaXiongJiaShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "baishuangxiongjia",
+    "helmetName": "Baishuangxiongjia 头盔",
+    "bodyName": "Baishuangxiongjia 胸甲",
+    "leggingsName": "Baishuangxiongjia 护腿",
+    "bootsName": "Baishuangxiongjia 靴子",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [
+      "§3极寒之地的千年冰魄，锻造的胸甲，全身因寒冷而颤抖，散发出无法靠近的寒气。",
+      "§3 Thousands of years of ice in the extremely cold land\\forged breastplate\\trembling with cold body\\exudes a cold air that can not be approached."
+    ],
+    "leggingsSpecialInfo": [
+      "§3极寒之地的千年冰魄，锻造的胸甲，全身因寒冷而颤抖，散发出无法靠近的寒气。",
+      "§3 Thousands of years of ice in the extremely cold land\\forged breastplate\\trembling with cold body\\exudes a cold air that can not be approached."
+    ],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelbaishuangxiongjia",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "baishuangxiongjia.png",
+    "leggingsModelName": "Modelbaishuangxiongjia",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "baishuangxiongjialayer_2.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 300,
+    "damageValueHelmet": 2,
+    "damageValueBody": 10,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 2,
+    "enchantability": 36,
+    "toughness": 1.7,
+    "knockbackResistance": 0.02,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

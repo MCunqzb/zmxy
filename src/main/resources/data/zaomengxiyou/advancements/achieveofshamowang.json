@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:xuehaimojia_chestplate"
+    },
+    "title": {
+      "translate": "advancements.achieveofshamowang.title"
+    },
+    "description": {
+      "translate": "advancements.achieveofshamowang.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "achieveofshamowang": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "zaomengxiyou:crafingcsmofnmg",
+      "zaomengxiyou:crafingacmbaoshi"
+    ]
+  },
+  "parent": "zaomengxiyou:achieveofjiaomwang"
+}

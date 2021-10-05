@@ -1,0 +1,98 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Pengmowangzhixue",
+    "groundBlock": {
+      "value": "CUSTOM:Ground2"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Ground21"
+    },
+    "airColor": {
+      "value": -18731,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -425856,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -41073,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:sdddbfuku"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 3000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:Shishituoling"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 5,
+    "bigMushroomsChunk": 1,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 3,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 1,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.NETHER_BRICK_WALL"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:Ground21"
+    },
+    "treeVines": {
+      "value": "CUSTOM:Jianci2"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Structures",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

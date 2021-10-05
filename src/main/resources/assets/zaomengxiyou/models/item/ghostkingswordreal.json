@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/guiwangjian",
+  "textures": {
+    "0": "zaomengxiyou:blocks/guiwangjian",
+    "particle": "zaomengxiyou:items/ghostkingswordreal"
+  }
+}

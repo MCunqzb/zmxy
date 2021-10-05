@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "gtq",
+    "customModelName": "gutengqiang:default",
+    "name": "Gutengqiang",
+    "specialInfo": [
+      "§2马面的古藤枪，坚韧无比，破巨岩，轻而易举。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Special",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 1.5,
+    "enchantability": 80,
+    "damageVsEntity": 11.5,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Cucaodexingzhegun"
+      },
+      {
+        "value": "CUSTOM:Ptdxzg"
+      },
+      {
+        "value": "CUSTOM:Jiachuanbaojian"
+      },
+      {
+        "value": "CUSTOM:Qinglongdao"
+      },
+      {
+        "value": "CUSTOM:Tianshayueji"
+      },
+      {
+        "value": "CUSTOM:Yxdxzg"
+      },
+      {
+        "value": "CUSTOM:Ryjgb"
+      },
+      {
+        "value": "CUSTOM:Yxdsmz"
+      },
+      {
+        "value": "CUSTOM:Ddishaquanzhang"
+      },
+      {
+        "value": "CUSTOM:Baihuzahng"
+      },
+      {
+        "value": "CUSTOM:Xuehaixiehuang"
+      },
+      {
+        "value": "CUSTOM:Jiuhuanchangzhang"
+      },
+      {
+        "value": "CUSTOM:Bolanggu"
+      },
+      {
+        "value": "CUSTOM:Bolanggu"
+      },
+      {
+        "value": "CUSTOM:Tatanghulu"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "zmxy_1",
+    "namespace": "forge"
+  }
+}

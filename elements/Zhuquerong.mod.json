@@ -1,0 +1,63 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "zhuquerong",
+    "enableBody": false,
+    "textureBody": "",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "ZhuquerongTouKuiShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "zhuquerong_",
+    "helmetName": "Zhuquerong 头盔",
+    "bodyName": "Zhuquerong 胸甲",
+    "leggingsName": "Zhuquerong 护腿",
+    "bootsName": "Zhuquerong 靴子",
+    "helmetSpecialInfo": [
+      "§b传说由朱雀的内丹熔炼的戒指，佩戴完攻击大增，朱雀般华丽。"
+    ],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 500,
+    "damageValueHelmet": 4,
+    "damageValueBody": 5,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

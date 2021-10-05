@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "zaomengxiyou:blocks/highmingdenghua2",
+    "particle": "zaomengxiyou:blocks/highmingdenghua2"
+  }
+}

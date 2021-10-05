@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:sourceformihouwang"
+    },
+    "title": {
+      "translate": "advancements.yuzeiwangachieve.title"
+    },
+    "description": {
+      "translate": "advancements.yuzeiwangachieve.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yuzeiwangachieve": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15,
+    "recipes": [
+      "zaomengxiyou:yzwhb",
+      "zaomengxiyou:source_3"
+    ]
+  },
+  "parent": "zaomengxiyou:mihouwangachievement"
+}

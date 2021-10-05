@@ -1,0 +1,13 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zaomengxiyou:zhuquerong_helmet"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:sourcelv_1",
+    "count": 20
+  }
+}

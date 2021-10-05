@@ -1,0 +1,37 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "zaomengxiyou:dapengniaodanke"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "zaomengxiyou:shamowangbingmao"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "zaomengxiyou:pmwzhipi"
+    },
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:csmofniumogu",
+    "count": 10
+  }
+}

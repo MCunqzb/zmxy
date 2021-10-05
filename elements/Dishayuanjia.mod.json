@@ -1,0 +1,68 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "dishayuanjiashangbanshen",
+    "enableLeggings": true,
+    "textureLeggings": "disyuanjiaxiabans",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "DishayuanjiaXiongJiaShiJianMeiYouXiKe"
+    },
+    "onLeggingsTick": {
+      "name": "DishayuanjiaXiongJiaShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "disahyuanjiaban2_",
+    "helmetName": "Dishayuanjia 头盔",
+    "bodyName": "Dishayuanjia 胸甲",
+    "leggingsName": "Dishayuanjia 护腿",
+    "bootsName": "Dishayuanjia 靴子",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [
+      "§a据说是通臂猿猴的战甲，染上了无法褪去的血迹和被遗忘的记忆。"
+    ],
+    "leggingsSpecialInfo": [
+      "§a据说是通臂猿猴的战甲，染上了无法褪去的血迹和被遗忘的记忆。"
+    ],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 200,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 25,
+    "toughness": 0.7,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

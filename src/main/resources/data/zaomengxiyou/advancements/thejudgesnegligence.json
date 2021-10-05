@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:judgetoken"
+    },
+    "title": {
+      "translate": "advancements.thejudgesnegligence.title"
+    },
+    "description": {
+      "translate": "advancements.thejudgesnegligence.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thejudgesnegligence": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "zaomengxiyou:judgetoken",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:asking_king_qin_guangforanexplanation"
+}

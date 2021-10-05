@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "ghostkingswordreal",
+    "customModelName": "guiwangjian:default",
+    "name": "Ghostkingswordreal",
+    "specialInfo": [
+      "§5The ghost king sword after unblocking",
+      "§5slaying demons and slaying demons",
+      "§5was just a matter of thought.",
+      "§5解封后的鬼王剑，斩妖除魔，也只是一念之间。",
+      "§o§5Passive: 5% bloodthirsty.",
+      "§o§5被动：5%嗜血。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.35,
+    "enchantability": 2,
+    "damageVsEntity": 36.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GhostkingswordrealDangShiTiBeiGongJuJiZhongShi"
+    }
+  }
+}

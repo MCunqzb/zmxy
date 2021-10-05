@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:dapengniaodanke"
+    },
+    "title": {
+      "translate": "advancements.achieveofpmw.title"
+    },
+    "description": {
+      "translate": "advancements.achieveofpmw.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "achieveofpmw": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:shishituowangachievement"
+}

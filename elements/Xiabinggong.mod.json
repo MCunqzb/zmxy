@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "tropical_fish",
+    "customModelName": "Normal",
+    "name": "Xiabinggong",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LongwangiceDangYuanChengWuPinShiYongShi"
+    },
+    "bulletPower": 0.3,
+    "bulletDamage": 4.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.FISH#1"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Cucaodexingzhegun"
+      },
+      {
+        "value": "CUSTOM:Ptdxzg"
+      },
+      {
+        "value": "CUSTOM:Cucaodesongmuzhang"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "putong",
+    "namespace": "forge"
+  }
+}

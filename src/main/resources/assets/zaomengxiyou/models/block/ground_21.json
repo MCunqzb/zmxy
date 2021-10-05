@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/ground2_3",
+    "up": "zaomengxiyou:blocks/ground2_3",
+    "north": "zaomengxiyou:blocks/ground2_3",
+    "east": "zaomengxiyou:blocks/ground2_3",
+    "south": "zaomengxiyou:blocks/ground2_3",
+    "west": "zaomengxiyou:blocks/ground2_3",
+    "particle": "zaomengxiyou:blocks/ground2_3"
+  }
+}

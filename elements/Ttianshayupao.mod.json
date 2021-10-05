@@ -1,0 +1,63 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "tianshayupao",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "TtianshayupaoXiongJiaShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "tianshayupao_",
+    "helmetName": "Ttianshayupao 头盔",
+    "bodyName": "Ttianshayupao 胸甲",
+    "leggingsName": "Ttianshayupao 护腿",
+    "bootsName": "Ttianshayupao 靴子",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [
+      "§3传说由鲲鹏羽毛编织成的法袍，藏有无限的法力，穿上后腾云驾雾，翱翔云端。（真的可以飞）"
+    ],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 500,
+    "damageValueHelmet": 2,
+    "damageValueBody": 12,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 1.5,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

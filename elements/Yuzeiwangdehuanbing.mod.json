@@ -1,0 +1,42 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "mihouhuanbing",
+    "customModelName": "Normal",
+    "name": "Yuzeiwangdehuanbing",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.0,
+    "specialInfo": [
+      "§c禹绒王的兵器，常人难以使用"
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "YuzeiwangdehuanbingDangYouJianDianJiKongQiShi"
+    },
+    "onEntityHitWith": {
+      "name": "YuzeiwangdehuanbingLivingEntityIsHitWithItem"
+    },
+    "hasDispenseBehavior": false
+  }
+}

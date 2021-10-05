@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:jryx"
+    },
+    "title": {
+      "translate": "advancements.enterniumogu.title"
+    },
+    "description": {
+      "translate": "advancements.enterniumogu.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enterniumogu": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "zaomengxiyou:niumoguworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "zaomengxiyou:achieveofshamowang"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "zaomengxiyou:custom/yxdxzg",
+  "textures": {
+    "0": "zaomengxiyou:blocks/youxiudexzg",
+    "1": "zaomengxiyou:blocks/youxiudexzg",
+    "2": "zaomengxiyou:blocks/yxdxzg2",
+    "particle": "zaomengxiyou:items/ccdxzg"
+  }
+}

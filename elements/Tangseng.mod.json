@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "tanseng",
+    "customModelName": "Normal",
+    "name": "Tangseng",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "ÓÒ¼üºóÑ¡ÔñÌÆÉ®¡£"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 20,
+    "saturation": 20.0,
+    "eatingSpeed": 1,
+    "resultItem": {
+      "value": "CUSTOM:Cucaodesongmuzhang"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "TangsengDangShiWuBeiChiShi"
+    }
+  }
+}

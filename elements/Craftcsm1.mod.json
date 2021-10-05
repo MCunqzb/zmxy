@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 10,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ground1"
+      },
+      {
+        "value": "CUSTOM:Sourcefordaxx"
+      },
+      {
+        "value": "CUSTOM:Ground1"
+      },
+      {
+        "value": "CUSTOM:Sourcelv1"
+      },
+      {
+        "value": "CUSTOM:Ground1"
+      },
+      {
+        "value": "CUSTOM:Sourceformihouwang"
+      },
+      {
+        "value": "CUSTOM:Ground1"
+      },
+      {
+        "value": "CUSTOM:Mhwdsource"
+      },
+      {
+        "value": "CUSTOM:Ground1"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Csm1"
+    },
+    "name": "craftcsm_1",
+    "namespace": "mod"
+  }
+}

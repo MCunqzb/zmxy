@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/yecha_slab"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/yecha_slab_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/yecha_slab_full"
+    }
+  }
+}

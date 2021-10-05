@@ -1,0 +1,112 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Wangchuanriverbiomes",
+    "groundBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Underruck"
+    },
+    "airColor": {
+      "value": -4267821,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -9537167,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -7434610,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -13202559,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -15835820,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:naiheriver"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": -1.0,
+    "heightVariation": 0.0,
+    "biomeType": "COOL",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 5,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 2,
+    "gravelPatchesPerChunk": 2,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 0,
+    "maxWaterDepth": 5,
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.COBBLESTONE"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
+    "oceanRuinType": "COLD",
+    "defaultFeatures": [],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityBoat"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 200,
+        "spawnType": "waterCreature"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "particle": "zaomengxiyou:blocks/naihe_bridge_brick_down"
+  }
+}

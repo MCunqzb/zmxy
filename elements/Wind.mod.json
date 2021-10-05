@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "wind1.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 4.0,
+    "height": 4.0,
+    "scale": 8.0,
+    "speedFactor": 1.0,
+    "gravity": 0.0,
+    "maxAge": 200,
+    "maxAgeDiff": 6,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
+  }
+}

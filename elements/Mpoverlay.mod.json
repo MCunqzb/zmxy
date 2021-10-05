@@ -1,0 +1,99 @@
+{
+  "_fv": 24,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": ":<ENBT:number:showtime>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": ":<ENBT:number:showtime>",
+          "x": 23,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_00.png",
+          "use1Xscale": false,
+          "name": "clock_00.png",
+          "x": 6,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:world_num>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:world_num>",
+          "x": 1,
+          "y": 220
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": ":<VAR:integer:Sources>",
+          "color": {
+            "value": -65286,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Souloverlayjudge"
+          },
+          "name": ":<VAR:integer:Sources>",
+          "x": 23,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:logic:sourcebag>",
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:logic:sourcebag>",
+          "x": 1,
+          "y": 210
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "soul.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Souloverlayjudge"
+          },
+          "name": "soul.png",
+          "x": 7,
+          "y": 55
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "Judgeoverlaycontrol"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

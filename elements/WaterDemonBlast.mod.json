@@ -1,0 +1,39 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "shuibomao",
+    "customModelName": "Normal",
+    "name": "Water Demon Blast",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§b为了减少§mbug特性，必须增加冷却。"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "WaterDemonBlastDangYouJianDianJiKongQiShi"
+    },
+    "hasDispenseBehavior": false
+  }
+}

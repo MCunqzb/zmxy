@@ -1,0 +1,37 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zaomengxiyou:ground_1"
+    },
+    {
+      "item": "zaomengxiyou:sourcefordaxx"
+    },
+    {
+      "item": "zaomengxiyou:ground_1"
+    },
+    {
+      "item": "zaomengxiyou:sourcelv_1"
+    },
+    {
+      "item": "zaomengxiyou:ground_1"
+    },
+    {
+      "item": "zaomengxiyou:sourceformihouwang"
+    },
+    {
+      "item": "zaomengxiyou:ground_1"
+    },
+    {
+      "item": "zaomengxiyou:mhwdsource"
+    },
+    {
+      "item": "zaomengxiyou:ground_1"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:csm_1",
+    "count": 10
+  }
+}

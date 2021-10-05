@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/baishuangzhang",
+  "textures": {
+    "0": "zaomengxiyou:blocks/baishuangzhang",
+    "particle": "zaomengxiyou:items/bgj"
+  }
+}

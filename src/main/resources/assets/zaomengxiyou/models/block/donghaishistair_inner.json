@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/donghaiscs",
+    "top": "zaomengxiyou:blocks/donghaiscs",
+    "side": "zaomengxiyou:blocks/donghaiscs"
+  }
+}

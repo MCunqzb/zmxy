@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/gutengbang",
+  "textures": {
+    "1": "zaomengxiyou:blocks/niutou",
+    "particle": "zaomengxiyou:items/gtb"
+  }
+}

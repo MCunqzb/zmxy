@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/boranggu",
+  "textures": {
+    "0": "zaomengxiyou:blocks/branggu",
+    "particle": "zaomengxiyou:items/bolanggu"
+  }
+}

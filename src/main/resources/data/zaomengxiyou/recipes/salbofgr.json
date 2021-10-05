@@ -1,0 +1,22 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "1": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "2": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:salbofghostroom",
+    "count": 6
+  }
+}

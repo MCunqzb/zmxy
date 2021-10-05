@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "On Fire",
+    "splashName": "Splash On Fire",
+    "lingeringName": "Lingering On Fire",
+    "arrowName": "Arrow of On Fire",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:OnFire"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

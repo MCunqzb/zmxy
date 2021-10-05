@@ -1,0 +1,13 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:magma_block"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:niumoguworld",
+    "count": 1
+  }
+}

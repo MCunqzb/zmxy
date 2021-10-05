@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "dishaquanzhang",
+    "customModelName": "Normal",
+    "name": "Dishaquanzhang 2",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 5.0,
+    "onRangedItemUsed": {
+      "name": "Dishaquanzhang2DangYuanChengWuPinShiYongShi"
+    },
+    "bulletPower": 0.6,
+    "bulletDamage": 15.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.BONE_BLOCK"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "Dishaquanzhang2DangZiDanJiZhongFangKuaiShi"
+    },
+    "onBulletHitsEntity": {
+      "name": "Dishaquanzhang2DangZiDanJiZhongFangKuaiShi"
+    }
+  }
+}

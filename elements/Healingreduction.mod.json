@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Healing reduction",
+    "icon": "healing_reduction.png",
+    "color": {
+      "value": -2911341,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "Healingreductioneverytick"
+    },
+    "onExpired": {
+      "name": "Healingreductionwhentimeover"
+    }
+  }
+}

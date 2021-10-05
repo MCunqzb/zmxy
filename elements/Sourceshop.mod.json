@@ -1,0 +1,379 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 200,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -2840321,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 137,
+          "y": 28
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -41892,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 240,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÁÒÑæ·ç±©",
+          "onClick": {
+            "name": "Buylieyanfengbao"
+          },
+          "width": 73,
+          "height": 20,
+          "name": "¹ºÂòÁÒÑæ·ç±©",
+          "x": 123,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 168,
+          "y": 28
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÔÂÖ®»Ô»Í",
+          "onClick": {
+            "name": "Buyyuezhihuihuang"
+          },
+          "width": 73,
+          "height": 20,
+          "name": "¹ºÂòÔÂÖ®»Ô»Í",
+          "x": 24,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÁÒÑæÉÁ",
+          "onClick": {
+            "name": "Buylys"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "¹ºÂòÁÒÑæÉÁ",
+          "x": 123,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò±»¶¯Öé",
+          "onClick": {
+            "name": "Buybeidongzhu"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "¹ºÂò±»¶¯Öé",
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò¹âÖ®ÓÀºã",
+          "onClick": {
+            "name": "Buyhuixue"
+          },
+          "width": 73,
+          "height": 20,
+          "name": "¹ºÂò¹âÖ®ÓÀºã",
+          "x": 321,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò¹âÖ®ÓÀºãlv.2",
+          "onClick": {
+            "name": "Buyhuixue2"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "¹ºÂò¹âÖ®ÓÀºãlv.2",
+          "x": 321,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò¹âÖ®ÓÀºãlv.3",
+          "onClick": {
+            "name": "Buyhuixue3"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "¹ºÂò¹âÖ®ÓÀºãlv.3",
+          "x": 321,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò¹âÖ®ÓÀºãlv.4",
+          "onClick": {
+            "name": "Buyhuixue4"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "¹ºÂò¹âÖ®ÓÀºãlv.4",
+          "x": 321,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò¹âÖ®ÓÀºãlv.5",
+          "onClick": {
+            "name": "Buyhuixue5"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "¹ºÂò¹âÖ®ÓÀºãlv.5",
+          "x": 321,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò±ùÁú²¨",
+          "onClick": {
+            "name": "Buybinglongbo"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "¹ºÂò±ùÁú²¨",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÐþ±ùÆÆ",
+          "onClick": {
+            "name": "Buyxuanbingpo"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "¹ºÂòÐþ±ùÆÆ",
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÌì½µ¸ÊÂ¶",
+          "onClick": {
+            "name": "Buytjgl"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "¹ºÂòÌì½µ¸ÊÂ¶",
+          "x": 195,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÔÂÖ®»Ô»Ílv2",
+          "onClick": {
+            "name": "Buyhl2"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "¹ºÂòÔÂÖ®»Ô»Ílv2",
+          "x": 24,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÔÂÖ®»Ô»Ílv3",
+          "onClick": {
+            "name": "Buyhl3"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "¹ºÂòÔÂÖ®»Ô»Ílv3",
+          "x": 24,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÔÂÖ®»Ô»Ílv4",
+          "onClick": {
+            "name": "Buyhl4"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "¹ºÂòÔÂÖ®»Ô»Ílv4",
+          "x": 24,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÔÂÖ®»Ô»Ílv5",
+          "onClick": {
+            "name": "Buyhl5"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "¹ºÂòÔÂÖ®»Ô»Ílv5",
+          "x": 24,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:hp_overlay>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:hp_overlay>",
+          "x": 24,
+          "y": 197
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "on/off(no use)",
+          "onClick": {
+            "name": "Changehealthoverlay"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "on/off(no use)",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:logic:healrhoverlay>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:logic:healrhoverlay>",
+          "x": 24,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂò»ðÄ§Õ¶",
+          "onClick": {
+            "name": "Buyhmz"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "¹ºÂò»ðÄ§Õ¶",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòÉýÁúÕ¶",
+          "onClick": {
+            "name": "Buyslz"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "¹ºÂòÉýÁúÕ¶",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "¹ºÂòË®Ä§±¬",
+          "onClick": {
+            "name": "Buysmb"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "¹ºÂòË®Ä§±¬",
+          "x": 195,
+          "y": 98
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

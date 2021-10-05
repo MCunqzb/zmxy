@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/glodenpaluse",
+    "up": "zaomengxiyou:blocks/glodenpaluse",
+    "north": "zaomengxiyou:blocks/glodenpaluse",
+    "east": "zaomengxiyou:blocks/glodenpaluse",
+    "south": "zaomengxiyou:blocks/glodenpaluse",
+    "west": "zaomengxiyou:blocks/glodenpaluse",
+    "particle": "zaomengxiyou:blocks/glodenpaluse"
+  }
+}

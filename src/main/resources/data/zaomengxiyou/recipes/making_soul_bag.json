@@ -1,0 +1,42 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:sourcelv_1"
+    },
+    "1": {
+      "item": "minecraft:string"
+    },
+    "2": {
+      "item": "zaomengxiyou:sourcelv_1"
+    },
+    "3": {
+      "item": "minecraft:leather"
+    },
+    "4": {
+      "item": "zaomengxiyou:sourcelv_1"
+    },
+    "5": {
+      "item": "minecraft:leather"
+    },
+    "6": {
+      "item": "zaomengxiyou:sourcelv_1"
+    },
+    "7": {
+      "item": "minecraft:leather"
+    },
+    "8": {
+      "item": "zaomengxiyou:sourcelv_1"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:sourcebag",
+    "count": 1
+  }
+}

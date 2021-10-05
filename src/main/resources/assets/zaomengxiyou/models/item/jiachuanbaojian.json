@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/jiachaungbaojian",
+  "textures": {
+    "0": "zaomengxiyou:blocks/jianchaunbaojian",
+    "particle": "zaomengxiyou:items/jiachuanjian"
+  }
+}

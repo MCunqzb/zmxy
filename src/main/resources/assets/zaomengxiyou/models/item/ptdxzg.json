@@ -1,0 +1,9 @@
+{
+  "parent": "zaomengxiyou:custom/cu_cao_de_xing_zhe_gun_",
+  "textures": {
+    "0": "zaomengxiyou:blocks/ccdxzg1",
+    "1": "zaomengxiyou:blocks/ccdxzg1",
+    "2": "zaomengxiyou:blocks/ccdxzg2",
+    "particle": "zaomengxiyou:items/ccdxzg"
+  }
+}

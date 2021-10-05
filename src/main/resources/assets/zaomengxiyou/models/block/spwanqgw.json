@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/ghost_king_place_brick",
+    "up": "zaomengxiyou:blocks/ghost_king_palace_floor_up",
+    "north": "zaomengxiyou:blocks/ghostkingstair1",
+    "east": "zaomengxiyou:blocks/ghostkingstair1",
+    "south": "zaomengxiyou:blocks/ghostkingstair1",
+    "west": "zaomengxiyou:blocks/ghostkingstair1",
+    "particle": "zaomengxiyou:blocks/ghost_king_place_brick"
+  }
+}

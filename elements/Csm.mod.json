@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "csm.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 1.0,
+    "height": 1.0,
+    "scale": 16.0,
+    "speedFactor": 0.0,
+    "gravity": 0.0,
+    "maxAge": 360,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "gtb",
+    "customModelName": "gutengbang:default",
+    "name": "Gutengbang",
+    "specialInfo": [
+      "§2 牛头的古藤棒，重达千斤，碎大石，易如反掌。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 80,
+    "damageVsEntity": 21.6,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

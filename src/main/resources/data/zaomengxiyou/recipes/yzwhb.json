@@ -1,0 +1,36 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone"
+    },
+    "1": {
+      "item": "zaomengxiyou:sourceformihouwang"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "minecraft:bone"
+    },
+    "4": {
+      "item": "zaomengxiyou:sourceformihouwang"
+    },
+    "5": {
+      "item": "minecraft:bone"
+    },
+    "7": {
+      "item": "minecraft:bone_block"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:yuzeiwangdehuanbing",
+    "count": 1
+  }
+}

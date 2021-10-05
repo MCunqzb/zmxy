@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "pig88",
+    "customModelName": "Normal",
+    "name": "Jryx",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Ω¯»Î”Œœ∑«Î”“º¸"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 0.3,
+    "eatingSpeed": 1,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "Pig8foodeaten"
+    }
+  }
+}

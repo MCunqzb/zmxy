@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "zaomengxiyou:blocks/shuijinglan",
+    "particle": "zaomengxiyou:blocks/shuijinglan"
+  }
+}

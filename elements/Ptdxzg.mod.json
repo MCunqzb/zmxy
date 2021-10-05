@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "ccdxzg",
+    "customModelName": "cu_cao_de_xing_zhe_gun_:default",
+    "name": "Ptdxzg",
+    "specialInfo": [
+      "普通的行者棍"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 4.0,
+    "attackSpeed": 1.9,
+    "enchantability": 2,
+    "damageVsEntity": 5.5,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntitySwing": {
+      "name": "CucaodexingzhegunDangShiTiHuiDongWuPinShi"
+    }
+  }
+}

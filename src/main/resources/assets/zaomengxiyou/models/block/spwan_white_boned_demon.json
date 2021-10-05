@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/spwan_white_bone_demon",
+    "up": "zaomengxiyou:blocks/spwan_white_bone_demon",
+    "north": "zaomengxiyou:blocks/spwan_white_bone_demon",
+    "east": "zaomengxiyou:blocks/spwan_white_bone_demon",
+    "south": "zaomengxiyou:blocks/spwan_white_bone_demon",
+    "west": "zaomengxiyou:blocks/spwan_white_bone_demon",
+    "particle": "zaomengxiyou:blocks/spwan_white_bone_demon"
+  }
+}

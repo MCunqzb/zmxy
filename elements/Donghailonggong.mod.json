@@ -1,0 +1,104 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Donghailonggong",
+    "groundBlock": {
+      "value": "CUSTOM:Shenhaishi"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Donghaicss"
+    },
+    "airColor": {
+      "value": -16722689,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16733441,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -14108417,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16741424,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:donghai"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 3000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particlesProbability": 0.0,
+    "biomeCategory": "OCEAN",
+    "parent": {
+      "value": "warm_ocean"
+    },
+    "rainingPossibility": 0.2,
+    "temperature": 0.5,
+    "baseHeight": -1.0,
+    "heightVariation": 0.0,
+    "biomeType": "COOL",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [
+      "OCEAN"
+    ],
+    "grassPerChunk": 1,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 1,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.TUBE_CORAL_BLOCK"
+    },
+    "treeBranch": {
+      "value": "Blocks.TUBE_CORAL_BLOCK"
+    },
+    "treeVines": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "treeFruits": {
+      "value": "Blocks.TUBE_CORAL"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "oceanRuinType": "WARM",
+    "defaultFeatures": [
+      "Lakes",
+      "OceanCaves",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

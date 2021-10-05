@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "jyyslv1",
+    "customModelName": "Normal",
+    "name": "Jyyslv 1",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "基础的经验药水"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 2,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "Jyyslv1FoodEaten"
+    }
+  }
+}

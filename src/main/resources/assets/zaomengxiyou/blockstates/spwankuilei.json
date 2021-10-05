@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/spwankuilei"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/spwankuilei_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/spwankuilei_full"
+    }
+  }
+}

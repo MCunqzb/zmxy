@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "tianshayueji1",
+        "missing": "tianshayueji1"
+      },
+      "name": "default"
+    }
+  }
+}

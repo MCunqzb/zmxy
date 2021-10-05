@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/donghaiscs",
+    "top": "zaomengxiyou:blocks/donghaiscs",
+    "side": "zaomengxiyou:blocks/donghaiscs"
+  }
+}

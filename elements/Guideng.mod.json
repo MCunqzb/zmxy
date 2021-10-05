@@ -1,0 +1,137 @@
+{
+  "_fv": 24,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Guideng",
+    "mobLabel": "",
+    "mobModelName": "Modelguideng",
+    "mobModelTexture": "guideng.png",
+    "mobModelGlowTexture": "guideng.png",
+    "modelWidth": 0.6,
+    "modelHeight": 1.0,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -16585985,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -3750922,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": "CUSTOM:Huoluobo"
+    },
+    "equipmentOffHand": {
+      "value": "CUSTOM:Guihuo"
+    },
+    "equipmentHelmet": {
+      "value": "CUSTOM:Sourcelv1"
+    },
+    "equipmentBody": {
+      "value": "CUSTOM:Sourcelv1"
+    },
+    "equipmentLeggings": {
+      "value": "CUSTOM:Sourcebig"
+    },
+    "equipmentBoots": {
+      "value": "CUSTOM:YUJINGPING"
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEAD",
+    "attackStrength": 0,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.2,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "health": 50,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": true,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": true,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": "CUSTOM:Sourcebig"
+    },
+    "livingSound": {
+      "value": "block.lantern.step"
+    },
+    "hurtSound": {
+      "value": "block.lantern.hit"
+    },
+    "deathSound": {
+      "value": "block.lantern.break"
+    },
+    "stepSound": {
+      "value": "block.fire.ambient"
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "SOUL_FIRE_FLAME"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.2,
+    "particleAmount": 2,
+    "whenMobDies": {
+      "name": "GuidengShiTiSiWangShi"
+    },
+    "onMobTickUpdate": {
+      "name": "GuidengDangShiTiGengXinKeShi"
+    },
+    "onPlayerCollidesWith": {
+      "name": "GuidengDangWanJiaYuGaiShiTiXiangZhuangShi"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_fly\"><field name=\"speed\">1.1</field><field name=\"radius\">7</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "GuidengZiRanShiTiShengChengTiaoJian"
+    },
+    "spawningProbability": 10,
+    "mobSpawningType": "ambient",
+    "minNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 2,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Ghost"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

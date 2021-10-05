@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/slabofglodenpaluse"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/slabofglodenpaluse_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/slabofglodenpaluse_full"
+    }
+  }
+}

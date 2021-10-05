@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Sourceformihouwang"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.BONE"
+      },
+      {
+        "value": "CUSTOM:Sourceformihouwang"
+      },
+      {
+        "value": "Items.BONE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.BONE_BLOCK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Yuzeiwangdehuanbing"
+    },
+    "name": "yzwhb",
+    "namespace": "mod"
+  }
+}

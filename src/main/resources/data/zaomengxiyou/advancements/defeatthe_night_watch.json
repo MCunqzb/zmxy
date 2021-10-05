@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:laozhepao_chestplate"
+    },
+    "title": {
+      "translate": "advancements.defeatthe_night_watch.title"
+    },
+    "description": {
+      "translate": "advancements.defeatthe_night_watch.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeatthe_night_watch": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:achievezaomeng_2"
+}

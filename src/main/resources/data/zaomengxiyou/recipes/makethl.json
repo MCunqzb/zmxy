@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "zaomengxiyou:ryjgb"
+  },
+  "addition": {
+    "item": "zaomengxiyou:glodenegg"
+  },
+  "result": {
+    "item": "zaomengxiyou:tatanghulu"
+  }
+}

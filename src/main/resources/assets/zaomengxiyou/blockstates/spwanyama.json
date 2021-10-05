@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "zaomengxiyou:block/spwanyama"
+    },
+    "facing=east": {
+      "model": "zaomengxiyou:block/spwanyama",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "zaomengxiyou:block/spwanyama",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "zaomengxiyou:block/spwanyama",
+      "y": 270
+    }
+  }
+}

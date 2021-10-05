@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/ghostcitybase1",
+    "up": "zaomengxiyou:blocks/ghostcitybase1",
+    "north": "zaomengxiyou:blocks/ghostcitybase1",
+    "east": "zaomengxiyou:blocks/ghostcitybase1",
+    "south": "zaomengxiyou:blocks/ghostcitybase1",
+    "west": "zaomengxiyou:blocks/ghostcitybase1",
+    "particle": "zaomengxiyou:blocks/ghostcitybase1"
+  }
+}

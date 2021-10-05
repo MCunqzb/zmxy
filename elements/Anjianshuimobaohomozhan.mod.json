@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Anjianshuimobaohomozhan",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "AnjianshuimobaohomozhanAnXiaAnJianShi"
+    }
+  }
+}

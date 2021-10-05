@@ -1,0 +1,13 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zaomengxiyou:dishayuanjia_chestplate"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:sourcelv_1",
+    "count": 10
+  }
+}

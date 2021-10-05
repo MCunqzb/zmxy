@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "the_judge_stage",
+        "missing": "the_judge_stage"
+      },
+      "name": "default"
+    }
+  }
+}

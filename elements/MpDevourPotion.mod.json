@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Mp Devour ",
+    "splashName": "Splash Potion of Mp Devour ",
+    "lingeringName": "Lingering Potion of Mp Devour ",
+    "arrowName": "Arrow of Mp Devour ",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:MpDevour"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "HUNGER"
+        },
+        "duration": 600,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": false
+      }
+    ]
+  }
+}

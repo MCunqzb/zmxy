@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/blockofxuekaicsm",
+    "up": "zaomengxiyou:blocks/blockofxuekaicsm",
+    "north": "zaomengxiyou:blocks/blockofxuekaicsm",
+    "east": "zaomengxiyou:blocks/blockofxuekaicsm",
+    "south": "zaomengxiyou:blocks/blockofxuekaicsm",
+    "west": "zaomengxiyou:blocks/blockofxuekaicsm",
+    "particle": "zaomengxiyou:blocks/blockofxuekaicsm"
+  }
+}

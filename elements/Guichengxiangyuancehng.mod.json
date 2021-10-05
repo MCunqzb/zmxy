@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "guichengxiang",
+    "customModelName": "Normal",
+    "name": "Guichengxiangyuancehng",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LongwangiceDangYuanChengWuPinShiYongShi"
+    },
+    "bulletPower": 0.3,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.BLUE_ICE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsPlayer": {
+      "name": "GuichengxiangyuancehngBulletHitsPlayer"
+    },
+    "onBulletHitsEntity": {
+      "name": "GuichengxiangyuancehngBulletHitsPlayer"
+    }
+  }
+}

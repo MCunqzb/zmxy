@@ -1,0 +1,70 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "xuehaimojia",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "XuehaimojiaXiongJiaShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "armor_main",
+    "helmetName": "Xuehaimojia 头盔",
+    "bodyName": "§5Xuehaimojia 胸甲",
+    "leggingsName": "Xuehaimojia 护腿",
+    "bootsName": "Xuehaimojia 靴子",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [
+      "§5聚集了无数怨魂的怨气，闪烁着胆寒的光芒，给人撕心裂肺的绝望。"
+    ],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelxueahaimojia",
+    "bodyModelPart": "body",
+    "armsModelPartL": "leftarm",
+    "armsModelPartR": "rightarm",
+    "bodyModelTexture": "xhmj.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 2,
+    "damageValueBody": 7,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 25,
+    "toughness": 3.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Pmwzhipi"
+      },
+      {
+        "value": "CUSTOM:Shamowangbingmao"
+      }
+    ]
+  }
+}

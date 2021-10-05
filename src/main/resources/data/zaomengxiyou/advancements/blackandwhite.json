@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:bianhua"
+    },
+    "title": {
+      "translate": "advancements.blackandwhite.title"
+    },
+    "description": {
+      "translate": "advancements.blackandwhite.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blackandwhite": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "loot": [
+      "zaomengxiyou:entities/heiwuchang",
+      "zaomengxiyou:entities/baiwuchang"
+    ]
+  },
+  "parent": "zaomengxiyou:defeatthe_night_watch"
+}

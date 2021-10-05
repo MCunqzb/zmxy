@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/tanghulu",
+  "textures": {
+    "0": "zaomengxiyou:blocks/thl",
+    "particle": "zaomengxiyou:items/thl"
+  }
+}

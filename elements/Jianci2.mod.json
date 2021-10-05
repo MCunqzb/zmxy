@@ -1,0 +1,70 @@
+{
+  "_fv": 24,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "jianci",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "jc",
+    "particleTexture": "jianci",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "SATURATION",
+    "suspiciousStewDuration": 0,
+    "growapableSpawnType": "Cave",
+    "growapableMaxHeight": 3,
+    "doublePlantGenerationType": "Flower",
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [],
+    "name": "Jianci 2",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "hardness": 2.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 0,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "frequencyOnChunks": 10,
+    "spawnWorldTypes": [
+      "CUSTOM:Weidu1"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Bianfuku"
+      }
+    ],
+    "patchSize": 64,
+    "onEntityCollides": {
+      "name": "JianciDangShiTiZaiFangKuaiShangXingZouShi"
+    }
+  }
+}

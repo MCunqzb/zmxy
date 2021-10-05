@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "On Fire",
+    "icon": "potion_fire.png",
+    "color": {
+      "value": -52429,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "OnFireYaoShuiXiaoGuoChiXuShiMeiKeFaSheng"
+    }
+  }
+}

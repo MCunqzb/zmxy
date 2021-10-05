@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/naihe_bridge_slab"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/naihe_bridge_slab_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/naihe_bridge_slab_full"
+    }
+  }
+}

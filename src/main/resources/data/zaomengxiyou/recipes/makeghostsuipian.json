@@ -1,0 +1,42 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "1": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "2": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "3": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "4": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "5": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "6": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "7": {
+      "item": "zaomengxiyou:guishizhuan"
+    },
+    "8": {
+      "item": "zaomengxiyou:guishizhuan"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:ghostcityblock_1",
+    "count": 1
+  }
+}

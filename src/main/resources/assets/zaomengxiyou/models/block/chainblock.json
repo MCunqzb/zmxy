@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/chanblock",
+    "up": "zaomengxiyou:blocks/chanblock",
+    "north": "zaomengxiyou:blocks/chanblock",
+    "east": "zaomengxiyou:blocks/chanblock",
+    "south": "zaomengxiyou:blocks/chanblock",
+    "west": "zaomengxiyou:blocks/chanblock",
+    "particle": "zaomengxiyou:blocks/chanblock"
+  }
+}

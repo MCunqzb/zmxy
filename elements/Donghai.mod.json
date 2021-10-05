@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Donghailonggong"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -9252609,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "DonghaiDangWanJiaJinRuWeiDuShi"
+    },
+    "portalFrame": {
+      "value": "CUSTOM:Donghaicss"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Donghai Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "texture": "donghaichuangsongshi",
+    "portalTexture": "csmfangkuai_",
+    "enablePortal": true
+  }
+}

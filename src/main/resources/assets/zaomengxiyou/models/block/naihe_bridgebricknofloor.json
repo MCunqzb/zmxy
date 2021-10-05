@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "up": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "north": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "east": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "south": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "west": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "particle": "zaomengxiyou:blocks/naihe_bridge_brick_down"
+  }
+}

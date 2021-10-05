@@ -1,0 +1,33 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "3": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "4": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "6": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "7": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    },
+    "8": {
+      "item": "zaomengxiyou:ghostroomawall_1"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:stairofghostromr",
+    "count": 4
+  }
+}

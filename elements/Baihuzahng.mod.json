@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "baihuzhang",
+    "customModelName": "Normal",
+    "name": "Baihuzahng",
+    "specialInfo": [
+      "§b传说由白虎的肋骨打制的法杖，施法时其疾如风，只见白虎之影。",
+      "§b远程伤害：17点。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 4.0,
+    "onRangedItemUsed": {
+      "name": "BaihuzahngDangYuanChengWuPinShiYongShi"
+    },
+    "bulletPower": 0.7,
+    "bulletDamage": 17.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.WOOL#3"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "BaihuzahngDangZiDanJiZhongShengCunShiTiShi"
+    },
+    "onBulletHitsEntity": {
+      "name": "BaihuzahngDangZiDanJiZhongShengCunShiTiShi"
+    }
+  }
+}

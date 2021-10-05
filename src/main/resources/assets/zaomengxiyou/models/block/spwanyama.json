@@ -1,0 +1,8 @@
+{
+  "parent": "zaomengxiyou:custom/the_yama_stage",
+  "textures": {
+    "all": "zaomengxiyou:blocks/the_yama_stage",
+    "particle": "zaomengxiyou:blocks/the_yama_stage",
+    "1": "zaomengxiyou:blocks/the_yama_stage"
+  }
+}

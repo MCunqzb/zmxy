@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/xuehaixiehuang",
+  "textures": {
+    "0": "zaomengxiyou:blocks/xuhaixiehuang",
+    "particle": "zaomengxiyou:items/xuehaixiehuang"
+  }
+}

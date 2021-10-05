@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Niumogu"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Niumochiyanshi"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Niumochiyanshi"
+    },
+    "airColor": {
+      "value": -16192,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:Csmofniumogu"
+    },
+    "portalParticles": {
+      "value": "FLAME"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Niumoguworld Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "texture": "csmnmg",
+    "portalTexture": "csmniumogumen",
+    "enablePortal": true
+  }
+}

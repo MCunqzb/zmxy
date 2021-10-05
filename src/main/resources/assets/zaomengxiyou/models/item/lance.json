@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/lance",
+  "textures": {
+    "0": "zaomengxiyou:blocks/lance",
+    "particle": "zaomengxiyou:items/lance"
+  }
+}

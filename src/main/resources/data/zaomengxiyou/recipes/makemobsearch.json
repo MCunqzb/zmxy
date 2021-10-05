@@ -1,0 +1,42 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "1": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "2": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "3": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "4": {
+      "item": "minecraft:compass"
+    },
+    "5": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "6": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "7": {
+      "item": "zaomengxiyou:sourcebig"
+    },
+    "8": {
+      "item": "zaomengxiyou:sourcebig"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:mobsearcher",
+    "count": 1
+  }
+}

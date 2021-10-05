@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "binglongbo",
+    "customModelName": "Normal",
+    "name": "Icedragon",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 4.0,
+    "enchantability": 50,
+    "damageVsEntity": 0.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "IcedragonDangYouJianDianJiKongQiShi"
+    }
+  }
+}

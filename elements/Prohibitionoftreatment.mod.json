@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Prohibitionoftreatment",
+    "icon": "prohibition_of_treatment.png",
+    "color": {
+      "value": -13697024,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ProhibitionoftreatmentYaoShuiXiaoGuoChiXuShiMeiKeFaSheng"
+    },
+    "onExpired": {
+      "name": "ProhibitionoftreatmentYaoShuiDaoQiShi"
+    }
+  }
+}

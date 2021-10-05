@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:dishalinjei_helmet"
+    },
+    "title": {
+      "translate": "advancements.disalinjieachievement.title"
+    },
+    "description": {
+      "translate": "advancements.disalinjieachievement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "disalinjieachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "zaomengxiyou:mihouwangachievement"
+}

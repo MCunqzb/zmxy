@@ -1,0 +1,134 @@
+{
+  "_fv": 24,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Baigujing 1",
+    "mobLabel": "",
+    "mobModelName": "Modelbaigujing1",
+    "mobModelTexture": "baigujing1.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -4827684,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -402469,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "isBoss": true,
+    "bossBarColor": "WHITE",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": "CUSTOM:YUJINGPING"
+    },
+    "equipmentOffHand": {
+      "value": "CUSTOM:Huoluobo"
+    },
+    "equipmentHelmet": {
+      "value": "CUSTOM:YUJINGPING"
+    },
+    "equipmentBody": {
+      "value": "CUSTOM:YUJINGPING"
+    },
+    "equipmentLeggings": {
+      "value": "CUSTOM:Huoluobo"
+    },
+    "equipmentBoots": {
+      "value": "CUSTOM:Huoluobo"
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEAD",
+    "attackStrength": 15,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 16.0,
+    "trackingRange": 64,
+    "health": 400,
+    "xpAmount": 2,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": true,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "entity.skeleton.ambient"
+    },
+    "hurtSound": {
+      "value": "entity.skeleton.hurt"
+    },
+    "deathSound": {
+      "value": "entity.skeleton.death"
+    },
+    "stepSound": {
+      "value": "entity.skeleton.step"
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "whenMobDies": {
+      "name": "Baigujing1ShiTiSiWangShi"
+    },
+    "onMobTickUpdate": {
+      "name": "Baigujing1DangShiTiGengXinKeShi"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.1</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:Xhz</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "Baigujing1ZiRanShiTiShengChengTiaoJian"
+    },
+    "spawningProbability": 1,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BoneSecretRealm"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

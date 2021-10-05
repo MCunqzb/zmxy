@@ -1,0 +1,13 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zaomengxiyou:wangchuanportal"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:wangchuanriverworld",
+    "count": 4
+  }
+}

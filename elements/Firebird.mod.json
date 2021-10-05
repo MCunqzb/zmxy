@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "firebired2.png",
+    "animate": true,
+    "frameDuration": 3,
+    "width": 0.5,
+    "height": 1.0,
+    "scale": 8.0,
+    "speedFactor": 1.0,
+    "gravity": 0.0,
+    "maxAge": 50,
+    "maxAgeDiff": 3,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "LIT"
+  }
+}

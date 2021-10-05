@@ -1,0 +1,35 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "tianshayueji",
+    "customModelName": "tianshayuejibetter:default",
+    "name": "Tianshayueji 2",
+    "specialInfo": [
+      "§3由月石经三味真火精炼而成，闪耀着黄金般的光芒，此光堪比皓月之明。(造梦2)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.4,
+    "enchantability": 40,
+    "damageVsEntity": 21.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "TianshayuejiDangGongJuChuXianZaiShouZhongShi"
+    },
+    "onStoppedUsing": {
+      "name": "TianshayuejiZaiWanJiaTingZhiShiYongShi"
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "_fv": 24,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Wangwang",
+    "mobLabel": "",
+    "mobModelName": "Modelwolf",
+    "mobModelTexture": "wolf.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 0.4,
+    "modelHeight": 1.2,
+    "modelShadowSize": 0.4,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -9984,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -2172843,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "health": 40,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": true,
+    "canControlForward": true,
+    "canControlStrafe": true,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "entity.wolf.ambient"
+    },
+    "hurtSound": {
+      "value": "entity.wolf.hurt"
+    },
+    "deathSound": {
+      "value": "entity.wolf.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "onPlayerCollidesWith": {
+      "name": "WangwangDangYouJianDianJiShiTi"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Goldenbone</field></block></value><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "tameable": true,
+    "breedTriggerItems": [
+      {
+        "value": "CUSTOM:Goldenbone"
+      }
+    ],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": false,
+    "spawningCondition": {
+      "name": "WangwangZiRanShiTiShengChengTiaoJian"
+    },
+    "spawningProbability": 1,
+    "mobSpawningType": "ambient",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Huaguoshan"
+      },
+      {
+        "value": "CUSTOM:Shuiliandong"
+      },
+      {
+        "value": "CUSTOM:Taohuayuan"
+      },
+      {
+        "value": "CUSTOM:Bianfuku"
+      },
+      {
+        "value": "CUSTOM:Shishituoling"
+      },
+      {
+        "value": "CUSTOM:Pengmowangzhixue"
+      },
+      {
+        "value": "CUSTOM:Donghailonggong"
+      },
+      {
+        "value": "CUSTOM:Qiantan"
+      },
+      {
+        "value": "CUSTOM:Donghaijiaomowang"
+      },
+      {
+        "value": "CUSTOM:Shazhiwoliu"
+      },
+      {
+        "value": "CUSTOM:Niumogu"
+      },
+      {
+        "value": "CUSTOM:Niumogu"
+      },
+      {
+        "value": "CUSTOM:Ghost"
+      },
+      {
+        "value": "CUSTOM:Underghost"
+      },
+      {
+        "value": "CUSTOM:BoneSecretRealm"
+      },
+      {
+        "value": "CUSTOM:Underghostpalace"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:guichengxiangyuancehng"
+    },
+    "title": {
+      "translate": "advancements.achieveofguicx.title"
+    },
+    "description": {
+      "translate": "advancements.achieveofguicx.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "achieveofguicx": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "zaomengxiyou:made_huixue_6"
+    ]
+  },
+  "parent": "zaomengxiyou:achieveofpmw"
+}

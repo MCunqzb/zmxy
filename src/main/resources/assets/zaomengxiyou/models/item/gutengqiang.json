@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/gutengqiang",
+  "textures": {
+    "1": "zaomengxiyou:blocks/mamian",
+    "particle": "zaomengxiyou:items/gtq"
+  }
+}

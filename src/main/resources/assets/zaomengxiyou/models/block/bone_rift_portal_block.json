@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/boneriftportalblock",
+    "up": "zaomengxiyou:blocks/boneriftportalblock",
+    "north": "zaomengxiyou:blocks/boneriftportalblockup",
+    "east": "zaomengxiyou:blocks/boneriftportalblockup",
+    "south": "zaomengxiyou:blocks/boneriftportalblockup",
+    "west": "zaomengxiyou:blocks/boneriftportalblockup",
+    "particle": "zaomengxiyou:blocks/boneriftportalblock"
+  }
+}

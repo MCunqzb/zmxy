@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "particle": "zaomengxiyou:blocks/naihe_bridge_brick_down"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/qinglongdao",
+  "textures": {
+    "0": "zaomengxiyou:blocks/qinglongd",
+    "particle": "zaomengxiyou:items/qinglongdao"
+  }
+}

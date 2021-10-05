@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/yeicah_brick",
+    "up": "zaomengxiyou:blocks/yeicah_brick",
+    "north": "zaomengxiyou:blocks/yeicah_brick",
+    "east": "zaomengxiyou:blocks/yeicah_brick",
+    "south": "zaomengxiyou:blocks/yeicah_brick",
+    "west": "zaomengxiyou:blocks/yeicah_brick",
+    "particle": "zaomengxiyou:blocks/yeicah_brick"
+  }
+}

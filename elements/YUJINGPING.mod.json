@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "yujingping",
+    "customModelName": "Normal",
+    "name": "YUJINGPING.lv.1",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "ªÿ¿∂"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "saturation": 0.3,
+    "eatingSpeed": 2,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "YUJINGPINGFoodEaten"
+    }
+  }
+}

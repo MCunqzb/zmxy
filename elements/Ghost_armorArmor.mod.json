@@ -1,0 +1,78 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "ghost_armor_head",
+    "enableBody": true,
+    "textureBody": "ghost_armor_body",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "GhostarmorArmorXiongJiaShiJianMeiYouXiKe"
+    },
+    "onBodyTick": {
+      "name": "GhostarmorArmorXiongJiaShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "ghost_armor",
+    "helmetName": "Ghost_armor Helmet",
+    "bodyName": "Ghost_armor Chestplate",
+    "leggingsName": "Ghost_armor Leggings",
+    "bootsName": "Ghost_armor Boots",
+    "helmetSpecialInfo": [
+      "§8Quality: evil spirit",
+      "§8品质：邪灵",
+      "§8Slow but firm",
+      "§8缓慢但是坚固。"
+    ],
+    "bodySpecialInfo": [
+      "§8Quality: evil spirit",
+      "§8品质：邪灵",
+      "§8Slow but firm",
+      "§8缓慢但是坚固。"
+    ],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 60,
+    "damageValueHelmet": 8,
+    "damageValueBody": 10,
+    "damageValueLeggings": 24,
+    "damageValueBoots": 8,
+    "enchantability": 36,
+    "toughness": 2.0,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ghostarmorfragments"
+      }
+    ]
+  }
+}

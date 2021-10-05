@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "jiuhuanchangzhang",
+    "customModelName": "jiuhuanchanzhang:default",
+    "name": "Jiuhuanchangzhang",
+    "specialInfo": [
+      "§e渡劫之日，三界俱灭，九环圣光，万物复苏。",
+      "§e远程伤害：35点"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "JiuhuanchangzhangDangYuanChengWuPinShiYongShi"
+    },
+    "onEntitySwing": {
+      "name": "JiuhuanchangzhangDangShiTiHuiDongWuPinShi"
+    },
+    "useCondition": {
+      "name": "BolangguKeYiShiYongYuanChengWuPinDeTiaoJian"
+    },
+    "bulletPower": 0.8,
+    "bulletDamage": 35.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.GOLD_BLOCK"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

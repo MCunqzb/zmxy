@@ -1,0 +1,62 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Ground1"
+      },
+      {
+        "value": "CUSTOM:Ground2"
+      },
+      {
+        "value": "CUSTOM:Shenhaishi"
+      },
+      {
+        "value": "CUSTOM:Niumochiyanshi"
+      },
+      {
+        "value": "CUSTOM:Donghaicss"
+      },
+      {
+        "value": "CUSTOM:Ground21"
+      },
+      {
+        "value": "CUSTOM:Donghaicss"
+      },
+      {
+        "value": "CUSTOM:Ghostcityblock1"
+      },
+      {
+        "value": "CUSTOM:Ghostcityblock2"
+      },
+      {
+        "value": "CUSTOM:Ghostcityblock3"
+      },
+      {
+        "value": "CUSTOM:Underdirt"
+      },
+      {
+        "value": "CUSTOM:Underruck"
+      },
+      {
+        "value": "CUSTOM:Spwannmxiaobing"
+      },
+      {
+        "value": "CUSTOM:Csmofniumogu"
+      },
+      {
+        "value": "CUSTOM:Niumochiyanshi"
+      },
+      {
+        "value": "CUSTOM:Boneashesblock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "dirt",
+    "namespace": "forge"
+  }
+}

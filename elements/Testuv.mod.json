@@ -1,0 +1,27 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "testuv",
+    "customModelName": "testuv:default",
+    "name": "Testuv",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 7,
+    "efficiency": 7.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

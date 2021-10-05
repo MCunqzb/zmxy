@@ -1,0 +1,22 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "1": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "2": {
+      "item": "zaomengxiyou:csm_1"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:slab_2",
+    "count": 6
+  }
+}

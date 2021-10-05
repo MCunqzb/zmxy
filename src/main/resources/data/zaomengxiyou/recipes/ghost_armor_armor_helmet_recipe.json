@@ -1,0 +1,29 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "1": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "2": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "3": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "5": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:ghost_armor_armor_helmet",
+    "count": 1
+  }
+}

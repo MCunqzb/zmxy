@@ -1,0 +1,121 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Niumogu",
+    "groundBlock": {
+      "value": "CUSTOM:Niumochiyanshi"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.OBSIDIAN"
+    },
+    "airColor": {
+      "value": -6615281,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -7009011,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -50116,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -37632,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -14951,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:nmg"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 3000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 1.6,
+    "baseHeight": -1.0,
+    "heightVariation": 0.0,
+    "biomeType": "DESERT",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 1,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 4,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.RED_NETHER_BRICK"
+    },
+    "treeBranch": {
+      "value": "Blocks.NETHER_BRICK"
+    },
+    "treeVines": {
+      "value": "Blocks.MAGMA"
+    },
+    "treeFruits": {
+      "value": "Blocks.LANTERN"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Niumowang1"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 10,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Niumowang1"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

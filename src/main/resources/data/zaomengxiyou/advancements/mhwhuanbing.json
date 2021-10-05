@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:yuzeiwangdehuanbing"
+    },
+    "title": {
+      "translate": "advancements.mhwhuanbing.title"
+    },
+    "description": {
+      "translate": "advancements.mhwhuanbing.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mhwhuanbing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "zaomengxiyou:yuzeiwangdehuanbing",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:yuzeiwangachieve"
+}

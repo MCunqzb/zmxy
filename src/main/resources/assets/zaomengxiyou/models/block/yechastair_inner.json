@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/yeicah_brick",
+    "top": "zaomengxiyou:blocks/yeicah_brick",
+    "side": "zaomengxiyou:blocks/yeicah_brick"
+  }
+}

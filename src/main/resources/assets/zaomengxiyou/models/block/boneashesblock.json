@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/boneashesblock",
+    "up": "zaomengxiyou:blocks/boneashesblock",
+    "north": "zaomengxiyou:blocks/boneashesblock",
+    "east": "zaomengxiyou:blocks/boneashesblock",
+    "south": "zaomengxiyou:blocks/boneashesblock",
+    "west": "zaomengxiyou:blocks/boneashesblock",
+    "particle": "zaomengxiyou:blocks/boneashesblock"
+  }
+}

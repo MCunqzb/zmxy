@@ -1,0 +1,36 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:soul_lantern"
+    },
+    "3": {
+      "tag": "minecraft:planks"
+    },
+    "4": {
+      "item": "zaomengxiyou:wangchuanriverworld"
+    },
+    "5": {
+      "tag": "minecraft:planks"
+    },
+    "6": {
+      "tag": "minecraft:planks"
+    },
+    "7": {
+      "tag": "minecraft:planks"
+    },
+    "8": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:wangchuanboatitem",
+    "count": 1
+  }
+}

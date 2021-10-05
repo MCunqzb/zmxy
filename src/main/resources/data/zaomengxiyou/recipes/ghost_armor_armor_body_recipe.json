@@ -1,0 +1,39 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "2": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "3": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "4": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "5": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "6": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "7": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    },
+    "8": {
+      "item": "zaomengxiyou:ghostarmorfragments"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:ghost_armor_armor_chestplate",
+    "count": 1
+  }
+}

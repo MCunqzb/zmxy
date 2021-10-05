@@ -1,0 +1,28 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "闪电的操控者",
+    "achievementDescription": "打败禹贼王，获取其灵魂",
+    "achievementIcon": {
+      "value": "CUSTOM:Sourceformihouwang"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Yzwhb",
+      "Source3"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 15,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Mihouwangachievement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"25\" y=\"56\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

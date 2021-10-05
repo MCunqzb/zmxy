@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/ruyijinggubang",
+  "textures": {
+    "0": "zaomengxiyou:blocks/ryjgb",
+    "particle": "zaomengxiyou:items/ccdxzg"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "B",
+    "keyBindingName": "Shop",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ShopAnXiaAnJianShi"
+    }
+  }
+}

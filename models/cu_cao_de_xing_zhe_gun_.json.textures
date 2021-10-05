@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ccdxzg1",
+        "1": "ccdxzg1",
+        "2": "ccdxzg2"
+      },
+      "name": "default"
+    }
+  }
+}

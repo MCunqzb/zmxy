@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/slab_2"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/slab_2_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/slab_2_full"
+    }
+  }
+}

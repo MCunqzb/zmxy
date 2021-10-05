@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:zisekulou"
+    },
+    "title": {
+      "translate": "advancements.achievezaomeng_2.title"
+    },
+    "description": {
+      "translate": "advancements.achievezaomeng_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "achievezaomeng_2": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "zaomengxiyou:ghostcity"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "zaomengxiyou:achieveniumowang"
+}

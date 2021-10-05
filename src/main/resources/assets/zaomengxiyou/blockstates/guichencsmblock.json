@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/guichencsmblock"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/guichencsmblock_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/guichencsmblock_full"
+    }
+  }
+}

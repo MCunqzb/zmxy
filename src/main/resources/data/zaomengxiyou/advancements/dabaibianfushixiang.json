@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:bianfhushixianghexing"
+    },
+    "title": {
+      "translate": "advancements.dabaibianfushixiang.title"
+    },
+    "description": {
+      "translate": "advancements.dabaibianfushixiang.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dabaibianfushixiang": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "zaomengxiyou:bianfhushixianghexing",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:yuzeiwangachieve"
+}

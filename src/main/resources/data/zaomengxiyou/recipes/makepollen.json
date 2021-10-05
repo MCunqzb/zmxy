@@ -1,0 +1,13 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zaomengxiyou:bianhua"
+    }
+  ],
+  "result": {
+    "item": "zaomengxiyou:bianhuapollen",
+    "count": 1
+  }
+}

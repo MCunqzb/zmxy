@@ -1,0 +1,35 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "qinglongdao",
+    "customModelName": "qinglongdao:default",
+    "name": "Qinglongdao",
+    "specialInfo": [
+      "§3传说由青龙的尖牙锻铸的大刀，挥舞间雷声贯耳，宛如青龙咆哮(有概率获得青龙之力：力量1，回血)。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.2,
+    "enchantability": 22,
+    "damageVsEntity": 10.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "QinglongdaoDangGongJuChuXianZaiShouZhongShi"
+    },
+    "onEntitySwing": {
+      "name": "QinglongdaoDangShiTiHuiDongWuPinShi"
+    }
+  }
+}

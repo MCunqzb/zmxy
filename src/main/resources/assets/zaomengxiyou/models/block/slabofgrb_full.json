@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/ghostroomwall1",
+    "top": "zaomengxiyou:blocks/ghostroomwall1",
+    "side": "zaomengxiyou:blocks/ghostrommwallbreak1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/ghostroomwall1",
+    "up": "zaomengxiyou:blocks/ghostroomwall1",
+    "north": "zaomengxiyou:blocks/ghostrommwallbreak1",
+    "east": "zaomengxiyou:blocks/ghostrommwallbreak1",
+    "south": "zaomengxiyou:blocks/ghostrommwallbreak1",
+    "west": "zaomengxiyou:blocks/ghostrommwallbreak1",
+    "particle": "zaomengxiyou:blocks/ghostroomwall1"
+  }
+}

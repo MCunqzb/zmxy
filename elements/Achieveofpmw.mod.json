@@ -1,0 +1,25 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "鹏魔王！",
+    "achievementDescription": "鹏魔王：混天魔王，死后化为大鹏蛋，如不打破届时重生！",
+    "achievementIcon": {
+      "value": "CUSTOM:Dapengniaodanke"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Shishituowangachievement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"39\" y=\"47\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block><block type=\"item_in_inventory\" x=\"21\" y=\"144\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value></block></xml>"
+  }
+}

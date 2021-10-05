@@ -1,0 +1,9 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "zaomengxiyou:ghostroomawall_1"
+  },
+  "result": "zaomengxiyou:ghostroombreak"
+}

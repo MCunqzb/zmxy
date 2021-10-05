@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "zaomengxiyou:block/bonerealm_portal_ew"
+    },
+    "axis=x": {
+      "model": "zaomengxiyou:block/bonerealm_portal_ns"
+    }
+  }
+}

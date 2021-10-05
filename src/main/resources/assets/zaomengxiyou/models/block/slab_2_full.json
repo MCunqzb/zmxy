@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/csm1",
+    "top": "zaomengxiyou:blocks/csm1",
+    "side": "zaomengxiyou:blocks/csm1"
+  }
+}

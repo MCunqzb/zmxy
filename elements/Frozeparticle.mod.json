@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "froze.png",
+    "animate": false,
+    "frameDuration": 5,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 1.0,
+    "speedFactor": 0.5,
+    "gravity": 0.3,
+    "maxAge": 20,
+    "maxAgeDiff": 5,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
+  }
+}

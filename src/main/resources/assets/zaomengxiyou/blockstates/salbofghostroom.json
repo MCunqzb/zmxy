@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/salbofghostroom"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/salbofghostroom_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/salbofghostroom_full"
+    }
+  }
+}

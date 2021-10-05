@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/underdirt2",
+    "up": "zaomengxiyou:blocks/underdirt1",
+    "north": "zaomengxiyou:blocks/underdirt3",
+    "east": "zaomengxiyou:blocks/underdirt3",
+    "south": "zaomengxiyou:blocks/underdirt3",
+    "west": "zaomengxiyou:blocks/underdirt3",
+    "particle": "zaomengxiyou:blocks/underdirt2"
+  }
+}

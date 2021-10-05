@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Frozen",
+    "icon": "froze.png",
+    "color": {
+      "value": -10027009,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "FrozenYaoShuiXiaoGuoChiXuShiMeiKeFaSheng"
+    },
+    "onExpired": {
+      "name": "FrozenYaoShuiDaoQiShi"
+    }
+  }
+}

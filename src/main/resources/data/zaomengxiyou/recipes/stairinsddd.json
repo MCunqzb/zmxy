@@ -1,0 +1,33 @@
+{
+  "group": "zaomengxiyou",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "3": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "4": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "6": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "7": {
+      "item": "zaomengxiyou:csm_1"
+    },
+    "8": {
+      "item": "zaomengxiyou:csm_1"
+    }
+  },
+  "result": {
+    "item": "zaomengxiyou:stabinweidu_1",
+    "count": 4
+  }
+}

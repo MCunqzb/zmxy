@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:ground_1"
+    },
+    "title": {
+      "translate": "advancements.mohuadedaxx.title"
+    },
+    "description": {
+      "translate": "advancements.mohuadedaxx.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mohuadedaxx": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "zaomengxiyou:sourcechange_1"
+    ]
+  },
+  "parent": "zaomengxiyou:zaomengxiyoudegree"
+}

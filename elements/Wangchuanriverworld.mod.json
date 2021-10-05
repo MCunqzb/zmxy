@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Wangchuanriverbiomes"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Underruck"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -10114663,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:Wangchuanportal"
+    },
+    "portalParticles": {
+      "value": "END_ROD"
+    },
+    "portalLuminance": 13,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Wangchuanriverworld Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "texture": "wangchuanriver_item",
+    "portalTexture": "wangchaunriverstilll",
+    "enablePortal": true
+  }
+}

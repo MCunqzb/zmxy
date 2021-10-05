@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "bubble.png",
+    "animate": true,
+    "frameDuration": 3,
+    "width": 1.0,
+    "height": 5.0,
+    "scale": 7.0,
+    "speedFactor": 5.0,
+    "gravity": 0.0,
+    "maxAge": 50,
+    "maxAgeDiff": 2,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

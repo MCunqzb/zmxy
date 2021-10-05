@@ -1,0 +1,52 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "bolanggu",
+    "customModelName": "boranggu:default",
+    "name": "Bolanggu",
+    "specialInfo": [
+      "§e童年的拨浪鼓，承载这许多回忆。",
+      "§e远程伤害：45点。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "CUSTOM:brg"
+    },
+    "hasGlow": false,
+    "glowCondition": {
+      "name": "BolangguKeYiShiYongYuanChengWuPinDeTiaoJian"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "BolangguDangYuanChengWuPinShiYongShi"
+    },
+    "onEntitySwing": {
+      "name": "JiuhuanchangzhangDangShiTiHuiDongWuPinShi"
+    },
+    "useCondition": {
+      "name": "BolangguKeYiShiYongYuanChengWuPinDeTiaoJian"
+    },
+    "bulletPower": 0.8,
+    "bulletDamage": 45.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.SHROOMLIGHT"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

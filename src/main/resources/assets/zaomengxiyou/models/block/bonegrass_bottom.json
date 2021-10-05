@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "zaomengxiyou:blocks/bone_grass_down",
+    "particle": "zaomengxiyou:blocks/bone_grass_down"
+  }
+}

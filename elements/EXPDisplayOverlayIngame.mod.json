@@ -1,0 +1,7 @@
+{
+  "_fv": 24,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"306\" y=\"127\"><field name=\"trigger\">entity_jumps</field><next><block type=\"entity_nbt_num_set\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">EXP</field></block></value><value name=\"tagValue\"><block type=\"entity_get_scoreboard_score\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"score\"><block type=\"text\"><field name=\"TEXT\">level_xiyou</field></block></value></block></value><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block><block type=\"text\" x=\"1014\" y=\"103\"><field name=\"TEXT\">killmob</field></block></xml>"
+  }
+}

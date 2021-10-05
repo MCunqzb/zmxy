@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/naihe_bridge_brick_down",
+    "top": "zaomengxiyou:blocks/naihe_bridge_brick_up",
+    "side": "zaomengxiyou:blocks/naihe_bridge_brick_side"
+  }
+}

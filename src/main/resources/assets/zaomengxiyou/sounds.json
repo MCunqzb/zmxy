@@ -1,0 +1,152 @@
+{
+  "lys": {
+    "category": "player",
+    "subtitle": "subtitles.lys",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:lys",
+        "stream": false
+      }
+    ]
+  },
+  "brg": {
+    "category": "master",
+    "subtitle": "subtitles.brg",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:bo_lang_gu__01",
+        "stream": false
+      }
+    ]
+  },
+  "tjgl": {
+    "category": "master",
+    "subtitle": "subtitles.tjgl",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:tian_jiang_gan_lu_4_01",
+        "stream": false
+      }
+    ]
+  },
+  "nmg": {
+    "category": "record",
+    "subtitle": "subtitles.nmg",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:si_kong_cong_lu__-_zao_meng_xi_you_1-long_wang_chang_di_ji_niu_mo_wang_",
+        "stream": true
+      }
+    ]
+  },
+  "ghost": {
+    "category": "record",
+    "subtitle": "subtitles.ghost",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:si_kong_cong_lu__-_zao_meng_xi_you_2-gui_cheng_",
+        "stream": true
+      }
+    ]
+  },
+  "sdddbfuku": {
+    "category": "record",
+    "subtitle": "subtitles.sdddbfuku",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:si_kong_cong_lu__-_zao_meng_xi_you_1-shan_dong_di_dai_",
+        "stream": true
+      }
+    ]
+  },
+  "donghai": {
+    "category": "record",
+    "subtitle": "subtitles.donghai",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:si_kong_cong_lu__-_zao_meng_xi_you_1-qian_an_qu_/xi_you_chuan_shuo_-dong_hai_long_gong_",
+        "stream": true
+      }
+    ]
+  },
+  "hgssld": {
+    "category": "record",
+    "subtitle": "subtitles.hgssld",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:hgssld",
+        "stream": true
+      }
+    ]
+  },
+  "lyfb": {
+    "category": "player",
+    "subtitle": "subtitles.lyfb",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:bandicam_2021-03-07_17-20-19-584.mp4",
+        "stream": false
+      }
+    ]
+  },
+  "hgssldthy": {
+    "category": "record",
+    "subtitle": "subtitles.hgssldthy",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:hgssldthy",
+        "stream": true
+      }
+    ]
+  },
+  "jieyindian": {
+    "category": "music",
+    "subtitle": "subtitles.jieyindian",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:si_kong_cong_lu__-_zao_meng_wu_shuang_online-deng_dian_dao_/zao_meng_xi_you_2-jie_yin_yuan_gao_yin_zhi_ban_ben_",
+        "stream": true
+      }
+    ]
+  },
+  "bonerealm": {
+    "category": "music",
+    "subtitle": "subtitles.bonerealm",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:bonerealm",
+        "stream": true
+      }
+    ]
+  },
+  "firedemon": {
+    "category": "player",
+    "subtitle": "subtitles.firedemon",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:firedenon",
+        "stream": false
+      }
+    ]
+  },
+  "naiheriver": {
+    "category": "music",
+    "subtitle": "subtitles.naiheriver",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:naiheriver",
+        "stream": true
+      }
+    ]
+  },
+  "zmxy2": {
+    "category": "master",
+    "subtitle": "subtitles.zmxy2",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:zmxy2",
+        "stream": false
+      }
+    ]
+  }
+}

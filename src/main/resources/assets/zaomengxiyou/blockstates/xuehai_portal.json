@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "zaomengxiyou:block/xuehai_portal_ew"
+    },
+    "axis=x": {
+      "model": "zaomengxiyou:block/xuehai_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "进入牛魔谷",
+    "achievementDescription": "历经多难，终于进入了牛魔谷。",
+    "achievementIcon": {
+      "value": "CUSTOM:Jryx"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 20,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:Achieveofshamowang"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"54\" y=\"61\"><field name=\"dimension\">CUSTOM:Niumoguworld</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

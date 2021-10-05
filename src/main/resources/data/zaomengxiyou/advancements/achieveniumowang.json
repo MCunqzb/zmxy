@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:jgz"
+    },
+    "title": {
+      "translate": "advancements.achieveniumowang.title"
+    },
+    "description": {
+      "translate": "advancements.achieveniumowang.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "achieveniumowang": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "zaomengxiyou:sourcechange_1",
+      "zaomengxiyou:sourcechange_2",
+      "zaomengxiyou:source_3",
+      "zaomengxiyou:yzwhb",
+      "zaomengxiyou:craftcsm_1",
+      "zaomengxiyou:tscss",
+      "zaomengxiyou:madeblockofxuehai",
+      "zaomengxiyou:madexuehaishi",
+      "zaomengxiyou:madewiteshuijing",
+      "zaomengxiyou:crafingcsmofnmg",
+      "zaomengxiyou:crafingacmbaoshi",
+      "zaomengxiyou:make_sourcebig",
+      "zaomengxiyou:made_huixue_6",
+      "zaomengxiyou:madeguihunshi",
+      "zaomengxiyou:makegoldenbone",
+      "zaomengxiyou:makeqiedan",
+      "zaomengxiyou:makethl",
+      "zaomengxiyou:crafting_table"
+    ]
+  },
+  "parent": "zaomengxiyou:enterniumogu"
+}

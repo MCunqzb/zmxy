@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/judgestable",
+    "up": "zaomengxiyou:blocks/judgesstabledown",
+    "north": "zaomengxiyou:blocks/judgesstale",
+    "east": "zaomengxiyou:blocks/judgesstale",
+    "south": "zaomengxiyou:blocks/judgesstale",
+    "west": "zaomengxiyou:blocks/judgesstale",
+    "particle": "zaomengxiyou:blocks/judgestable"
+  }
+}

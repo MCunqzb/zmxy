@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "ccdxzg",
+    "customModelName": "ruyijinggubang:default",
+    "name": "Ryjgb",
+    "specialInfo": [
+      "§e东海龙宫之定海神针，一万三千五百斤，浩劫之际，元归齐天。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 22,
+    "damageVsEntity": 27.0,
+    "usageCount": 10000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "RyjgbDangGongJuChuXianZaiShouZhongShi"
+    }
+  }
+}

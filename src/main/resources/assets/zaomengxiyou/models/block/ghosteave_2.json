@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/ghosteave",
+    "top": "zaomengxiyou:blocks/ghosteave",
+    "side": "zaomengxiyou:blocks/ghosteave"
+  }
+}

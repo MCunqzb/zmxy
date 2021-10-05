@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/huoshi5",
+    "up": "zaomengxiyou:blocks/shuishiup",
+    "north": "zaomengxiyou:blocks/huoshi2",
+    "east": "zaomengxiyou:blocks/huoshi1",
+    "south": "zaomengxiyou:blocks/huoshi4",
+    "west": "zaomengxiyou:blocks/huoshi3",
+    "particle": "zaomengxiyou:blocks/huoshi5"
+  }
+}

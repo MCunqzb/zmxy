@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "ghostking_slash.png",
+    "animate": true,
+    "frameDuration": 4,
+    "width": 0.7,
+    "height": 0.7,
+    "scale": 13.0,
+    "speedFactor": 1.0,
+    "gravity": 0.0,
+    "maxAge": 40,
+    "maxAgeDiff": 3,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
+  }
+}

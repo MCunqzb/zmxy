@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:mhwdsource"
+    },
+    "title": {
+      "translate": "advancements.mihouwangachievement.title"
+    },
+    "description": {
+      "translate": "advancements.mihouwangachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mihouwangachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "zaomengxiyou:sourcechange_2"
+    ]
+  },
+  "parent": "zaomengxiyou:mohuadedaxx"
+}

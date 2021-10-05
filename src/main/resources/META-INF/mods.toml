@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="zaomengxiyou"
+version="0.1.9"
+displayName="zaomengxiyou"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://space.bilibili.com/353684200 \n https://mcreator.net"
+logoFile="logo.png"
+authors="Leaky Sign Pen/洒水的签字笔,MCreator"
+description='''
+造梦西游模组
+'''
+
+[[dependencies.zaomengxiyou]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

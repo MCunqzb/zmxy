@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "zaomengxiyou:block/ghostpalace_portal_ew"
+    },
+    "axis=x": {
+      "model": "zaomengxiyou:block/ghostpalace_portal_ns"
+    }
+  }
+}

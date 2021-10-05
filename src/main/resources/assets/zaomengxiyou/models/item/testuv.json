@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/testuv",
+  "textures": {
+    "0": "zaomengxiyou:blocks/uvtest",
+    "particle": "zaomengxiyou:items/testuv"
+  }
+}

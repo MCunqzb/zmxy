@@ -1,0 +1,35 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "thl",
+    "customModelName": "tanghulu:default",
+    "name": "Tatanghulu",
+    "specialInfo": [
+      "¡ìe³ÐÔØÍ¯Äê»ØÒäµÄÌÇºùÂ«¡£"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.4,
+    "enchantability": 2,
+    "damageVsEntity": 37.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "TatanghuluDangYouJianDianJiKongQiShi"
+    },
+    "onItemInUseTick": {
+      "name": "TatanghuluDangGongJuChuXianZaiShouZhongShi"
+    }
+  }
+}

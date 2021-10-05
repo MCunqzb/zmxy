@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "zaomengxiyou:block/csmofniumogu"
+    },
+    "facing=east": {
+      "model": "zaomengxiyou:block/csmofniumogu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "zaomengxiyou:block/csmofniumogu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "zaomengxiyou:block/csmofniumogu",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "zaomengxiyou:block/csmofniumogu",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "zaomengxiyou:block/csmofniumogu",
+      "x": 90
+    }
+  }
+}

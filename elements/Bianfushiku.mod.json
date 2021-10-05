@@ -1,0 +1,131 @@
+{
+  "_fv": 24,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Bianfushiku",
+    "mobLabel": "",
+    "mobModelName": "Modelbianfushiku",
+    "mobModelTexture": "bianfushiku.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 1.5,
+    "modelHeight": 2.5,
+    "modelShadowSize": 1.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -10073012,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -8165529,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "isBoss": true,
+    "bossBarColor": "YELLOW",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": "CUSTOM:Jyyslv1"
+    },
+    "equipmentOffHand": {
+      "value": "CUSTOM:Jyyslv1"
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": "CUSTOM:Jiachuanbaojian"
+    },
+    "equipmentLeggings": {
+      "value": "CUSTOM:Jiachuanshouhuan.helmet"
+    },
+    "equipmentBoots": {
+      "value": "CUSTOM:Jiachuanbaojian"
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 1.0,
+    "knockbackResistance": 1000.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 8.0,
+    "trackingRange": 64,
+    "health": 230,
+    "xpAmount": 15,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": true,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": true,
+    "immuneToLightning": false,
+    "immuneToPotions": true,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": "CUSTOM:Bianfhushixianghexing"
+    },
+    "livingSound": {
+      "value": "entity.bat.ambient"
+    },
+    "hurtSound": {
+      "value": "block.stone.break"
+    },
+    "deathSound": {
+      "value": "entity.irongolem.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Lyfbdelizi"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "whenMobDies": {
+      "name": "BianfushikuEntityDies"
+    },
+    "onMobTickUpdate": {
+      "name": "BianfushikuOnEntityTickUpdate"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">0</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 1,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Bianfuku"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

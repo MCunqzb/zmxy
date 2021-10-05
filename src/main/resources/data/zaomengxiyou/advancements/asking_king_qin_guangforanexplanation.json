@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:shuijinglan"
+    },
+    "title": {
+      "translate": "advancements.asking_king_qin_guangforanexplanation.title"
+    },
+    "description": {
+      "translate": "advancements.asking_king_qin_guangforanexplanation.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "asking_king_qin_guangforanexplanation": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:puppetsobstruction"
+}

@@ -1,0 +1,113 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Xhz"
+      },
+      {
+        "value": "CUSTOM:Lansehouzi"
+      },
+      {
+        "value": "CUSTOM:Daxxxiaoguai"
+      },
+      {
+        "value": "CUSTOM:Batinxiyou"
+      },
+      {
+        "value": "CUSTOM:Shituoxiaobing"
+      },
+      {
+        "value": "CUSTOM:Xiong"
+      },
+      {
+        "value": "CUSTOM:Bird"
+      },
+      {
+        "value": "CUSTOM:Xiabing"
+      },
+      {
+        "value": "CUSTOM:Xiejiang"
+      },
+      {
+        "value": "CUSTOM:Shark"
+      },
+      {
+        "value": "CUSTOM:Windofmhw"
+      },
+      {
+        "value": "CUSTOM:Mhwgun"
+      },
+      {
+        "value": "CUSTOM:Niumoxiaobing"
+      },
+      {
+        "value": "CUSTOM:Guideng"
+      },
+      {
+        "value": "CUSTOM:Zombieqing"
+      },
+      {
+        "value": "CUSTOM:Shixiang1"
+      },
+      {
+        "value": "CUSTOM:Shixiang2"
+      },
+      {
+        "value": "CUSTOM:Mamian"
+      },
+      {
+        "value": "CUSTOM:Niutou"
+      },
+      {
+        "value": "CUSTOM:Guiwa"
+      },
+      {
+        "value": "CUSTOM:Baigujingkilled"
+      },
+      {
+        "value": "CUSTOM:Baigujingkilled2"
+      },
+      {
+        "value": "CUSTOM:Ghostblue"
+      },
+      {
+        "value": "CUSTOM:Ghostanger"
+      },
+      {
+        "value": "CUSTOM:Ghostidiotic"
+      },
+      {
+        "value": "CUSTOM:Ghostarmy"
+      },
+      {
+        "value": "CUSTOM:Ghostarmylive"
+      },
+      {
+        "value": "CUSTOM:Ghostgate"
+      },
+      {
+        "value": "CUSTOM:Piranha"
+      },
+      {
+        "value": "CUSTOM:Watersprite"
+      },
+      {
+        "value": "CUSTOM:Pollen"
+      },
+      {
+        "value": "CUSTOM:FlowerDemon"
+      },
+      {
+        "value": "CUSTOM:Ghostgeneral"
+      }
+    ],
+    "name": "zmxynormalmob",
+    "namespace": "forge"
+  }
+}

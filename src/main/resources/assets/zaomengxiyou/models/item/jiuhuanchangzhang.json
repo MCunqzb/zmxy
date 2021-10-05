@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/jiuhuanchanzhang",
+  "textures": {
+    "1": "zaomengxiyou:blocks/jhcz",
+    "particle": "zaomengxiyou:items/jiuhuanchangzhang"
+  }
+}

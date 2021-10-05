@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "hlb",
+    "customModelName": "Normal",
+    "name": "Huoluobo",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "食用后可以回血"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 0.3,
+    "eatingSpeed": 1,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "HuoluoboFoodEaten"
+    }
+  }
+}

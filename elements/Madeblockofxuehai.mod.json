@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 10,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ground2"
+      },
+      {
+        "value": "CUSTOM:Shituowansource"
+      },
+      {
+        "value": "CUSTOM:Ground2"
+      },
+      {
+        "value": "CUSTOM:Bianfhushixianghexing"
+      },
+      {
+        "value": "CUSTOM:Ground2"
+      },
+      {
+        "value": "CUSTOM:Jianci2"
+      },
+      {
+        "value": "CUSTOM:Ground2"
+      },
+      {
+        "value": "CUSTOM:Dapengniaodanke"
+      },
+      {
+        "value": "CUSTOM:Ground2"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Blockofxuehaicsm"
+    },
+    "name": "madeblockofxuehai",
+    "namespace": "mod"
+  }
+}

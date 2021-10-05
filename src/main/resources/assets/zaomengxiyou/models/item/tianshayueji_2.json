@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/tianshayuejibetter",
+  "textures": {
+    "2": "zaomengxiyou:blocks/tianshayueji1",
+    "particle": "zaomengxiyou:items/tianshayueji"
+  }
+}

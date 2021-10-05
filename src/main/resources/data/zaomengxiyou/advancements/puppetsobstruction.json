@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:dishalingjei_2_helmet"
+    },
+    "title": {
+      "translate": "advancements.puppetsobstruction.title"
+    },
+    "description": {
+      "translate": "advancements.puppetsobstruction.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "puppetsobstruction": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "zaomengxiyou:chaindrop",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "loot": [
+      "zaomengxiyou:entities/kuilei"
+    ]
+  },
+  "parent": "zaomengxiyou:blackandwhite"
+}

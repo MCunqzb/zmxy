@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "lance",
+    "customModelName": "lance:default",
+    "name": "Lance",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 4.0,
+    "attackSpeed": 0.3,
+    "enchantability": 2,
+    "damageVsEntity": 50.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ghostarmorfragments"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

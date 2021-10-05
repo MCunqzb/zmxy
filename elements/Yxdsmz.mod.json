@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "yxdfaz",
+    "customModelName": "Normal",
+    "name": "Yxdsmz",
+    "specialInfo": [
+      "°Ï2”≈–„µƒÀ…ƒæ’»",
+      "°Ï2‘∂≥Ã…À∫¶£∫9µ„°£"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "item.bucket.empty"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "YxdsmzKeYiShiYongYuanChengWuPinDeTiaoJian"
+    },
+    "bulletPower": 0.7,
+    "bulletDamage": 9.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.BLUE_ICE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

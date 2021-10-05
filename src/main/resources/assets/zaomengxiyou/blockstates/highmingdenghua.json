@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "zaomengxiyou:block/highmingdenghua"
+    },
+    "half=lower": {
+      "model": "zaomengxiyou:block/highmingdenghua_bottom"
+    }
+  }
+}

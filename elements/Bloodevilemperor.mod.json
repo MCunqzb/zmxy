@@ -1,0 +1,55 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "xuehaixiehuang",
+    "customModelName": "xuehaixiehuang:default",
+    "name": "Xuehaixiehuang",
+    "specialInfo": [
+      "§5吸取了血海里无数鲜血和冤魂妖化而成，诡异的妖杖散发着死亡的气息。",
+      "§5远程伤害：50点，§5命中实体吸血。"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "XuehaixiehuangShiWuPinFaGuang"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 5.0,
+    "onRangedItemUsed": {
+      "name": "XuehaixiehuangDangYuanChengWuPinShiYongShi"
+    },
+    "onEntitySwing": {
+      "name": "XuehaixiehuangDangShiTiHuiDongWuPinShi"
+    },
+    "bulletPower": 0.5,
+    "bulletDamage": 50.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.CRIMSON_HYPHAE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "XuehaixiehuangDangZiDanJiZhongFangKuaiShi"
+    },
+    "onBulletHitsEntity": {
+      "name": "XuehaixiehuangDangZiDanJiZhongShengCunShiTiShi"
+    }
+  }
+}

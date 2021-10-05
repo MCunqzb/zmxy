@@ -1,0 +1,74 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Feiping2"
+      },
+      {
+        "value": "CUSTOM:Qingguangwang"
+      },
+      {
+        "value": "CUSTOM:Duqiu"
+      },
+      {
+        "value": "CUSTOM:Baigujing1"
+      },
+      {
+        "value": "CUSTOM:Baigujing2"
+      },
+      {
+        "value": "CUSTOM:Baigujing3"
+      },
+      {
+        "value": "CUSTOM:BlackImpermanenceer"
+      },
+      {
+        "value": "CUSTOM:WhiteImpermanencer"
+      },
+      {
+        "value": "CUSTOM:Judge"
+      },
+      {
+        "value": "CUSTOM:Ghostblue"
+      },
+      {
+        "value": "CUSTOM:Ghostanger"
+      },
+      {
+        "value": "CUSTOM:Ghostidiotic"
+      },
+      {
+        "value": "CUSTOM:Ghostarmy"
+      },
+      {
+        "value": "CUSTOM:Ghostarmylive"
+      },
+      {
+        "value": "CUSTOM:Yama"
+      },
+      {
+        "value": "CUSTOM:YechaBoss"
+      },
+      {
+        "value": "CUSTOM:Piranha"
+      },
+      {
+        "value": "CUSTOM:Watersprite"
+      },
+      {
+        "value": "CUSTOM:FlowerDemon"
+      },
+      {
+        "value": "CUSTOM:Ghostgeneral"
+      }
+    ],
+    "name": "zmxy_2mob",
+    "namespace": "forge"
+  }
+}

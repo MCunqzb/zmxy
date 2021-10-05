@@ -1,0 +1,396 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 256,
+    "height": 176,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "true/false",
+          "onClick": {
+            "name": "Overlaycontrol"
+          },
+          "width": 75,
+          "height": 20,
+          "name": "true/false",
+          "x": 96,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:logic:ui>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:logic:ui>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:uii>",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:uii>",
+          "x": 96,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "xy.png",
+          "use1Xscale": false,
+          "name": "xy.png",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "x:",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "x:",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "y:",
+          "color": {
+            "value": -16770561,
+            "falpha": 0.0
+          },
+          "name": "y:",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+1",
+          "onClick": {
+            "name": "Xaxis1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "+1",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+10",
+          "onClick": {
+            "name": "Xaxis10"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "+10",
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+100",
+          "onClick": {
+            "name": "Xaxis100"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "+100",
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+1",
+          "onClick": {
+            "name": "Yaxis1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "+1",
+          "x": 222,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+10",
+          "onClick": {
+            "name": "Yaxis10"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "+10",
+          "x": 222,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+100",
+          "onClick": {
+            "name": "Yaxis100"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "+100",
+          "x": 222,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-1",
+          "onClick": {
+            "name": "Xaxisd1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "-1",
+          "x": 168,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-10",
+          "onClick": {
+            "name": "Xaxisd10"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "-10",
+          "x": 168,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-100",
+          "onClick": {
+            "name": "Xzxisd100"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "-100",
+          "x": 168,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-1",
+          "onClick": {
+            "name": "Yaxisd1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "-1",
+          "x": 258,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-10",
+          "onClick": {
+            "name": "Yaxisd10"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "-10",
+          "x": 258,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-100",
+          "onClick": {
+            "name": "Yaxisd100"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "-100",
+          "x": 258,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "reset",
+          "onClick": {
+            "name": "ResetXY"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "reset",
+          "x": 177,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EXP Location:",
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "name": "EXP Location:",
+          "x": 222,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "X+1",
+          "onClick": {
+            "name": "Exptextadd1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "X+1",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "X-1",
+          "onClick": {
+            "name": "Exptextdecline1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "X-1",
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Y+1",
+          "onClick": {
+            "name": "YExptextadd1"
+          },
+          "width": 27,
+          "height": 20,
+          "name": "Y+1",
+          "x": 258,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Y-1",
+          "onClick": {
+            "name": "YExptextdecline1"
+          },
+          "width": 27,
+          "height": 20,
+          "name": "Y-1",
+          "x": 258,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Absorbe Num:",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "Absorbe Num:",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "X+1",
+          "onClick": {
+            "name": "Absorbeadd1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "X+1",
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "X-1",
+          "onClick": {
+            "name": "Absorbedecline1"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "X-1",
+          "x": 168,
+          "y": 161
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "SettingDangZheGeJieMianDaKaiShi"
+    },
+    "onTick": {
+      "name": "SettingDangZheGeJieMianDaKaiShi"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

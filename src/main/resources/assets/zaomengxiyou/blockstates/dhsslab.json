@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/dhsslab"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/dhsslab_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/dhsslab_full"
+    }
+  }
+}

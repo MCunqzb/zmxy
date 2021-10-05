@@ -1,0 +1,44 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§e打败牛魔王。",
+    "achievementDescription": "§e打败牛魔王，解救众生！",
+    "achievementIcon": {
+      "value": "CUSTOM:Jgz"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Sourcechange1",
+      "Sourcechange2",
+      "Source3",
+      "Yzwhb",
+      "Craftcsm1",
+      "Tscss",
+      "Madeblockofxuehai",
+      "Madexuehaishi",
+      "Madewiteshuijing",
+      "Crafingcsmofnmg",
+      "Crafingacmbaoshi",
+      "MakeSourcebig",
+      "MadeHuixue6",
+      "Madeguihunshi",
+      "Makegoldenbone",
+      "Makeqiedan",
+      "Makethl",
+      "Makebrg"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Enterniumogu"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"39\" y=\"44\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

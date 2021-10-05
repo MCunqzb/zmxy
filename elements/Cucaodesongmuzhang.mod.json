@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "ccdfazhang",
+    "customModelName": "Normal",
+    "name": "Cucaodesongmuzhang",
+    "specialInfo": [
+      "¡ì7´Ö²ÚµÄËÉÄ¾ÕÈ",
+      "¡ì7Ô¶³ÌÉËº¦£º5µã¡£"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "CucaodesongmuzhangDangYuanChengWuPinShiYongShi"
+    },
+    "bulletPower": 0.7,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.ICE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}
