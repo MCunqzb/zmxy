@@ -71,8 +71,7 @@ public class BinglongboDangShiTiGengXinKeShiProcedure {
 					if (((!(entityiterator instanceof PlayerEntity))
 							&& ((!(entityiterator instanceof BinglongboEntity.CustomEntity)) && (!(entityiterator instanceof ItemEntity))))) {
 						if (entityiterator instanceof LivingEntity) {
-							((LivingEntity) entityiterator).attackEntityFrom(
-									new DamageSource("\u6B7B\u4E8E\u51B0\u9F99\u6CE2").setDamageBypassesArmor(),
+							((LivingEntity) entityiterator).attackEntityFrom(new DamageSource("binglongbo").setDamageBypassesArmor(),
 									(float) (6 + ((entity.rotationPitch) * 4)));
 						}
 					}

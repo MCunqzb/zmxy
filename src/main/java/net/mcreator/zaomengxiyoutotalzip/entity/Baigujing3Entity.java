@@ -162,6 +162,7 @@ public class Baigujing3Entity extends ZaomengxiyouModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
 				Baigujing3ShiTiSiWangShiProcedure.executeProcedure($_dependencies);
 			}
 		}

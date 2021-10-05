@@ -46,10 +46,8 @@ import net.mcreator.zaomengxiyoutotalzip.item.ShamowangbingmaoItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.ShamowangRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
 
-
 import java.util.Map;
 import java.util.HashMap;
-import net.minecraft.client.particle.BubbleParticle;
 
 @ZaomengxiyouModElements.ModElement.Tag
 public class ShamowangEntity extends ZaomengxiyouModElements.ModElement {

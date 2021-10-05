@@ -159,6 +159,7 @@ public class DaxxxiaoguaiEntity extends ZaomengxiyouModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
 				DaxxxiaoguaiEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}

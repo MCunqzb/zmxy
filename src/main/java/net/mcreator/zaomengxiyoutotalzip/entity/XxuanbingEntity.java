@@ -133,8 +133,6 @@ public class XxuanbingEntity extends ZaomengxiyouModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				XxuanbingChuShiShiTiShengChengProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

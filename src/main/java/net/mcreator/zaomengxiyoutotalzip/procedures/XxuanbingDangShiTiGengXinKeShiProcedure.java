@@ -66,13 +66,18 @@ public class XxuanbingDangShiTiGengXinKeShiProcedure {
 					if (entityiterator instanceof LivingEntity)
 						((LivingEntity) entityiterator).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 50, (int) 3, (false), (false)));
 					if (entityiterator instanceof LivingEntity) {
-						((LivingEntity) entityiterator).attackEntityFrom(
-								new DamageSource("\u6B7B\u4E8E\u7384\u51B0\u624E\u523A").setDamageBypassesArmor(),
+						((LivingEntity) entityiterator).attackEntityFrom(new DamageSource("xuanbing").setDamageBypassesArmor(),
 								(float) (((entity.rotationPitch) * (-6)) + 4));
 					}
 					entityiterator.setMotion(0, 0.05, 0);
 				}
 			}
+		}
+		entity.getPersistentData().putDouble("timetick", ((entity.getPersistentData().getDouble("timetick")) + 1));
+		if ((((entity.getPersistentData().getDouble("timetick")) >= 20) && ((entity.getPersistentData().getDouble("timetick")) < 21))) {
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 60, (int) 1, (false), (false)));
+			entity.attackEntityFrom(DamageSource.GENERIC, (float) 200);
 		}
 	}
 }

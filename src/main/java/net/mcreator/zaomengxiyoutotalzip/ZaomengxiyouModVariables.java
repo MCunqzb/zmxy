@@ -115,6 +115,7 @@ public class ZaomengxiyouModVariables {
 		public double world_num = 1.0;
 		public double mpforcaculate = 0;
 		public double deathjudge = 0;
+		public double evilxuanbing = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -130,6 +131,7 @@ public class ZaomengxiyouModVariables {
 			world_num = nbt.getDouble("world_num");
 			mpforcaculate = nbt.getDouble("mpforcaculate");
 			deathjudge = nbt.getDouble("deathjudge");
+			evilxuanbing = nbt.getDouble("evilxuanbing");
 		}
 
 		@Override
@@ -139,6 +141,7 @@ public class ZaomengxiyouModVariables {
 			nbt.putDouble("world_num", world_num);
 			nbt.putDouble("mpforcaculate", mpforcaculate);
 			nbt.putDouble("deathjudge", deathjudge);
+			nbt.putDouble("evilxuanbing", evilxuanbing);
 			return nbt;
 		}
 

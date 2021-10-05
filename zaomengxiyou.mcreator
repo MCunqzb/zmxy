@@ -11289,16 +11289,7 @@
       "ids": {},
       "registry_name": "waterfall_chu_shi_shi_ti_sheng_cheng",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -11525,16 +11516,7 @@
       "ids": {},
       "registry_name": "xxuanbing_chu_shi_shi_ti_sheng_cheng",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -15769,6 +15751,216 @@
           }
         ]
       }
+    },
+    {
+      "name": "EvilTangseng",
+      "type": "livingentity",
+      "sortid": 969,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_tangseng",
+      "path": "~/mobs"
+    },
+    {
+      "name": "EvilIcedragon",
+      "type": "livingentity",
+      "sortid": 970,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_icedragon",
+      "path": "~/mobs"
+    },
+    {
+      "name": "EvilIcedragonDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 971,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_icedragon_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EvilTangsengDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 970,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_tangseng_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Evilxuanbing",
+      "type": "livingentity",
+      "sortid": 972,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evilxuanbing",
+      "path": "~/mobs"
+    },
+    {
+      "name": "EvilxuanbingDangShiTiSiWangShi",
+      "type": "procedure",
+      "sortid": 973,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evilxuanbing_dang_shi_ti_si_wang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EvilxuanbingDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 974,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evilxuanbing_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Evilwaterfall",
+      "type": "livingentity",
+      "sortid": 975,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evilwaterfall",
+      "path": "~/mobs"
+    },
+    {
+      "name": "EvilwaterfallDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 976,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evilwaterfall_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EvilTangsengChuShiShiTiShengCheng",
+      "type": "procedure",
+      "sortid": 977,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_tangseng_chu_shi_shi_ti_sheng_cheng",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15848,6 +16040,12 @@
       "name": "Sources",
       "type": "number",
       "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "evilxuanbing",
+      "type": "number",
+      "scope": "map",
       "value": "0"
     }
   ],
@@ -15987,8 +16185,8 @@
       "biome.zaomengxiyou_total_zip.shishituoling": "Shishituoling",
       "item.zaomengxiyou.ghostgeneral_spawn_egg": "Ghostgeneral Spawn Egg",
       "entity.zaomengxiyou.zisetou": "Zisetou",
-      "item.zaomengxiyou.icedragon": "Icedragon",
       "item.zaomengxiyou_total_zip.yuzeiwangdehuanbing": "Yuzeiwangdehuanbing",
+      "item.zaomengxiyou.icedragon": "Icedragon",
       "item.zaomengxiyou.jgz": "Jgz",
       "entity.zaomengxiyou.piranha": "Piranha",
       "item.zaomengxiyou.duqiu_spawn_egg": "Duqiu Spawn Egg",
@@ -16002,17 +16200,17 @@
       "entity.zaomengxiyou_total_zip.shark": "Shark",
       "entity.zaomengxiyou_total_zip.bird": "Bird",
       "entity.zaomengxiyou.xhz": "Xhz",
-      "item.minecraft.tipped_arrow.effect.vertigo": "Arrow of Frozen",
-      "block.zaomengxiyou_total_zip.s_pwandaxxxiaoguai": "SPwandaxxxiaoguai",
       "biome.zaomengxiyou.niumogu": "Niumogu",
+      "block.zaomengxiyou_total_zip.s_pwandaxxxiaoguai": "SPwandaxxxiaoguai",
+      "item.minecraft.tipped_arrow.effect.vertigo": "Arrow of Frozen",
       "block.zaomengxiyou.guichencsmblock": "Guichencsmblock",
       "item.zaomengxiyou_total_zip.yujingping": "YUJINGPING.lv.1",
       "block.zaomengxiyou.spwanniumowang": "Spwanniumowang",
       "entity.zaomengxiyou.kuilei": "Kuilei",
-      "key.zaomengxiyou.anjianshipinglan": "Anjianshipinglan",
       "wether.health": "Health overlay on/off.",
-      "item.zaomengxiyou_total_zip.mhwdsource": "Mhwdsource",
+      "key.zaomengxiyou.anjianshipinglan": "Anjianshipinglan",
       "biome.zaomengxiyou_total_zip.bianfuku": "Bianfuku",
+      "item.zaomengxiyou_total_zip.mhwdsource": "Mhwdsource",
       "block.zaomengxiyou.s_pwandaxxxiaoguai": "SPwandaxxxiaoguai",
       "no.skill": "No skills,",
       "block.zaomengxiyou.underdirt": "Underdirt",
@@ -16034,15 +16232,15 @@
       "item.zaomengxiyou.zhuquerong_chestplate": "Zhuquerong 胸甲",
       "entity.zaomengxiyou_total_zip.mihouwang": "Mihouwang",
       "item.zaomengxiyou.ttianshayupao_chestplate": "Ttianshayupao 胸甲",
-      "item.zaomengxiyou.binglongbo_spawn_egg": "Binglongbo Spawn Egg",
       "item.zaomengxiyou.huilan_boots": "Huilan Boots",
+      "item.zaomengxiyou.binglongbo_spawn_egg": "Binglongbo Spawn Egg",
       "entity.zaomengxiyou.feiping_2": "Feiping 2",
       "entity.zaomengxiyou_total_zip.egg": "Egg",
       "block.zaomengxiyou.ghosteave_2": "Ghosteave 2",
       "entity.zaomengxiyou.evil_sunwukong": "Evil Sunwukong",
       "subtitles.lys": "lys",
       "mob.searcher": "§aGet the coordinates of the nearby boss at ",
-      "item.zaomengxiyou.blood_demon_shell_chestplate": "§3Blood Demon Shell",
+      "item.zaomengxiyou.blood_demon_shell_chestplate": "Xuehaiyaoke 胸甲",
       "block.zaomengxiyou.spwanqgw": "Spwanqgw",
       "block.zaomengxiyou.ghost_king_palace_brickfloor": "Ghost King Palace Brickfloor",
       "block.zaomengxiyou.bianhua": "Bianhua",
@@ -16051,8 +16249,8 @@
       "item.zaomengxiyou_total_zip.guichengxiangyuancehng": "Guichengxiangyuancehng",
       "item.zaomengxiyou.ttianshayupao_boots": "Ttianshayupao 靴子",
       "item.zaomengxiyou.dishayuanjia_chestplate": "Dishayuanjia 胸甲",
-      "mp.low": "Low MP",
       "item.zaomengxiyou.tianshayupao_2_chestplate": "Tianshayupao 2 胸甲",
+      "mp.low": "Low MP",
       "subtitles.bonerealm": "bonerealmmusic",
       "item.minecraft.tipped_arrow.effect.frozen": "Arrow of Frozen",
       "item.minecraft.lingering_potion.effect.mp_devour_potion": "Lingering Potion of Mp Devour ",
@@ -16077,8 +16275,8 @@
       "item.zaomengxiyou.ghostarmorfragments": "Ghostarmorfragments",
       "item.zaomengxiyou_total_zip.zhuquerong_helmet": "Zhuquerong 头盔",
       "item.zaomengxiyou_total_zip.sourcebig": "Sourcebig",
-      "block.zaomengxiyou.yecha": "Yecha",
       "item.zaomengxiyou.longwang_spawn_egg": "Longwang Spawn Egg",
+      "block.zaomengxiyou.yecha": "Yecha",
       "entity.zaomengxiyou.niutou": "Niutou",
       "item.zaomengxiyou_total_zip.huilan_leggings": "Huilan Leggings",
       "block.zaomengxiyou.spwanlsh": "Spwanlsh",
@@ -16127,8 +16325,8 @@
       "entity.zaomengxiyou.zombieqing": "Zombieqing",
       "item.minecraft.potion.effect.on_fire": "On Fire",
       "item.zaomengxiyou.dhfq": "Dhfq",
-      "item.zaomengxiyou.ghost_armor_armor_leggings": "Ghost_armor Leggings",
       "entity.zaomengxiyou.baiwuchang": "Baiwuchang",
+      "item.zaomengxiyou.ghost_armor_armor_leggings": "Ghost_armor Leggings",
       "item.zaomengxiyou_total_zip.ryjgb": "Ryjgb",
       "item.zaomengxiyou_total_zip.xuehaimojia_helmet": "Xuehaimojia 头盔",
       "key.zaomengxiyou_total_zip.anjianshipinglan": "Anjianshipinglan",
@@ -16157,8 +16355,8 @@
       "item.minecraft.potion.effect.vertigo": "Frozen",
       "death.attack.killed.by.judge": "§4The seven lights are out, and the soul is scattered.",
       "item.zaomengxiyou.dishagun_1": "Dishagun 1",
-      "item.zaomengxiyou.testcycle": "Testcycle",
       "entity.zaomengxiyou.mamian": "Mamian",
+      "item.zaomengxiyou.testcycle": "Testcycle",
       "item.zaomengxiyou.baishuangxiongjia_leggings": "Baishuangxiongjia 护腿",
       "item.zaomengxiyou.kingqingguang_token": "Kingqingguang Token",
       "item.zaomengxiyou.niumowang_2_spawn_egg": "Niumowang 2 Spawn Egg",
@@ -16189,8 +16387,8 @@
       "item.zaomengxiyou.yxdsmz": "Yxdsmz",
       "block.zaomengxiyou_total_zip.spwanshituoxiaobing": "Spwanshituoxiaobing",
       "entity.zaomengxiyou_total_zip.guichengxiang": "Guichengxiang",
-      "bug.vulnerabilities": "§oThere will be major bugs in using the keys to use skills, please don’t use them too quickly",
       "item.minecraft.potion.effect.frozen": "Frozen",
+      "bug.vulnerabilities": "§oThere will be major bugs in using the keys to use skills, please don’t use them too quickly",
       "item.zaomengxiyou.jiachuanjiasha_helmet": "Jiachuanjiasha 头盔",
       "item.zaomengxiyou.bloodevilemperor": "Xuehaixiehuang",
       "effect.healingreduction": "Healing reduction",
@@ -16207,8 +16405,8 @@
       "item.zaomengxiyou.wangchuanriverworld": "Wangchuanriverworld Portal Igniter",
       "item.zaomengxiyou.ghostkingswordreal": "Ghostkingswordreal",
       "entity.zaomengxiyou.ghostarmylive": "Ghostarmylive",
-      "item.minecraft.potion.effect.jgzxg": "金刚琢",
       "block.zaomengxiyou.ghostroomawall_1": "Ghostroomawall 1",
+      "item.minecraft.potion.effect.jgzxg": "金刚琢",
       "item.zaomengxiyou.xuehaimojia_helmet": "Xuehaimojia 头盔",
       "biome.zaomengxiyou.ghost": "Ghost",
       "item.zaomengxiyou.raksha_ghost_clothes_chestplate": "Raksha Ghost Clothes 胸甲",
@@ -16223,8 +16421,8 @@
       "block.zaomengxiyou.bonegrass": "Bonegrass",
       "item.zaomengxiyou.longwangice": "Longwangice",
       "item.zaomengxiyou.jiachuanjiasha_boots": "Jiachuanjiasha 靴子",
-      "item.zaomengxiyou.runeof_yang": "Runeof Yang",
       "biome.zaomengxiyou_total_zip.qiantan": "Qiantan",
+      "item.zaomengxiyou.runeof_yang": "Runeof Yang",
       "item.zaomengxiyou.purplepetals": "Purple Petals",
       "item.zaomengxiyou.baishaungzhongjia_helmet": "Baishaungzhongjia 头盔",
       "block.zaomengxiyou_total_zip.spwanbird": "Spwanbird",
@@ -16298,8 +16496,8 @@
       "entity.zaomengxiyou_total_zip.shituoxiaobing": "Shituoxiaobing",
       "block.zaomengxiyou_total_zip.blockofsanchaji": "Blockofsanchaji",
       "item.zaomengxiyou.zombieqing_spawn_egg": "Zombieqing Spawn Egg",
-      "item.zaomengxiyou.dishayuanjia_2_helmet": "Dishayuanjia 2 头盔",
       "item.zaomengxiyou.mingjeiqixi": "Mingjeiqixi",
+      "item.zaomengxiyou.dishayuanjia_2_helmet": "Dishayuanjia 2 头盔",
       "block.zaomengxiyou_total_zip.spwanguicx": "Spwanguicx",
       "key.zaomengxiyou.anjianshuimobaohomozhan": "Anjianshuimobaohomozhan",
       "key.zaomengxiyou.a_settings": "A Settings",
@@ -16329,9 +16527,9 @@
       "item.zaomengxiyou_total_zip.dishayuanjia_helmet": "Dishayuanjia 头盔",
       "item.zaomengxiyou_total_zip.lianyanfengbao": "LIANYANFENGBAO",
       "item.zaomengxiyou.xuehaiyaoke_boots": "Xuehaiyaoke 靴子",
-      "item.zaomengxiyou.blood_magic_armor_chestplate": "§5Blood_Magic_Armor",
-      "item.minecraft.splash_potion.effect.on_fire": "Splash On Fire",
       "block.zaomengxiyou_total_zip.spwandaxxboss": "Spwandaxxboss",
+      "item.minecraft.splash_potion.effect.on_fire": "Splash On Fire",
+      "item.zaomengxiyou.blood_magic_armor_chestplate": "§5Blood_Magic_Armor",
       "entity.zaomengxiyou.spell": "Spell",
       "item.zaomengxiyou.tianshayueji": "Tianshayueji",
       "biome.zaomengxiyou.wangchuanriverbiomes": "Wangchuanriverbiomes",
@@ -16350,7 +16548,7 @@
       "biome.zaomengxiyou.huaguoshan": "Huaguoshan",
       "item.zaomengxiyou.raksha_ghost_clothes_leggings": "Raksha Ghost Clothes 护腿",
       "item.zaomengxiyou.yecha_boss_spawn_egg": "Yecha Boss Spawn Egg",
-      "item.zaomengxiyou.blood_demon_shell_helmet": "§3Blood Demon Shell",
+      "item.zaomengxiyou.blood_demon_shell_helmet": "Xuehaiyaoke 头盔",
       "block.zaomengxiyou.spwanlongwangdiffer": "Spwanlongwangdiffer",
       "entity.zaomengxiyou_total_zip.xiabing": "Xiabing",
       "item.zaomengxiyou.firedemonslash": "Firedemonslash",
@@ -16358,6 +16556,7 @@
       "block.zaomengxiyou.salbofghostroom": "Salbofghostroom",
       "item.zaomengxiyou.xuanwujia_leggings": "Xuanwujia 护腿",
       "item.zaomengxiyou.tatanghulu": "Tatanghulu",
+      "entity.zaomengxiyou.evilwaterfall": "evilwaterfall",
       "entity.zaomengxiyou.xiejiang": "Xiejiang",
       "item.zaomengxiyou_total_zip.hl_5": "Hl 5",
       "item.zaomengxiyou_total_zip.hl_4": "Hl 4",
@@ -16372,13 +16571,14 @@
       "item.zaomengxiyou.guishizhuan": "Guishizhuan",
       "block.zaomengxiyou.naihe_bridgewall": "Naihe Bridgewall",
       "block.zaomengxiyou.slab_2": "Slab 2",
-      "block.zaomengxiyou.spwanpmw": "Spwan  Peng Lord",
+      "block.zaomengxiyou.spwanpmw": "Spwanpmw",
       "item.zaomengxiyou.timestoptomob": "Timestoptomob",
       "block.zaomengxiyou_total_zip.shenhaishi": "Shenhaishi",
       "item.zaomengxiyou.dishayuanjia_2_chestplate": "Dishayuanjia 2 胸甲",
       "advancements.blackandwhite.descr": "Encountered by black and white impermanence on the way, great changes in the underworld must happen",
       "effect.on_fire": "On Fire",
       "item.zaomengxiyou.ghostidiotic_spawn_egg": "Ghostblue Spawn Egg",
+      "entity.zaomengxiyou.evilxuanbing": "evilxuanbing",
       "item.zaomengxiyou.guiwa_spawn_egg": "Guiwa Spawn Egg",
       "item.zaomengxiyou.dishalinjei_leggings": "Dishalinjei 护腿",
       "block.zaomengxiyou.sspwanshamowang": "Sspwanshamowang",
@@ -16464,6 +16664,7 @@
       "item.minecraft.splash_potion.effect.frozen": "Splash Frozen",
       "block.zaomengxiyou.slabofgrb": "Slabofgrb",
       "item.zaomengxiyou.weidu_1": "Weidu 1 Portal Igniter",
+      "death.attack.binglongbo": "Died in ice Dragon waves",
       "item.zaomengxiyou_total_zip.tianshagulian_chestplate": "Tianshagulian 胸甲",
       "key.mcreator.anjianlys": "Anjianlys",
       "item.zaomengxiyou.xuehai": "Xuehai Portal Igniter",
@@ -16475,6 +16676,7 @@
       "subtitles.tjgl": "天降甘露",
       "item.zaomengxiyou.shituowansource": "Shituowansource",
       "item.zaomengxiyou_total_zip.cucaodesongmuzhang": "Cucaodesongmuzhang",
+      "item.zaomengxiyou.evilxuanbing_spawn_egg": "evilxuanbing Spawn Egg",
       "entity.zaomengxiyou_total_zip.jiaomowang": "Jiaomowang",
       "item.zaomengxiyou_total_zip.shituowansource": "Shituowansource",
       "death.killed.by.judge": "§4The seven lights are out, and the soul is scattered.",
@@ -16508,7 +16710,7 @@
       "advancements.achieveniumowang.title": "§e打败牛魔王。",
       "entity.zaomengxiyou.baigujingkilled": "Baigujingkilled",
       "block.zaomengxiyou.spwanbird": "Spwanbird",
-      "item.zaomengxiyou.pmwzhipi": "The skin of the Lord Dumpling",
+      "item.zaomengxiyou.pmwzhipi": "Pmwzhipi",
       "block.zaomengxiyou.spwandaxxboss": "Spwandaxxboss",
       "item.zaomengxiyou.hx_3": "Hx 3",
       "item.zaomengxiyou.hx_4": "Hx 4",
@@ -16540,12 +16742,14 @@
       "block.zaomengxiyou.donghaicss": "Donghaicss",
       "item.minecraft.potion.effect.prohibitionoftreatment": "Prohibition_of_treatment",
       "item.zaomengxiyou.blood_magic_armor_boots": "Xuehaimojia 靴子",
+      "item.zaomengxiyou.evil_icedragon_spawn_egg": "evilicedragon Spawn Egg",
       "biome.zaomengxiyou_total_zip.shuiliandong": "Shuiliandong",
       "item.zaomengxiyou.xiong_spawn_egg": "Xiong Spawn Egg",
       "item.zaomengxiyou.pengmowang_spawn_egg": "Pengmowang Spawn Egg",
       "item.zaomengxiyou.zhuquerong_helmet": "Zhuquerong 头盔",
       "item.zaomengxiyou.laozhepao_boots": "Laozhepao 靴子",
       "block.zaomengxiyou.yecha_slab": "Yecha Slab",
+      "item.zaomengxiyou.evil_tangseng_spawn_egg": "Evil Tangseng Spawn Egg",
       "item.zaomengxiyou.ghostkingsword": "Ghostkingsword",
       "advancements.yuzeiwangachieve.descr": "打败禹贼王，获取其灵魂",
       "item.zaomengxiyou_total_zip.windofmhw_spawn_egg": "Windofmhw Spawn Egg",
@@ -16606,6 +16810,7 @@
       "item.zaomengxiyou.lansehouzi_spawn_egg": "Lansehouzi Spawn Egg",
       "item.zaomengxiyou_total_zip.mingjeiqixi": "Mingjeiqixi",
       "item.zaomengxiyou.dishayuanjia_2_leggings": "Dishayuanjia 2 护腿",
+      "entity.zaomengxiyou.evil_icedragon": "evilicedragon",
       "item.minecraft.lingering_potion.effect.jgzxg": "Lingering 金刚琢",
       "item.zaomengxiyou.piranha_spawn_egg": "Piranha Spawn Egg",
       "item.zaomengxiyou.nmw_3_spawn_egg": "Nmw 3 Spawn Egg",
@@ -16688,6 +16893,7 @@
       "item.zaomengxiyou.jiachuanjiasha_leggings": "Jiachuanjiasha 护腿",
       "item.zaomengxiyou_total_zip.xuehai": "Xuehai Portal Igniter",
       "subtitles.brg": "拨浪鼓",
+      "entity.zaomengxiyou.evil_tangseng": "Evil Tangseng",
       "item.zaomengxiyou.daxx_spawn_egg": "Daxxboss Spawn Egg",
       "item.zaomengxiyou.shamowangbingmao": "Shamowangbingmao",
       "item.zaomengxiyou.dishajiguanqiang": "Dishajiguanqiang",
@@ -16736,6 +16942,7 @@
       "item.zaomengxiyou.niumoxiaobing_spawn_egg": "Niumoxiaobing Spawn Egg",
       "key.zaomengxiyou.anjianlyfb": "Anjianlyfb",
       "block.zaomengxiyou.spwanshituoxiaobing": "Spwanshituoxiaobing",
+      "death.attack.xuanbing": "Died of ice stabbing",
       "biome.zaomengxiyou.underghostpalace": "Underghostpalace",
       "block.zaomengxiyou_total_zip.spwannmxiaobing": "Spwannmxiaobing",
       "key.mcreator.anjianlyfb": "Anjianlyfb",
@@ -16789,6 +16996,7 @@
       "item.zaomengxiyou_total_zip.xuehaimojia_chestplate": "§5Xuehaimojia 胸甲",
       "entity.zaomengxiyou_total_zip.longwang": "Longwang",
       "item.zaomengxiyou.water_demon_blast": "Water Demon Blast",
+      "item.zaomengxiyou.evilwaterfall_spawn_egg": "evilwaterfall Spawn Egg",
       "item.zaomengxiyou.bolanggu": "Bolanggu",
       "item.zaomengxiyou_total_zip.niumoguworld": "Niumoguworld Portal Igniter",
       "block.zaomengxiyou.shuijinglan": "Shuijinglan",
@@ -16876,6 +17084,7 @@
       "item.zaomengxiyou.weidu_1": "天煞传送石",
       "source.bag.description": "一个用来存放灵魂的袋子。潜行以存入灵魂。",
       "item.zaomengxiyou.jiachuanshouhuan_chestplate": "Jiachuanshouhuan 胸甲",
+      "death.attack.binglongbo": "死于冰龙波",
       "block.zaomengxiyou.spwanhwc": "黑无常生怪砖",
       "entity.zaomengxiyou.niumoxiaobing": "牛魔小兵",
       "entity.zaomengxiyou.shixiang_2": "石像2",
@@ -16899,6 +17108,7 @@
       "item.zaomengxiyou.shituowansource": "狮驼王的灵魂",
       "item.zaomengxiyou.binglongbo_spawn_egg": "生成 冰龙波",
       "entity.zaomengxiyou.feiping_2": "飞瓶",
+      "item.zaomengxiyou.evilxuanbing_spawn_egg": "Xxuanbing Spawn Egg",
       "block.zaomengxiyou.ghosteave_2": "鬼城半屋檐",
       "entity.zaomengxiyou.evil_sunwukong": "邪悟空",
       "subtitles.lys": "烈焰闪",
@@ -16995,6 +17205,7 @@
       "Prompt.vulnerabilities": "",
       "item.zaomengxiyou.baiwuchang_spawn_egg": "生成 白无常",
       "item.zaomengxiyou.shenglongzhan": "升龙斩",
+      "item.zaomengxiyou.evil_icedragon_spawn_egg": "Binglongbo Spawn Egg",
       "item.zaomengxiyou.xiong_spawn_egg": "生成 熊or穿山甲",
       "item.zaomengxiyou.niumoguworld": "牛魔谷传送石",
       "item.zaomengxiyou.pengmowang_spawn_egg": "生成 鹏魔王",
@@ -17007,6 +17218,7 @@
       "item.zaomengxiyou.raksha_ghost_clothes_boots": "Raksha Ghost Clothes 靴子",
       "block.zaomengxiyou.yecha_slab": "夜叉半砖",
       "entity.zaomengxiyou.bird": "恶鸟",
+      "item.zaomengxiyou.evil_tangseng_spawn_egg": "生成 邪唐僧",
       "item.zaomengxiyou.shituowang_spawn_egg": "生成 狮驼王",
       "item.zaomengxiyou.ghostkingsword": "封印的鬼王剑",
       "advancements.yuzeiwangachieve.descr": "§a打败禹绒王，获取其灵魂。",
@@ -17131,6 +17343,7 @@
       "item.zaomengxiyou.dishayuanjia_2_leggings": "§a地煞护腿§o2",
       "subtitles.donghai": "造梦西游1—东海",
       "item.zaomengxiyou.wangchuanriverworld": "忘川河砂",
+      "entity.zaomengxiyou.evil_icedragon": "Binglongbo",
       "item.minecraft.lingering_potion.effect.jgzxg": "滞留型 §d金刚琢",
       "item.zaomengxiyou.ghostkingswordreal": "§5鬼王剑",
       "item.zaomengxiyou.piranha_spawn_egg": "生成 食人鱼",
@@ -17248,6 +17461,7 @@
       "item.zaomengxiyou.jiachuanjiasha_leggings": "Jiachuanjiasha 护腿",
       "ghost.army.live.hurt": "§l武器在盔甲上铛铛作响，下方的岩石似乎并不牢固。",
       "subtitles.brg": "拨浪鼓",
+      "entity.zaomengxiyou.evil_tangseng": "邪唐僧",
       "item.zaomengxiyou.daxx_spawn_egg": "生成 大猩猩",
       "item.zaomengxiyou.mhwgun_spawn_egg": "生成 猕猴棍",
       "item.minecraft.tipped_arrow.effect.jgzxg": "Arrow of §d金刚琢",
@@ -17323,6 +17537,7 @@
       "item.minecraft.splash_potion.effect.dhfqxg": "喷溅型 §2东海幡旗",
       "block.zaomengxiyou.spwanshituoxiaobing": "狮驼小兵生怪砖",
       "key.zaomengxiyou.anjianlyfb": "烈焰风暴/冰龙波",
+      "death.attack.xuanbing": "死于玄冰扎刺",
       "biome.zaomengxiyou.underghostpalace": "鬼王殿",
       "item.zaomengxiyou.white_impermanencer_spawn_egg": "生成 白无常小怪",
       "advancements.shishituowangachievement.title": "§d打败狮驼王",
@@ -17357,6 +17572,7 @@
       "item.zaomengxiyou.guci_1_spawn_egg": "Guci 1 Spawn Egg",
       "item.zaomengxiyou.xuanwujia_leggings": "Xuanwujia 护腿",
       "item.zaomengxiyou.tatanghulu": "§e糖葫芦",
+      "entity.zaomengxiyou.evilwaterfall": "Waterfall",
       "entity.zaomengxiyou.xiejiang": "蟹将",
       "block.zaomengxiyou.spwanmhw": "猕猴王生怪砖",
       "Ninetynine.difficult": "九九八十一难。",
@@ -17388,6 +17604,7 @@
       "block.zaomengxiyou.dhsslab": "蓝色宫殿半砖",
       "entity.zaomengxiyou.niumowang_2": "牛魔王2",
       "item.zaomengxiyou.ghostidiotic_spawn_egg": "生成 痴鬼",
+      "entity.zaomengxiyou.evilxuanbing": "Xxuanbing",
       "advancements.defeatthe_night_watch.title": "打败守夜人！",
       "entity.zaomengxiyou.niumowang_1": "牛魔王1",
       "entity.zaomengxiyou.longwang": "龙王",
@@ -17406,6 +17623,7 @@
       "item.zaomengxiyou.ttianshayupao_leggings": "Ttianshayupao 护腿",
       "subtitles.zmxy2": "造梦西游2-界面音乐",
       "item.minecraft.tipped_arrow.effect.dhfqxg": "Arrow of §2东海幡旗",
+      "item.zaomengxiyou.evilwaterfall_spawn_egg": "Waterfall Spawn Egg",
       "item.zaomengxiyou.bolanggu": "§e拨浪鼓",
       "block.zaomengxiyou.niumochiyanshi": "牛魔炽焰石",
       "item.zaomengxiyou.jiachuanbaojian": "§a家传宝剑",
