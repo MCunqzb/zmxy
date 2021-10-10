@@ -31,6 +31,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.LongwangiceDangYuanChengWuPinShiYongShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.GuichengxiangyuancehngZiDanFeiXingGanShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.GuichengxiangyuancehngBulletHitsPlayerProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.GuichengxiangyuancehngRenderer;
@@ -136,22 +137,6 @@ public class GuichengxiangyuancehngItem extends ZaomengxiyouModElements.ModEleme
 		}
 
 		@Override
-		public void onCollideWithPlayer(PlayerEntity entity) {
-			super.onCollideWithPlayer(entity);
-			Entity sourceentity = this.func_234616_v_();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-			Entity imediatesourceentity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				GuichengxiangyuancehngBulletHitsPlayerProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
@@ -177,6 +162,11 @@ public class GuichengxiangyuancehngItem extends ZaomengxiyouModElements.ModEleme
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
 			Entity imediatesourceentity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("imediatesourceentity", imediatesourceentity);
+				GuichengxiangyuancehngZiDanFeiXingGanShiProcedure.executeProcedure($_dependencies);
+			}
 			if (this.inGround) {
 				this.remove();
 			}

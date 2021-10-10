@@ -68,6 +68,7 @@ public class ZaomengxiyouModElements {
 		sounds.put(new ResourceLocation("zaomengxiyou", "naiheriver"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("zaomengxiyou", "naiheriver")));
 		sounds.put(new ResourceLocation("zaomengxiyou", "zmxy2"), new net.minecraft.util.SoundEvent(new ResourceLocation("zaomengxiyou", "zmxy2")));
+		sounds.put(new ResourceLocation("zaomengxiyou", "awp"), new net.minecraft.util.SoundEvent(new ResourceLocation("zaomengxiyou", "awp")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("zaomengxiyou").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

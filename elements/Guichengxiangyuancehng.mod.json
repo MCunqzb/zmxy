@@ -36,11 +36,11 @@
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
-    "onBulletHitsPlayer": {
-      "name": "GuichengxiangyuancehngBulletHitsPlayer"
-    },
     "onBulletHitsEntity": {
       "name": "GuichengxiangyuancehngBulletHitsPlayer"
+    },
+    "onBulletFlyingTick": {
+      "name": "GuichengxiangyuancehngZiDanFeiXingGanShi"
     }
   }
 }

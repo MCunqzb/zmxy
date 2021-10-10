@@ -30,12 +30,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:world_num>",
+          "text": "<ENBT:number:food>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "<VAR:world_num>",
+          "name": "<ENBT:number:food>",
           "x": 1,
           "y": 220
         }

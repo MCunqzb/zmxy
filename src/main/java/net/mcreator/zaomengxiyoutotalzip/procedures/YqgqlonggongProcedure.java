@@ -85,24 +85,20 @@ public class YqgqlonggongProcedure {
 				&& (!((entity instanceof PlayerEntity)
 						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(DonghaiItem.block))
 						: false)))) {
-			for (int index0 = 0; index0 < (int) (1); index0++) {
-				if (world instanceof ServerWorld) {
-					Template template = ((ServerWorld) world).getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("zaomengxiyou", "donghai"));
-					if (template != null) {
-						template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) (y + 4), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
-								((World) world).rand);
-					}
+			if (world instanceof ServerWorld) {
+				Template template = ((ServerWorld) world).getStructureTemplateManager()
+						.getTemplateDefaulted(new ResourceLocation("zaomengxiyou", "donghai"));
+				if (template != null) {
+					template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) (y + 4), (int) z),
+							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+							((World) world).rand);
 				}
-				if ((!((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(DonghaiItem.block))
-						: false))) {
-					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(DonghaiItem.block);
-						_setstack.setCount((int) 1);
-						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-					}
+			}
+			if ((!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(DonghaiItem.block)) : false))) {
+				if (entity instanceof PlayerEntity) {
+					ItemStack _setstack = new ItemStack(DonghaiItem.block);
+					_setstack.setCount((int) 1);
+					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
 			}
 		}

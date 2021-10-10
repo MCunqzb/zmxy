@@ -11,10 +11,13 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
 import net.minecraft.world.server.ServerBossInfo;
 import net.minecraft.world.World;
+import net.minecraft.world.IServerWorld;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.BossInfo;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -31,18 +34,28 @@ import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRangedAttackMob;
+import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.zaomengxiyoutotalzip.procedures.MengpoDangShiTiGengXinKeShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.MengpoChuShiShiTiShengChengProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.MengpoweponItem;
 import net.mcreator.zaomengxiyoutotalzip.item.BloodevilemperorItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.MengpoRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
+
+import javax.annotation.Nullable;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
 public class MengpoEntity extends ZaomengxiyouModElements.ModElement {
@@ -70,7 +83,7 @@ public class MengpoEntity extends ZaomengxiyouModElements.ModElement {
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 900);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 1000);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 40);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
 			event.put(entity, ammma.create());
@@ -132,6 +145,40 @@ public class MengpoEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public ILivingEntityData onInitialSpawn(IServerWorld world, DifficultyInstance difficulty, SpawnReason reason,
+				@Nullable ILivingEntityData livingdata, @Nullable CompoundNBT tag) {
+			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				MengpoChuShiShiTiShengChengProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MengpoDangShiTiGengXinKeShiProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {

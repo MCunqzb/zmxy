@@ -1,9 +1,6 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -31,6 +28,8 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.stream.Collectors;
 import java.util.function.Function;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.Executors;
 import java.util.Map;
 import java.util.List;
 import java.util.Comparator;
@@ -148,38 +147,17 @@ public class LIANYANFENGBAORightClickedInAirProcedure {
 								((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
 							}
 							entity.rotationPitch = (float) (0);
-							new Object() {
-								private int ticks = 0;
-								private float waitTicks;
-								private IWorld world;
-								public void start(IWorld world, int waitTicks) {
-									this.waitTicks = waitTicks;
-									MinecraftForge.EVENT_BUS.register(this);
-									this.world = world;
+							Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
+								entity.rotationYaw = (float) (((entity.rotationYaw) + 180));
+								entity.setRenderYawOffset(entity.rotationYaw);
+								entity.prevRotationYaw = entity.rotationYaw;
+								if (entity instanceof LivingEntity) {
+									((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
+									((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
+									((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
 								}
-
-								@SubscribeEvent
-								public void tick(TickEvent.ServerTickEvent event) {
-									if (event.phase == TickEvent.Phase.END) {
-										this.ticks += 1;
-										if (this.ticks >= this.waitTicks)
-											run();
-									}
-								}
-
-								private void run() {
-									entity.rotationYaw = (float) (((entity.rotationYaw) + 180));
-									entity.setRenderYawOffset(entity.rotationYaw);
-									entity.prevRotationYaw = entity.rotationYaw;
-									if (entity instanceof LivingEntity) {
-										((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
-										((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
-										((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
-									}
-									entity.rotationPitch = (float) (0);
-									MinecraftForge.EVENT_BUS.unregister(this);
-								}
-							}.start(world, (int) 5);
+								entity.rotationPitch = (float) (0);
+							}, 500, TimeUnit.MILLISECONDS);
 						}
 					}
 				}

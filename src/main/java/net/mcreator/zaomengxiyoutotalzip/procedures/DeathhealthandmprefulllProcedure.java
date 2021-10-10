@@ -1,15 +1,20 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 
+import net.minecraft.util.FoodStats;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.Executors;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -37,15 +42,20 @@ public class DeathhealthandmprefulllProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		{
-			double _setval = (double) ((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mpglobal);
-			entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.mp = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).setHealth((float) ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1));
+		Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
+			{
+				double _setval = (double) ((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mpglobal);
+				entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).setHealth((float) ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1));
+			if (entity instanceof PlayerEntity) {
+				ObfuscationReflectionHelper.setPrivateValue(FoodStats.class, ((PlayerEntity) entity).getFoodStats(), (float) 50, "field_75125_b");
+			}
+		}, 1000, TimeUnit.MILLISECONDS);
 	}
 }

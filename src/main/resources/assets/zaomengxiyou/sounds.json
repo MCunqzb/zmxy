@@ -148,5 +148,15 @@
         "stream": false
       }
     ]
+  },
+  "awp": {
+    "category": "player",
+    "subtitle": "subtitles.awp",
+    "sounds": [
+      {
+        "name": "zaomengxiyou:awp",
+        "stream": false
+      }
+    ]
   }
 }
