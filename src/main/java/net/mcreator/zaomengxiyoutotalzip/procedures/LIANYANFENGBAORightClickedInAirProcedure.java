@@ -125,7 +125,7 @@ public class LIANYANFENGBAORightClickedInAirProcedure {
 							}
 							entityiterator.setMotion((((entityiterator.getPosX()) - (entity.getPosX())) * 0.2), 0.05,
 									(((entityiterator.getPosZ()) - (entity.getPosZ())) * 0.2));
-							entityiterator.attackEntityFrom(DamageSource.GENERIC, (float) (10 + ((new Object() {
+							entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) (10 + ((new Object() {
 								public int getScore(String score) {
 									if (entity instanceof PlayerEntity) {
 										Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();

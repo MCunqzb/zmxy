@@ -1,19 +1,22 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.zaomengxiyoutotalzip.entity.SnakedemonEntity;
+import net.mcreator.zaomengxiyoutotalzip.entity.QingguangwangEntity;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.stream.Collectors;
 import java.util.function.Function;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.Executors;
 import java.util.Map;
 import java.util.List;
 import java.util.Comparator;
@@ -75,34 +78,19 @@ public class DuqiuDangShiTiGengXinKeShiProcedure {
 							}
 						}.compareDistOf(x, y, z)).collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					entityiterator.attackEntityFrom(DamageSource.GENERIC, (float) 20);
+					if ((!((entityiterator instanceof QingguangwangEntity.CustomEntity)
+							|| (entityiterator instanceof SnakedemonEntity.CustomEntity)))) {
+						entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) 20);
+						if (entityiterator instanceof LivingEntity)
+							((LivingEntity) entityiterator).addPotionEffect(new EffectInstance(Effects.POISON, (int) 60, (int) 4));
+					}
 				}
 			}
 		} else {
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private IWorld world;
-				public void start(IWorld world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					entity.attackEntityFrom(DamageSource.GENERIC, (float) 20);
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, (int) 200);
+			Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
+				if (!entity.world.isRemote())
+					entity.remove();
+			}, 5000, TimeUnit.MILLISECONDS);
 		}
 	}
 }

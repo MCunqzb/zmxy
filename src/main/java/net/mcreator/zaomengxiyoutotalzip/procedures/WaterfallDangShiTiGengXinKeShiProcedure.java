@@ -66,7 +66,7 @@ public class WaterfallDangShiTiGengXinKeShiProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (((!(entityiterator instanceof PlayerEntity)) && ((!(entityiterator instanceof WaterfallEntity.CustomEntity))
 						&& ((!(entityiterator instanceof ItemEntity)) && (!(entityiterator instanceof WaterboomcircleEntity.CustomEntity)))))) {
-					entityiterator.attackEntityFrom(DamageSource.GENERIC,
+					entityiterator.attackEntityFrom(DamageSource.MAGIC,
 							(float) ((Math.sqrt((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) / 2))
 									* (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) / 2)) + 20));
 				}
@@ -84,7 +84,7 @@ public class WaterfallDangShiTiGengXinKeShiProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (((!(entityiterator instanceof PlayerEntity)) && ((!(entityiterator instanceof WaterfallEntity.CustomEntity))
 						&& ((!(entityiterator instanceof ItemEntity)) && (!(entityiterator instanceof WaterboomcircleEntity.CustomEntity)))))) {
-					entityiterator.attackEntityFrom(DamageSource.GENERIC,
+					entityiterator.attackEntityFrom(DamageSource.WITHER,
 							(float) ((Math.sqrt((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) / 2))
 									* (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) / 2)) + 20));
 				}

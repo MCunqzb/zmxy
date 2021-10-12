@@ -40,6 +40,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.mcreator.zaomengxiyoutotalzip.procedures.WhitefrostcaneDangZiDanJiZhongShengCunShiTiShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.WhitefrostcaneDangZiDanJiZhongFangKuaiShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.W15tick_coolingProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJianProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.WhitefrostcaneRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
@@ -51,6 +52,7 @@ import java.util.HashMap;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.ImmutableMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
 public class WhitefrostcaneItem extends ZaomengxiyouModElements.ModElement {
@@ -121,7 +123,8 @@ public class WhitefrostcaneItem extends ZaomengxiyouModElements.ModElement {
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				if (true) {
+				if (BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJianProcedure
+						.executeProcedure(ImmutableMap.of("entity", entity, "world", world))) {
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.7f, 28, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;

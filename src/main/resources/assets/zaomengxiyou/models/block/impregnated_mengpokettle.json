@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zaomengxiyou:blocks/mengpo_kettle",
+    "up": "zaomengxiyou:blocks/impregnated_meng_po_kettle_up",
+    "north": "zaomengxiyou:blocks/impregnated_meng_po_kettle",
+    "east": "zaomengxiyou:blocks/impregnated_meng_po_kettle",
+    "south": "zaomengxiyou:blocks/impregnated_meng_po_kettle",
+    "west": "zaomengxiyou:blocks/impregnated_meng_po_kettle",
+    "particle": "zaomengxiyou:blocks/mengpo_kettle"
+  }
+}

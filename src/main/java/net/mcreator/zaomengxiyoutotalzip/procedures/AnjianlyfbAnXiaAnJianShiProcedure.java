@@ -134,7 +134,7 @@ public class AnjianlyfbAnXiaAnJianShiProcedure {
 											(z + (Math.random() * 5)), (int) 1, 2, 2, 2, 0.01);
 								}
 							}
-							entityiterator.attackEntityFrom(DamageSource.GENERIC, (float) (10 + ((new Object() {
+							entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) (10 + ((new Object() {
 								public int getScore(String score) {
 									if (entity instanceof PlayerEntity) {
 										Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();

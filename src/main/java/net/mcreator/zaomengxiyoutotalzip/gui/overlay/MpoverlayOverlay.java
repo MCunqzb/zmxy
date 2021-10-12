@@ -58,7 +58,7 @@ public class MpoverlayOverlay {
 						posX + -190, posY + -44, -16777216);
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("zaomengxiyou:textures/clock_00.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + -49, 0, 0, 16, 16, 16, 16);
-				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "" + (entity.getPersistentData().getDouble("food")) + "",
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "" + (entity.getPersistentData().getBoolean("T")) + "",
 						posX + -212, posY + 100, -1);
 				if (SouloverlayjudgeProcedure.executeProcedure(ImmutableMap.of("entity", entity)))
 					Minecraft

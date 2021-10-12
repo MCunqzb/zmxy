@@ -30,12 +30,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:food>",
+          "text": "<ENBT:logic:T>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:food>",
+          "name": "<ENBT:logic:T>",
           "x": 1,
           "y": 220
         }

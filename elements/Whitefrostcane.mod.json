@@ -29,6 +29,9 @@
     "onRangedItemUsed": {
       "name": "W15tick_cooling"
     },
+    "useCondition": {
+      "name": "BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJian"
+    },
     "bulletPower": 0.7,
     "bulletDamage": 28.0,
     "bulletKnockback": 0,

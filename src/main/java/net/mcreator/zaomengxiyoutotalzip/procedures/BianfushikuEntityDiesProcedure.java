@@ -91,14 +91,12 @@ public class BianfushikuEntityDiesProcedure {
 				}
 			}
 			{
-				double _setval = (double) (((((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null)
-						.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				double _setval = (double) (((sourceentity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) + 6);
-				((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null)
-						.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.mp = _setval;
-							capability.syncPlayerVariables(((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null));
-						});
+				sourceentity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mp = _setval;
+					capability.syncPlayerVariables(sourceentity);
+				});
 			}
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(

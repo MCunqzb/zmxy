@@ -1,0 +1,8 @@
+{
+  "parent": "zaomengxiyou:custom/hollow",
+  "textures": {
+    "all": "zaomengxiyou:blocks/impregnated_meng_po_kettle",
+    "particle": "zaomengxiyou:blocks/impregnated_meng_po_kettle",
+    "0": "zaomengxiyou:blocks/hollow_mengpo_kettle"
+  }
+}

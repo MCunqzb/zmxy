@@ -26,6 +26,9 @@
     "onRangedItemUsed": {
       "name": "Dishaquanzhang2DangYuanChengWuPinShiYongShi"
     },
+    "useCondition": {
+      "name": "BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJian"
+    },
     "bulletPower": 0.6,
     "bulletDamage": 15.0,
     "bulletKnockback": 0,
