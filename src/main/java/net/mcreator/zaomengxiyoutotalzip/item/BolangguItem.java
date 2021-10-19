@@ -97,6 +97,7 @@ public class BolangguItem extends ZaomengxiyouModElements.ModElement {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("\u00A7e\u7AE5\u5E74\u7684\u62E8\u6D6A\u9F13\uFF0C\u627F\u8F7D\u8FD9\u8BB8\u591A\u56DE\u5FC6\u3002"));
 			list.add(new StringTextComponent("\u00A7e\u8FDC\u7A0B\u4F24\u5BB3\uFF1A45\u70B9\u3002"));
+			list.add(new StringTextComponent("\u00A7e\u66B4\u51FB\uFF1A15%"));
 		}
 
 		@Override

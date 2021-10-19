@@ -8,7 +8,8 @@
     "name": "Xuehaixiehuang",
     "specialInfo": [
       "§5吸取了血海里无数鲜血和冤魂妖化而成，诡异的妖杖散发着死亡的气息。",
-      "§5远程伤害：50点，§5命中实体吸血。"
+      "§5远程伤害：50点，§5命中实体吸血。",
+      "§5暴击：5%。"
     ],
     "creativeTab": {
       "value": "CUSTOM:Zaomengxiyou"
@@ -34,6 +35,9 @@
     },
     "onEntitySwing": {
       "name": "XuehaixiehuangDangShiTiHuiDongWuPinShi"
+    },
+    "useCondition": {
+      "name": "BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJian"
     },
     "bulletPower": 0.5,
     "bulletDamage": 50.0,

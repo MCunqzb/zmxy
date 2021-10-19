@@ -15,16 +15,7 @@ public class HuoluoboFoodEatenProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1)
-				+ (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.2)) <= ((entity instanceof LivingEntity)
-						? ((LivingEntity) entity).getMaxHealth()
-						: -1))) {
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1)
-						+ (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.2)));
-		} else {
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).setHealth((float) ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1));
-		}
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).heal((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.2));
 	}
 }

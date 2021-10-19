@@ -43,6 +43,7 @@ import net.mcreator.zaomengxiyoutotalzip.procedures.XuehaixiehuangDangZiDanJiZho
 import net.mcreator.zaomengxiyoutotalzip.procedures.XuehaixiehuangDangZiDanJiZhongFangKuaiShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.XuehaixiehuangDangYuanChengWuPinShiYongShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.XuehaixiehuangDangShiTiHuiDongWuPinShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJianProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.BloodevilemperorRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
@@ -110,6 +111,7 @@ public class BloodevilemperorItem extends ZaomengxiyouModElements.ModElement {
 			list.add(new StringTextComponent(
 					"\u00A75\u5438\u53D6\u4E86\u8840\u6D77\u91CC\u65E0\u6570\u9C9C\u8840\u548C\u51A4\u9B42\u5996\u5316\u800C\u6210\uFF0C\u8BE1\u5F02\u7684\u5996\u6756\u6563\u53D1\u7740\u6B7B\u4EA1\u7684\u6C14\u606F\u3002"));
 			list.add(new StringTextComponent("\u00A75\u8FDC\u7A0B\u4F24\u5BB3\uFF1A50\u70B9\uFF0C\u00A75\u547D\u4E2D\u5B9E\u4F53\u5438\u8840\u3002"));
+			list.add(new StringTextComponent("\u00A75\u66B4\u51FB\uFF1A5%\u3002"));
 		}
 
 		@Override
@@ -158,7 +160,8 @@ public class BloodevilemperorItem extends ZaomengxiyouModElements.ModElement {
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				if (true) {
+				if (BloodevilemperorKeYiShiYongYuanChengWuPinDeTiaoJianProcedure
+						.executeProcedure(ImmutableMap.of("entity", entity, "world", world))) {
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.5f, 50, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;

@@ -12,7 +12,9 @@
       "§5was just a matter of thought.",
       "§5解封后的鬼王剑，斩妖除魔，也只是一念之间。",
       "§o§5Passive: 5% bloodthirsty.",
-      "§o§5被动：5%嗜血。"
+      "§o§5被动：5%嗜血",
+      "§o§5Crit value: 5%",
+      "§o§5暴击：5%"
     ],
     "creativeTab": {
       "value": "CUSTOM:Zaomengxiyou"

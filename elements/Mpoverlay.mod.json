@@ -30,12 +30,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:logic:T>",
+          "text": "<ENBT:number:Crit_num>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "<ENBT:logic:T>",
+          "name": "<ENBT:number:Crit_num>",
           "x": 1,
           "y": 220
         }

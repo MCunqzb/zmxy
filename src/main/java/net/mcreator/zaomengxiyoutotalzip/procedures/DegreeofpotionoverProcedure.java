@@ -16,6 +16,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.zaomengxiyoutotalzip.potion.ReductionofinjuryPotionEffect;
+import net.mcreator.zaomengxiyoutotalzip.potion.IncreasesthedamagePotionEffect;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.Map;
@@ -58,7 +59,7 @@ public class DegreeofpotionoverProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((new Object() {
+		if ((((new Object() {
 			int check(Entity _entity) {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
@@ -69,7 +70,18 @@ public class DegreeofpotionoverProcedure {
 				}
 				return 0;
 			}
-		}.check(entity)) > 100)) {
+		}.check(entity)) > 100) || ((new Object() {
+			int check(Entity _entity) {
+				if (_entity instanceof LivingEntity) {
+					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+					for (EffectInstance effect : effects) {
+						if (effect.getPotion() == IncreasesthedamagePotionEffect.potion)
+							return effect.getAmplifier();
+					}
+				}
+				return 0;
+			}
+		}.check(entity)) > 100))) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("zaomengxiyou:potionoverwhelm"));
@@ -82,10 +94,11 @@ public class DegreeofpotionoverProcedure {
 					}
 				}
 			}
+			if (entity instanceof PlayerEntity) {
+				((PlayerEntity) entity).giveExperiencePoints((int) -114514);
+			}
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).addExperienceLevel(-((int) 4));
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getFoodStats().setFoodLevel((int) 0);
+				((PlayerEntity) entity).getFoodStats().setFoodLevel((int) 3);
 		}
 	}
 }

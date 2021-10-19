@@ -230,6 +230,7 @@ public class ZaomengxiyouModVariables {
 			nbt.putDouble("level", instance.level);
 			nbt.putDouble("mp", instance.mp);
 			nbt.putDouble("Sources", instance.Sources);
+			nbt.putDouble("jump2", instance.jump2);
 			return nbt;
 		}
 
@@ -242,6 +243,7 @@ public class ZaomengxiyouModVariables {
 			instance.level = nbt.getDouble("level");
 			instance.mp = nbt.getDouble("mp");
 			instance.Sources = nbt.getDouble("Sources");
+			instance.jump2 = nbt.getDouble("jump2");
 		}
 	}
 
@@ -252,6 +254,7 @@ public class ZaomengxiyouModVariables {
 		public double level = 1.0;
 		public double mp = 40.0;
 		public double Sources = 0;
+		public double jump2 = 0;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				ZaomengxiyouMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -291,6 +294,7 @@ public class ZaomengxiyouModVariables {
 		if (!event.isWasDeath()) {
 			clone.mpglobal = original.mpglobal;
 			clone.mp = original.mp;
+			clone.jump2 = original.jump2;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -320,6 +324,7 @@ public class ZaomengxiyouModVariables {
 					variables.level = message.data.level;
 					variables.mp = message.data.mp;
 					variables.Sources = message.data.Sources;
+					variables.jump2 = message.data.jump2;
 				}
 			});
 			context.setPacketHandled(true);

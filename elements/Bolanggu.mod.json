@@ -8,7 +8,8 @@
     "name": "Bolanggu",
     "specialInfo": [
       "§e童年的拨浪鼓，承载这许多回忆。",
-      "§e远程伤害：45点。"
+      "§e远程伤害：45点。",
+      "§e暴击：15%"
     ],
     "creativeTab": {
       "value": "CUSTOM:Zaomengxiyou"

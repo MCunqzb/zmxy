@@ -38,9 +38,9 @@ public class CrackParticle {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
 			this.setSize((float) 0.2, (float) 0.2);
-			this.particleScale *= (float) 1;
-			this.maxAge = 50;
-			this.particleGravity = (float) 0;
+			this.particleScale *= (float) 2;
+			this.maxAge = 22;
+			this.particleGravity = (float) 1;
 			this.canCollide = true;
 			this.motionX = vx * 1;
 			this.motionY = vy * 1;
@@ -57,7 +57,7 @@ public class CrackParticle {
 		public void tick() {
 			super.tick();
 			if (!this.isExpired) {
-				this.setSprite(this.spriteSet.get((this.age / 1) % 11 + 1, 11));
+				this.setSprite(this.spriteSet.get((this.age / 2) % 11 + 1, 11));
 			}
 		}
 	}

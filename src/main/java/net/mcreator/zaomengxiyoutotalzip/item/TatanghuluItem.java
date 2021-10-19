@@ -65,6 +65,7 @@ public class TatanghuluItem extends ZaomengxiyouModElements.ModElement {
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("\u00A7e\u627F\u8F7D\u7AE5\u5E74\u56DE\u5FC6\u7684\u7CD6\u846B\u82A6\u3002"));
+				list.add(new StringTextComponent("\u00A7e\u66B4\u51FB\uFF1A15%"));
 			}
 
 			@Override

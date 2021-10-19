@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Reduce Injury Potion",
+    "splashName": "Splash Potion of Reduce Injury Potion",
+    "lingeringName": "Lingering Potion of Reduce Injury Potion",
+    "arrowName": "Arrow of Reduce Injury Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Reductionofinjury"
+        },
+        "duration": 600,
+        "amplifier": 95,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

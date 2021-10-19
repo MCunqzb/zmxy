@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "dirt_thorn",
+    "customModelName": "Normal",
+    "name": "Dirtthorn",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 64,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "ModelSoil_thorn",
+    "customBulletModelTexture": "soil_thorn.png",
+    "onBulletHitsBlock": {
+      "name": "DirtthornDangZiDanJiZhongFangKuaiShi"
+    },
+    "onBulletHitsEntity": {
+      "name": "DirtthornDangZiDanJiZhongShengCunShiTiShi"
+    },
+    "onBulletFlyingTick": {
+      "name": "DirtthornZiDanFeiXingGanShi"
+    }
+  }
+}

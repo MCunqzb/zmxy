@@ -66,7 +66,9 @@ public class GhostkingswordrealItem extends ZaomengxiyouModElements.ModElement {
 				list.add(new StringTextComponent(
 						"\u00A75\u89E3\u5C01\u540E\u7684\u9B3C\u738B\u5251\uFF0C\u65A9\u5996\u9664\u9B54\uFF0C\u4E5F\u53EA\u662F\u4E00\u5FF5\u4E4B\u95F4\u3002"));
 				list.add(new StringTextComponent("\u00A7o\u00A75Passive: 5% bloodthirsty."));
-				list.add(new StringTextComponent("\u00A7o\u00A75\u88AB\u52A8\uFF1A5%\u55DC\u8840\u3002"));
+				list.add(new StringTextComponent("\u00A7o\u00A75\u88AB\u52A8\uFF1A5%\u55DC\u8840"));
+				list.add(new StringTextComponent("\u00A7o\u00A75Crit value: 5%"));
+				list.add(new StringTextComponent("\u00A7o\u00A75\u66B4\u51FB\uFF1A5%"));
 			}
 
 			@Override

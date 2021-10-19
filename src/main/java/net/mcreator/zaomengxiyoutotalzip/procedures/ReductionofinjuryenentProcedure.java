@@ -11,7 +11,6 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.network.play.NetworkPlayerInfo;
@@ -19,10 +18,9 @@ import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.zaomengxiyoutotalzip.potion.ReductionofinjuryPotionEffect;
+import net.mcreator.zaomengxiyoutotalzip.potion.IncreasesthedamagePotionEffect;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.Executors;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Collection;
@@ -59,13 +57,7 @@ public class ReductionofinjuryenentProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency entity for procedure Reductionofinjuryenent!");
 			return;
 		}
-		if (dependencies.get("amount") == null) {
-			if (!dependencies.containsKey("amount"))
-				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency amount for procedure Reductionofinjuryenent!");
-			return;
-		}
 		Entity entity = (Entity) dependencies.get("entity");
-		double amount = dependencies.get("amount") instanceof Integer ? (int) dependencies.get("amount") : (double) dependencies.get("amount");
 		if ((new Object() {
 			boolean check(Entity _entity) {
 				if (_entity instanceof LivingEntity) {
@@ -89,27 +81,68 @@ public class ReductionofinjuryenentProcedure {
 					}
 					return 0;
 				}
-			}.check(entity)) <= 100)) {
-				Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.heal((float) (((amount) * (1 - ((((LivingEntity) entity).getAttribute(Attributes.ARMOR).getBaseValue() / 5) / 25)))
-										* (0.01 * (new Object() {
-											int check(Entity _entity) {
-												if (_entity instanceof LivingEntity) {
-													Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-													for (EffectInstance effect : effects) {
-														if (effect.getPotion() == ReductionofinjuryPotionEffect.potion)
-															return effect.getAmplifier();
-													}
-												}
-												return 0;
-											}
-										}.check(entity)))));
-				}, 100, TimeUnit.MILLISECONDS);
-			} else {
+			}.check(entity)) > 100)) {
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).removePotionEffect(ReductionofinjuryPotionEffect.potion);
+				}
+				if ((entity instanceof PlayerEntity)) {
+					if (((new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayerEntity) {
+								return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+							} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+								NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+										.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+								return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+							}
+							return false;
+						}
+					}.checkGamemode(entity)) || (new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayerEntity) {
+								return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.ADVENTURE;
+							} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+								NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+										.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+								return _npi != null && _npi.getGameType() == GameType.ADVENTURE;
+							}
+							return false;
+						}
+					}.checkGamemode(entity)))) {
+						if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+							((PlayerEntity) entity).sendStatusMessage(
+									new StringTextComponent((new TranslationTextComponent("potion.overwhelm").getString())), (false));
+						}
+					}
+				}
+			}
+		}
+		if ((new Object() {
+			boolean check(Entity _entity) {
+				if (_entity instanceof LivingEntity) {
+					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+					for (EffectInstance effect : effects) {
+						if (effect.getPotion() == IncreasesthedamagePotionEffect.potion)
+							return true;
+					}
+				}
+				return false;
+			}
+		}.check(entity))) {
+			if (((new Object() {
+				int check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == IncreasesthedamagePotionEffect.potion)
+								return effect.getAmplifier();
+						}
+					}
+					return 0;
+				}
+			}.check(entity)) > 100)) {
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).removePotionEffect(IncreasesthedamagePotionEffect.potion);
 				}
 				if ((entity instanceof PlayerEntity)) {
 					if (((new Object() {

@@ -113,7 +113,7 @@ public class BianhuaBlock extends ZaomengxiyouModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0,
+			super(Effects.HASTE, 60,
 					Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
 							.hardnessAndResistance(0f, 0f).setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true)
 							.setLightLevel(s -> 14));

@@ -98,6 +98,7 @@ public class JiuhuanchangzhangItem extends ZaomengxiyouModElements.ModElement {
 			list.add(new StringTextComponent(
 					"\u00A7e\u6E21\u52AB\u4E4B\u65E5\uFF0C\u4E09\u754C\u4FF1\u706D\uFF0C\u4E5D\u73AF\u5723\u5149\uFF0C\u4E07\u7269\u590D\u82CF\u3002"));
 			list.add(new StringTextComponent("\u00A7e\u8FDC\u7A0B\u4F24\u5BB3\uFF1A35\u70B9"));
+			list.add(new StringTextComponent("\u00A7e\u66B4\u51FB\uFF1A5%"));
 		}
 
 		@Override

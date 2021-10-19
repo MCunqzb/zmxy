@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Ryjgb"
+      },
+      {
+        "value": "CUSTOM:Jiuhuanchangzhang"
+      },
+      {
+        "value": "CUSTOM:Bolanggu"
+      },
+      {
+        "value": "CUSTOM:Tatanghulu"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "fifteencrit",
+    "namespace": "forge"
+  }
+}

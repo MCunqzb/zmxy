@@ -101,8 +101,7 @@ public class YechaBossEntity extends ZaomengxiyouModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, FlowerDemonEntity.CustomEntity.class, false, false));
-			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 		}
 
 		@Override

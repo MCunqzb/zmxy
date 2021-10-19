@@ -62,6 +62,7 @@ public class RyjgbItem extends ZaomengxiyouModElements.ModElement {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent(
 						"\u00A7e\u4E1C\u6D77\u9F99\u5BAB\u4E4B\u5B9A\u6D77\u795E\u9488\uFF0C\u4E00\u4E07\u4E09\u5343\u4E94\u767E\u65A4\uFF0C\u6D69\u52AB\u4E4B\u9645\uFF0C\u5143\u5F52\u9F50\u5929\u3002"));
+				list.add(new StringTextComponent("\u00A7e\u66B4\u51FB\uFF1A15%"));
 			}
 
 			@Override

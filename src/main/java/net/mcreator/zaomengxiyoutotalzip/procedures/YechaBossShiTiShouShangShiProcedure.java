@@ -13,6 +13,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.zaomengxiyoutotalzip.potion.VertigoPotionEffect;
+import net.mcreator.zaomengxiyoutotalzip.potion.ReductionofinjuryPotionEffect;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.Map;
@@ -90,6 +91,8 @@ public class YechaBossShiTiShouShangShiProcedure {
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.hit_ground")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(ReductionofinjuryPotionEffect.potion, (int) 20, (int) 10));
 		}
 	}
 }

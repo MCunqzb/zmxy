@@ -61,7 +61,7 @@ public class DiethjudgeProcedure {
 		}
 		if ((((imediatesourceentity.getEntity() instanceof ProjectileEntity)
 				? ((imediatesourceentity).getMotion().distanceTo(Vector3d.ZERO))
-				: 0) <= 200)) {
+				: 0) > (-1))) {
 			return (false);
 		}
 		return (false);

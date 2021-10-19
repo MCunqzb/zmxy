@@ -12,8 +12,8 @@
     "isItemTinted": false,
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
-    "suspiciousStewEffect": "SATURATION",
-    "suspiciousStewDuration": 0,
+    "suspiciousStewEffect": "HASTE",
+    "suspiciousStewDuration": 60,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
@@ -42,6 +42,21 @@
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "useLootTableForDrops": false,
     "customDrop": {

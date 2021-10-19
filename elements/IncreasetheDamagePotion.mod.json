@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Increasethe Damage Potion",
+    "splashName": "Splash Potion of Increasethe Damage Potion",
+    "lingeringName": "Lingering Potion of Increasethe Damage Potion",
+    "arrowName": "Arrow of Increasethe Damage Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Increasesthedamage"
+        },
+        "duration": 1200,
+        "amplifier": 50,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

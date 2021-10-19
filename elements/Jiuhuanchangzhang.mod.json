@@ -8,7 +8,8 @@
     "name": "Jiuhuanchangzhang",
     "specialInfo": [
       "§e渡劫之日，三界俱灭，九环圣光，万物复苏。",
-      "§e远程伤害：35点"
+      "§e远程伤害：35点",
+      "§e暴击：5%"
     ],
     "creativeTab": {
       "value": "CUSTOM:Zaomengxiyou"

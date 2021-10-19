@@ -7,25 +7,16 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.SphereReplaceConfig;
 import net.minecraft.world.gen.feature.ProbabilityConfig;
 import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.BiomeGenerationSettings;
@@ -50,8 +41,6 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
-import com.google.common.collect.ImmutableList;
-
 @ZaomengxiyouModElements.ModElement.Tag
 public class WangchuanriverbiomesBiome extends ZaomengxiyouModElements.ModElement {
 	public static Biome biome;
@@ -71,31 +60,9 @@ public class WangchuanriverbiomesBiome extends ZaomengxiyouModElements.ModElemen
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.WATER.getDefaultState(),
 								UnderruckBlock.block.getDefaultState(), UnderruckBlock.block.getDefaultState())));
-				biomeGenerationSettings.withStructure(StructureFeatures.MONUMENT);
-				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_COLD);
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-								new SimpleBlockStateProvider(Blocks.COBBLESTONE.getDefaultState()),
-								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(0, 2, 0), new TwoLayerFeature(1, 0, 1)))
-										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
-												new CustomCocoaTreeDecorator()))
-										.setMaxWaterDepth(5).build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS
-						.withConfiguration(new ProbabilityConfig(0.3F)).func_242731_b(5).withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.DISK
-								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
-										ImmutableList.of(Blocks.WATER.getDefaultState(), UnderruckBlock.block.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.DISK
-								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
-										ImmutableList.of(Blocks.WATER.getDefaultState(), UnderruckBlock.block.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
+						.withConfiguration(new ProbabilityConfig(0.3F)).func_242731_b(8).withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.BOAT, 200, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(-1f).scale(0f).temperature(0.5f)
