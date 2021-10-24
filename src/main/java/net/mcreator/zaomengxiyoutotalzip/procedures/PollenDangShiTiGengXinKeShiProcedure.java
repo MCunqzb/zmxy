@@ -76,7 +76,7 @@ public class PollenDangShiTiGengXinKeShiProcedure {
 			if (!entity.world.isRemote())
 				entity.remove();
 		}
-		if ((entity.isOnGround())) {
+		if (((entity.isOnGround()) || (entity.isInWater()))) {
 			if (!entity.world.isRemote())
 				entity.remove();
 		}

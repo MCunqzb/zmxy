@@ -35,11 +35,9 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.LansehouziZiRanShiTiShengChengTiaoJianProcedure;
-import net.mcreator.zaomengxiyoutotalzip.procedures.LansehouziEntityDiesProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
 import net.mcreator.zaomengxiyoutotalzip.item.Sourcelv1Item;
@@ -47,9 +45,6 @@ import net.mcreator.zaomengxiyoutotalzip.item.HuoluoboItem;
 import net.mcreator.zaomengxiyoutotalzip.item.CucaodexingzhegunItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.LansehouziRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
-
-import java.util.Map;
-import java.util.HashMap;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -166,22 +161,6 @@ public class LansehouziEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("sourceentity", sourceentity);
-				LansehouziEntityDiesProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 }

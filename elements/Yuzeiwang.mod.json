@@ -101,9 +101,6 @@
     "onStruckByLightning": {
       "name": "YuzeiwangItIsStruckByLightning"
     },
-    "whenMobDies": {
-      "name": "YuzeiwangEntityDies"
-    },
     "onMobTickUpdate": {
       "name": "YuzeiwangOnEntityTickUpdate"
     },

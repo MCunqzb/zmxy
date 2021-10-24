@@ -22,6 +22,7 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -33,7 +34,6 @@ import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
@@ -109,7 +109,8 @@ public class EvilTangsengEntity extends ZaomengxiyouModElements.ModElement {
 			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, LivingEntity.class, false, false));
+			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, AnimalEntity.class, false, false));
+			this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, MobEntity.class, false, false));
 		}
 
 		@Override

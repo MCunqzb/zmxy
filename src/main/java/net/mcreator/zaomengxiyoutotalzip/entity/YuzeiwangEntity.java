@@ -48,7 +48,6 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.YuzeiwangOnEntityTickUpdateProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.YuzeiwangItIsStruckByLightningProcedure;
-import net.mcreator.zaomengxiyoutotalzip.procedures.YuzeiwangEntityDiesProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.Weidu1Item;
 import net.mcreator.zaomengxiyoutotalzip.item.Sourcelv1Item;
@@ -185,22 +184,6 @@ public class YuzeiwangEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("sourceentity", sourceentity);
-				YuzeiwangEntityDiesProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

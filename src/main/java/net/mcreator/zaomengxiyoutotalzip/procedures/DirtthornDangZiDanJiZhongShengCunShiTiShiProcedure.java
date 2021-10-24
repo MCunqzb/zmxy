@@ -30,7 +30,8 @@ public class DirtthornDangZiDanJiZhongShengCunShiTiShiProcedure {
 		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		entity.attackEntityFrom(DamageSource.MAGIC,
-				(float) (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHealth() : -1) / 12));
+				(float) ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHealth() : -1) * 2.2)
+						+ (50 / (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHealth() : -1) + 2))));
 		imediatesourceentity.getPersistentData().putDouble("dirtthron", 0);
 	}
 }

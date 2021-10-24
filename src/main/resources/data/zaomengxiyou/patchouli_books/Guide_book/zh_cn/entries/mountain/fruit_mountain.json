@@ -1,0 +1,11 @@
+{
+    "name": "打败魔化的大猩猩，拯救花果山。",
+    "icon": "minecraft:writable_book",
+    "category": "category_mountain",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "打败魔化的大猩猩，拯救花果山。"
+        }
+    ]
+}

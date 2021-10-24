@@ -15,13 +15,13 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.EvilxuanbingDangShiTiSiWangShiProcedure;
@@ -68,7 +68,7 @@ public class EvilxuanbingEntity extends ZaomengxiyouModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -86,7 +86,7 @@ public class EvilxuanbingEntity extends ZaomengxiyouModElements.ModElement {
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEFINED;
+			return CreatureAttribute.ILLAGER;
 		}
 
 		@Override

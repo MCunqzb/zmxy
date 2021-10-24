@@ -17,13 +17,19 @@ import com.google.common.collect.ImmutableMap;
 
 public class YechaBoss2DangShiTiSiWangShiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("imediatesourceentity") == null) {
+			if (!dependencies.containsKey("imediatesourceentity"))
+				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure YechaBoss2DangShiTiSiWangShi!");
+			return;
+		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure YechaBoss2DangShiTiSiWangShi!");
 			return;
 		}
+		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
 			{
 				Entity _ent = sourceentity;
 				if (_ent instanceof PlayerEntity) {

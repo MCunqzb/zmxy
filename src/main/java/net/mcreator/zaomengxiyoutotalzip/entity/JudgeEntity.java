@@ -34,7 +34,6 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.zaomengxiyoutotalzip.procedures.JudgeShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.JudgeShiTiShouShangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.JudgeDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
@@ -153,22 +152,6 @@ public class JudgeEntity extends ZaomengxiyouModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
-				$_dependencies.put("world", world);
-				JudgeShiTiSiWangShiProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

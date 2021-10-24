@@ -38,6 +38,11 @@ public class EggEntityDiesProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency entity for procedure EggEntityDies!");
 			return;
 		}
+		if (dependencies.get("imediatesourceentity") == null) {
+			if (!dependencies.containsKey("imediatesourceentity"))
+				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure EggEntityDies!");
+			return;
+		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure EggEntityDies!");
@@ -64,12 +69,13 @@ public class EggEntityDiesProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
 			{
 				Entity _ent = sourceentity;
 				if (_ent instanceof PlayerEntity) {

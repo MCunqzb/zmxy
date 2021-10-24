@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "zaomengxiyou:blocks/mengpo_kettle",
+    "top": "zaomengxiyou:blocks/mengpo_kettle",
+    "side": "zaomengxiyou:blocks/mengpo_kettle"
+  }
+}

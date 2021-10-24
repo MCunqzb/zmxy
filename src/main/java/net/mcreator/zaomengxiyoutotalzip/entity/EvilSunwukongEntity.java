@@ -28,7 +28,6 @@ import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
@@ -100,7 +99,7 @@ public class EvilSunwukongEntity extends ZaomengxiyouModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, LivingEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, MobEntity.class, false, false));
 			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, MonsterEntity.class, false, false));
 		}
 

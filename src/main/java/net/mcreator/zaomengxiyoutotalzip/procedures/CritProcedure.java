@@ -12,6 +12,7 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.Map;
 import java.util.HashMap;
+import net.minecraft.entity.LivingEntity;
 
 public class CritProcedure {
 	@Mod.EventBusSubscriber
@@ -36,7 +37,7 @@ public class CritProcedure {
 				dependencies.put("sourceentity", sourceentity);
 				dependencies.put("event", event);
 				executeProcedure(dependencies);
-				if (dependencies.get("sourceentity") != null) {
+				if (/*dependencies.get("sourceentity") != null &&*/ dependencies.get("sourceentity") instanceof LivingEntity ) {
 				if (((100 * Math.random()) < (sourceentity.getPersistentData().getDouble("Crit_num")))) {
 					event.setAmount(event.getAmount() * 2 );}
 				}

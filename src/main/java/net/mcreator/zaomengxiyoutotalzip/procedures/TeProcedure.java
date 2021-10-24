@@ -68,8 +68,9 @@ public class TeProcedure {
 		Object tooltip = (Object) dependencies.get("tooltip");
 		List<ITextComponent> tooltips = (List<ITextComponent>) dependencies.get("tooltip");
 		if (((itemstack).getItem() == SourcebagItem.block)) {
-			tooltips.add(1, new StringTextComponent((("\u00A7c") + "" + ((new TranslationTextComponent("source.bag.description").getString())))));
-			tooltips.add(2,
+			tooltips.add((int) 1,
+					new StringTextComponent((("\u00A7c") + "" + ((new TranslationTextComponent("source.bag.description").getString())))));
+			tooltips.add((int) 2,
 					new StringTextComponent((("\u00A7c") + "" + ((new TranslationTextComponent("source.bag.description.line").getString())) + ""
 							+ (((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new ZaomengxiyouModVariables.PlayerVariables())).Sources)))));

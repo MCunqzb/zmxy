@@ -18,13 +18,13 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.DuqiuDangShiTiGengXinKeShiProcedure;
@@ -37,7 +37,7 @@ import java.util.HashMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
 public class DuqiuEntity extends ZaomengxiyouModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 0.6f)).build("duqiu").setRegistryName("duqiu");
 	public DuqiuEntity(ZaomengxiyouModElements instance) {
@@ -68,7 +68,7 @@ public class DuqiuEntity extends ZaomengxiyouModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -86,7 +86,7 @@ public class DuqiuEntity extends ZaomengxiyouModElements.ModElement {
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEFINED;
+			return CreatureAttribute.ILLAGER;
 		}
 
 		@Override

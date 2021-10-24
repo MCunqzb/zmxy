@@ -43,7 +43,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.zaomengxiyoutotalzip.procedures.NiutouDangShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.FlowerDemonZiRanShiTiShengChengTiaoJianProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.FlowerDemonDangWanJiaYuGaiShiTiXiangZhuangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.FlowerDemonDangShiTiGengXinKeShiProcedure;
@@ -215,21 +214,6 @@ public class FlowerDemonEntity extends ZaomengxiyouModElements.ModElement {
 		@Override
 		public boolean onLivingFall(float l, float d) {
 			return false;
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
-				NiutouDangShiTiSiWangShiProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

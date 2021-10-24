@@ -1,58 +1,25 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.feature.template.Template;
 import net.minecraft.world.gen.feature.template.PlacementSettings;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.gen.feature.template.BlockIgnoreStructureProcessor;
+
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 import net.minecraft.state.Property;
 import net.minecraft.block.BlockState;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.feature.template.Template;
-import net.minecraft.world.gen.feature.template.PlacementSettings;
-import net.minecraft.world.gen.feature.template.BlockIgnoreStructureProcessor;
-import net.minecraft.world.gen.feature.NoFeatureConfig;
-import net.minecraft.world.gen.feature.IFeatureConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.ChunkGenerator;
-import net.minecraft.world.World;
-import net.minecraft.world.ISeedReader;
-import net.minecraft.util.registry.WorldGenRegistries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Rotation;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.RegistryKey;
-import net.minecraft.util.Mirror;
-
 
 import net.mcreator.zaomengxiyoutotalzip.block.NaihebridgebrickBlock;
-import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.Map;
 
-@ZaomengxiyouModElements.ModElement.Tag
-public class YechaBrickGengXinYouXiKeProcedure extends ZaomengxiyouModElements.ModElement {
-	public YechaBrickGengXinYouXiKeProcedure(ZaomengxiyouModElements instance) {
-		super(instance, 922);
-	}
-
+public class YechaBrickGengXinYouXiKeProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -78,14 +45,29 @@ public class YechaBrickGengXinYouXiKeProcedure extends ZaomengxiyouModElements.M
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof ServerWorld) {
-			Template template = ((ServerWorld) world).getStructureTemplateManager()
-					.getTemplateDefaulted(new ResourceLocation("zaomengxiyou", "naihe_bridge2"));
-			if (template != null) {
-				template.func_237144_a_((ServerWorld) world, new BlockPos((int) (x - 6), (int) (y - 17), (int) (z + 1)),
-						new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE)
-						.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),//Ignore the air
-						((World) world).rand);
+		if ((Math.random() < 0.5)) {
+			if (world instanceof ServerWorld) {
+				Template template = ((ServerWorld) world).getStructureTemplateManager()
+						.getTemplateDefaulted(new ResourceLocation("zaomengxiyou", "naihe_bridge2"));
+				if (template != null) {
+					template.func_237144_a_((ServerWorld) world, new BlockPos((int) (x - 6), (int) (y - 17), (int) (z + 1)),
+							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE)
+									.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
+							((World) world).rand);
+
+				}
+			}
+		} else {
+			if (world instanceof ServerWorld) {
+				Template template = ((ServerWorld) world).getStructureTemplateManager()
+						.getTemplateDefaulted(new ResourceLocation("zaomengxiyou", "mengpobridge"));
+				if (template != null) {
+					template.func_237144_a_((ServerWorld) world, new BlockPos((int) (x - 6), (int) (y - 17), (int) (z + 1)),
+							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE)
+									.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
+							((World) world).rand);
+
+				}
 			}
 		}
 		{

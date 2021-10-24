@@ -18,6 +18,11 @@ import com.google.common.collect.ImmutableMap;
 
 public class JudgeShiTiSiWangShiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("imediatesourceentity") == null) {
+			if (!dependencies.containsKey("imediatesourceentity"))
+				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure JudgeShiTiSiWangShi!");
+			return;
+		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure JudgeShiTiSiWangShi!");
@@ -28,11 +33,12 @@ public class JudgeShiTiSiWangShiProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency world for procedure JudgeShiTiSiWangShi!");
 			return;
 		}
+		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		IWorld world = (IWorld) dependencies.get("world");
 		ZaomengxiyouModVariables.MapVariables.get(world).deathjudge = (double) 0;
 		ZaomengxiyouModVariables.MapVariables.get(world).syncData(world);
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
 			{
 				Entity _ent = sourceentity;
 				if (_ent instanceof PlayerEntity) {

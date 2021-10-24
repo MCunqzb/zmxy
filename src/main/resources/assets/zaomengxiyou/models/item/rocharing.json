@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/loucharing",
+  "textures": {
+    "0": "zaomengxiyou:blocks/rocha_ring",
+    "particle": "zaomengxiyou:items/rocha_ring"
+  }
+}

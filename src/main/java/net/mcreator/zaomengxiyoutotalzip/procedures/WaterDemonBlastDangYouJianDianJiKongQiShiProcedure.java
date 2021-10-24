@@ -1,9 +1,6 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -33,6 +30,8 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.function.Function;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.Executors;
 import java.util.Map;
 import java.util.Comparator;
 
@@ -120,39 +119,18 @@ public class WaterDemonBlastDangYouJianDianJiKongQiShiProcedure {
 					}
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 100, (int) 0, (false), (false)));
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private IWorld world;
-						public void start(IWorld world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
+					Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
+						if ((((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ZaomengxiyouModVariables.PlayerVariables())).waterboomnum) == (true))) {
+							{
+								boolean _setval = (boolean) (false);
+								entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.waterboomnum = _setval;
+									capability.syncPlayerVariables(entity);
+								});
 							}
 						}
-
-						private void run() {
-							if ((((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ZaomengxiyouModVariables.PlayerVariables())).waterboomnum) == (true))) {
-								{
-									boolean _setval = (boolean) (false);
-									entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-										capability.waterboomnum = _setval;
-										capability.syncPlayerVariables(entity);
-									});
-								}
-							}
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, (int) 103);
+					}, 5100, TimeUnit.MILLISECONDS);
 				} else {
 					if (world instanceof ServerWorld) {
 						((World) world).getServer().getCommandManager()

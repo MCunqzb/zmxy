@@ -9,6 +9,7 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -55,6 +56,16 @@ public class YechaBrickBlock extends ZaomengxiyouModElements.ModElement {
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
+		public boolean canProvidePower(BlockState state) {
+			return true;
+		}
+
+		@Override
+		public int getWeakPower(BlockState blockstate, IBlockReader blockAccess, BlockPos pos, Direction side) {
 			return 15;
 		}
 

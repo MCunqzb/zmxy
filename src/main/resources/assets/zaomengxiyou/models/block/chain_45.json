@@ -1,0 +1,8 @@
+{
+  "parent": "zaomengxiyou:custom/chain_45",
+  "textures": {
+    "all": "zaomengxiyou:blocks/chain_45",
+    "particle": "zaomengxiyou:blocks/chain_45",
+    "0": "zaomengxiyou:blocks/chain_45"
+  }
+}

@@ -38,7 +38,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.WaterspriteDangShiTiGengXinKeShiProcedure;
-import net.mcreator.zaomengxiyoutotalzip.procedures.NiutouDangShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.WaterspriteRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
@@ -152,21 +151,6 @@ public class WaterspriteEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.ANVIL)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
-				NiutouDangShiTiSiWangShiProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

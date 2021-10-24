@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zaomengxiyou:block/mengpo_kettle_slab"
+    },
+    "type=top": {
+      "model": "zaomengxiyou:block/mengpo_kettle_slab_top"
+    },
+    "type=double": {
+      "model": "zaomengxiyou:block/mengpo_kettle_slab_full"
+    }
+  }
+}

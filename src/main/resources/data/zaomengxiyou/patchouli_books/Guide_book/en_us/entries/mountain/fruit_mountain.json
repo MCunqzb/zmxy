@@ -1,0 +1,11 @@
+{
+    "name": "Defeat the demonized gorilla and save the mountain of Flowers and Fruits.",
+    "icon": "minecraft:writable_book",
+    "category": "category_mountain",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Defeat the demonized gorilla and save the mountain of Flowers and Fruits."
+        }
+    ]
+}

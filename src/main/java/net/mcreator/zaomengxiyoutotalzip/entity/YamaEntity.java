@@ -35,7 +35,6 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.zaomengxiyoutotalzip.procedures.YamaDangShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.YamaDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.GhostkingswordItem;
@@ -119,21 +118,6 @@ public class YamaEntity extends ZaomengxiyouModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
-				YamaDangShiTiSiWangShiProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

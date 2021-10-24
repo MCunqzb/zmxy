@@ -38,7 +38,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.zaomengxiyoutotalzip.procedures.Baigujing1ShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.Baigujing1DangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
@@ -152,26 +151,6 @@ public class Baigujing1Entity extends ZaomengxiyouModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("sourceentity", sourceentity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				Baigujing1ShiTiSiWangShiProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

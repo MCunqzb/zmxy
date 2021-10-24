@@ -82,7 +82,7 @@ public class DirtthornZiDanFeiXingGanShiProcedure {
 		imediatesourceentity.getPersistentData().putDouble("dirtthron", ((imediatesourceentity.getPersistentData().getDouble("dirtthron")) + 1));
 		if ((((imediatesourceentity.getPersistentData().getDouble("dirtthron")) >= 1)
 				&& ((imediatesourceentity.getPersistentData().getDouble("dirtthron")) < 15))) {
-			imediatesourceentity.setMotion(0, 0.1, 0);
+			imediatesourceentity.setMotion(0, 0.15, 0);
 		}
 		if ((((imediatesourceentity.getPersistentData().getDouble("dirtthron")) >= 15)
 				&& ((imediatesourceentity.getPersistentData().getDouble("dirtthron")) < 30))) {

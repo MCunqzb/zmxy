@@ -30,6 +30,11 @@ public class Baigujing1ShiTiSiWangShiProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency entity for procedure Baigujing1ShiTiSiWangShi!");
 			return;
 		}
+		if (dependencies.get("imediatesourceentity") == null) {
+			if (!dependencies.containsKey("imediatesourceentity"))
+				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure Baigujing1ShiTiSiWangShi!");
+			return;
+		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure Baigujing1ShiTiSiWangShi!");
@@ -56,6 +61,7 @@ public class Baigujing1ShiTiSiWangShiProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
@@ -71,7 +77,7 @@ public class Baigujing1ShiTiSiWangShiProcedure {
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 			world.addEntity(entityToSpawn);
 		}
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
 			{
 				Entity _ent = ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null);
 				if (_ent instanceof PlayerEntity) {
