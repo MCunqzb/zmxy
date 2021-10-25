@@ -11,18 +11,14 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.ai.goal.EatGrassGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
@@ -32,29 +28,30 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.zaomengxiyoutotalzip.procedures.SoilballDangShiTiGengXinKeShiProcedure;
-import net.mcreator.zaomengxiyoutotalzip.procedures.SoilballChuShiShiTiShengChengProcedure;
-import net.mcreator.zaomengxiyoutotalzip.entity.renderer.SoilballRenderer;
+import net.mcreator.zaomengxiyoutotalzip.procedures.ArgillaceousshieldDangWanJiaYuGaiShiTiFaShengPengZhuangShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.ArgillaceousshieldDangShiTiGengXinKeShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.entity.renderer.ArgillaceousshieldRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
-public class SoilballEntity extends ZaomengxiyouModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
+public class ArgillaceousshieldEntity extends ZaomengxiyouModElements.ModElement {
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
-			.size(1f, 1.8f)).build("soilball").setRegistryName("soilball");
-	public SoilballEntity(ZaomengxiyouModElements instance) {
-		super(instance, 1028);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new SoilballRenderer.ModelRegisterHandler());
+			.size(1f, 1f)).build("argillaceousshield").setRegistryName("argillaceousshield");
+	public ArgillaceousshieldEntity(ZaomengxiyouModElements instance) {
+		super(instance, 1053);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ArgillaceousshieldRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("soilball_spawn_egg"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("argillaceousshield_spawn_egg"));
 	}
 
 	@Override
@@ -65,7 +62,7 @@ public class SoilballEntity extends ZaomengxiyouModElements.ModElement {
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 500);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 1000);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
 			event.put(entity, ammma.create());
@@ -91,7 +88,6 @@ public class SoilballEntity extends ZaomengxiyouModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new EatGrassGoal(this));
 		}
 
 		@Override
@@ -146,15 +142,6 @@ public class SoilballEntity extends ZaomengxiyouModElements.ModElement {
 		}
 
 		@Override
-		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
-			ItemStack itemstack = sourceentity.getHeldItem(hand);
-			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
-			super.func_230254_b_(sourceentity, hand);
-			sourceentity.startRiding(this);
-			return retval;
-		}
-
-		@Override
 		public void baseTick() {
 			super.baseTick();
 			double x = this.getPosX();
@@ -164,7 +151,11 @@ public class SoilballEntity extends ZaomengxiyouModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				SoilballDangShiTiGengXinKeShiProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ArgillaceousshieldDangShiTiGengXinKeShiProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -179,8 +170,21 @@ public class SoilballEntity extends ZaomengxiyouModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("sourceentity", sourceentity);
-				SoilballChuShiShiTiShengChengProcedure.executeProcedure($_dependencies);
+				ArgillaceousshieldDangWanJiaYuGaiShiTiFaShengPengZhuangShiProcedure.executeProcedure($_dependencies);
 			}
+		}
+
+		@Override
+		public boolean canBePushed() {
+			return false;
+		}
+
+		@Override
+		protected void collideWithEntity(Entity entityIn) {
+		}
+
+		@Override
+		protected void collideWithNearbyEntities() {
 		}
 	}
 }

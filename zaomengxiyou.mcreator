@@ -17483,6 +17483,117 @@
       "ids": {},
       "registry_name": "roar",
       "path": "~/items"
+    },
+    {
+      "name": "ArgillaceousshieldDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1053,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "argillaceousshield_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Argillaceousshield",
+      "type": "livingentity",
+      "sortid": 1053,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "argillaceousshield",
+      "path": "~/mobs"
+    },
+    {
+      "name": "ArgillaceousshieldDangWanJiaYuGaiShiTiFaShengPengZhuangShi",
+      "type": "procedure",
+      "sortid": 1054,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "argillaceousshield_dang_wan_jia_yu_gai_shi_ti_fa_sheng_peng_zhuang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ArgillaceousshielditemDangYouJianDianJiKongQiShi",
+      "type": "procedure",
+      "sortid": 1055,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "argillaceousshielditem_dang_you_jian_dian_ji_kong_qi_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Argillaceousshielditem",
+      "type": "item",
+      "sortid": 1055,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "argillaceousshielditem",
+      "path": "~/items"
     }
   ],
   "variable_elements": [
@@ -18200,6 +18311,7 @@
       "item.zaomengxiyou_total_zip.xuanwujia_leggings": "Xuanwujia 护腿",
       "entity.zaomengxiyou.shituowang": "Shituowang",
       "item.zaomengxiyou.tianshagulian_2_helmet": "Tianshagulian 2 头盔",
+      "entity.zaomengxiyou.argillaceousshield": "Argillaceousshield",
       "item.zaomengxiyou.shixiang_2_spawn_egg": "Shixiang 2 Spawn Egg",
       "block.zaomengxiyou_total_zip.blockofxuehaicsm": "Blockofxuehaicsm",
       "item.zaomengxiyou.jiachuanshouhuan_boots": "Jiachuanshouhuan 靴子",
@@ -18307,6 +18419,7 @@
       "item.zaomengxiyou.sourcebag": "Soul Bag",
       "item.zaomengxiyou_total_zip.jgz": "Jgz",
       "item.zaomengxiyou.tianshayupao_2_boots": "Tianshayupao 2 靴子",
+      "item.zaomengxiyou.argillaceousshield_spawn_egg": "Argillaceousshield Spawn Egg",
       "item.zaomengxiyou.judgetoken": "Judgetoken",
       "item.zaomengxiyou_total_zip.niumowang_1_spawn_egg": "Niumowang 1 Spawn Egg",
       "item.zaomengxiyou.timestopoff": "Timestopoff",
@@ -18540,6 +18653,7 @@
       "item.zaomengxiyou_total_zip.tianshagulian_helmet": "Tianshagulian 头盔",
       "item.zaomengxiyou.shituoxiaobing_spawn_egg": "Shituoxiaobing Spawn Egg",
       "item.zaomengxiyou.mengpo_spawn_egg": "Mengpo Spawn Egg",
+      "item.zaomengxiyou.argillaceousshielditem": "Argillaceous Shield Item",
       "entity.zaomengxiyou.xxuanbing": "Xxuanbing",
       "item.zaomengxiyou_total_zip.dishalinjei_leggings": "Dishalinjei 护腿",
       "item.zaomengxiyou.jiachuanshouhuan_helmet": "Jiachuanshouhuan 头盔",
@@ -18624,14 +18738,15 @@
       "biome.zaomengxiyou.shazhiwoliu": "鲨之涡流",
       "subtitles.ghost": "鬼城",
       "advancements.dabaibianfushixiang.title": "破坏蝙蝠石像",
-      "item.zaomengxiyou.cucaodexingzhegun": "§7粗糙的行者棍",
       "item.zaomengxiyou.awp": "AWP",
+      "item.zaomengxiyou.cucaodexingzhegun": "§7粗糙的行者棍",
       "advancements.puppetsobstruction.descr": "秦广王竟然出动了傀儡，这个家伙不好对付。",
-      "item.zaomengxiyou.ghostgeneral_spawn_egg": "生成 鬼将",
       "entity.zaomengxiyou.shituowang": "狮驼王",
+      "item.zaomengxiyou.ghostgeneral_spawn_egg": "生成 鬼将",
       "item.zaomengxiyou.tianshagulian_2_helmet": "§b天煞骨链§o2",
-      "entity.zaomengxiyou.zisetou": "头骨",
+      "entity.zaomengxiyou.argillaceousshield": "Argillaceousshield",
       "item.zaomengxiyou.shixiang_2_spawn_egg": "生成 石像2",
+      "entity.zaomengxiyou.zisetou": "头骨",
       "item.zaomengxiyou.jiachuanshouhuan_boots": "Jiachuanshouhuan 靴子",
       "item.zaomengxiyou.waterboomcircle_spawn_egg": "Waterboomcircle Spawn Egg",
       "item.zaomengxiyou.icedragon": "冰龙波",
@@ -18798,6 +18913,7 @@
       "enchantment.zaomengxiyou.playerlevel": "玩家等级",
       "item.zaomengxiyou.feiping_2_spawn_egg": "生成 飞瓶",
       "item.zaomengxiyou.tianshayupao_2_boots": "Tianshayupao 2 靴子",
+      "item.zaomengxiyou.argillaceousshield_spawn_egg": "Argillaceousshield Spawn Egg",
       "item.zaomengxiyou.judgetoken": "判官令",
       "item.zaomengxiyou.thislifefragments": "今生碎片",
       "item.minecraft.lingering_potion.effect.healingreduction": "滞留型减疗药水",
@@ -19189,6 +19305,7 @@
       "book.mountain.name": "花果山",
       "item.zaomengxiyou.shituoxiaobing_spawn_egg": "生成 狮驼小兵",
       "item.zaomengxiyou.mengpo_spawn_egg": "生成 孟婆",
+      "item.zaomengxiyou.argillaceousshielditem": "土盾守护",
       "entity.zaomengxiyou.xxuanbing": "玄冰",
       "item.zaomengxiyou.jiachuanshouhuan_helmet": "§a家传手镯",
       "item.zaomengxiyou.tangseng": "选择唐僧",

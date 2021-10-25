@@ -1,5 +1,7 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
+
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.ScoreObjective;
@@ -12,9 +14,14 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.zaomengxiyoutotalzip.item.XuanbingpoItem;
+import net.mcreator.zaomengxiyoutotalzip.item.WaterDemonBlastItem;
+import net.mcreator.zaomengxiyoutotalzip.item.TianjiangganluItem;
 import net.mcreator.zaomengxiyoutotalzip.item.TangsengItem;
 import net.mcreator.zaomengxiyoutotalzip.item.JryxItem;
+import net.mcreator.zaomengxiyoutotalzip.item.IcedragonItem;
 import net.mcreator.zaomengxiyoutotalzip.item.CucaodejiashaItem;
+import net.mcreator.zaomengxiyoutotalzip.item.BinglingboItem;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
@@ -92,6 +99,31 @@ public class TangsengDangShiWuBeiChiShiProcedure {
 				capability.choice = _setval;
 				capability.syncPlayerVariables(entity);
 			});
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(IcedragonItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(XuanbingpoItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(TianjiangganluItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(WaterDemonBlastItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(BinglingboItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
 	}
 }

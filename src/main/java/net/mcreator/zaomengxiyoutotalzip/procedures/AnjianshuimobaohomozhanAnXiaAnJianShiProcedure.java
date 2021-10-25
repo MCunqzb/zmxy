@@ -39,6 +39,7 @@ import net.mcreator.zaomengxiyoutotalzip.item.WaterDemonBlastItem;
 import net.mcreator.zaomengxiyoutotalzip.item.FiredemonslashItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.XhzEntity;
 import net.mcreator.zaomengxiyoutotalzip.entity.WaterboomcircleEntity;
+import net.mcreator.zaomengxiyoutotalzip.entity.SoilballEntity;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
@@ -393,14 +394,41 @@ public class AnjianshuimobaohomozhanAnXiaAnJianShiProcedure {
 							(true));
 				}
 			}
-		} else {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((new TranslationTextComponent("not.sunwukong").getString())),
-						(true));
-			}
-			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u00A7l\u00A71\u804C\u4E1A\u4E0D\u662F\u5510\u50E7\u3002"),
-						(true));
+		} else if ((((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ZaomengxiyouModVariables.PlayerVariables())).choice) == 3)) {
+			if ((!(((Entity) world
+					.getEntitiesWithinAABB(SoilballEntity.CustomEntity.class,
+							new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null))) {
+				if ((((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) >= 100)) {
+					if (world instanceof ServerWorld) {
+						((World) world).getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+								(("summon zaomengxiyou:soilball ~ ~ ~ {Health:") + ""
+										+ (((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ZaomengxiyouModVariables.PlayerVariables())).level))
+										+ "" + ("}")));
+					}
+					{
+						double _setval = (double) (((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) - 100);
+						entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.mp = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				} else {
+					if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+						((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((new TranslationTextComponent("mp.low").getString())),
+								(false));
+					}
+				}
 			}
 		}
 	}

@@ -15,8 +15,6 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.stream.Collectors;
 import java.util.function.Function;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.Executors;
 import java.util.Map;
 import java.util.List;
 import java.util.Comparator;
@@ -75,10 +73,12 @@ public class XxuanbingDangShiTiGengXinKeShiProcedure {
 				}
 			}
 		}
-		Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
+		entity.getPersistentData().putDouble("timetick", ((entity.getPersistentData().getDouble("timetick")) + 1));
+		if ((((entity.getPersistentData().getDouble("timetick")) >= 30) && ((entity.getPersistentData().getDouble("timetick")) < 31))) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 60, (int) 1, (false), (false)));
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 200);
-		}, 1500, TimeUnit.MILLISECONDS);
+			entity.getPersistentData().putDouble("timetick", 0);
+		}
 	}
 }

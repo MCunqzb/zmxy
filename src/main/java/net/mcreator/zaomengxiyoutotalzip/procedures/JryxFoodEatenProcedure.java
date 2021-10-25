@@ -16,8 +16,12 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.zaomengxiyoutotalzip.item.TangsengItem;
+import net.mcreator.zaomengxiyoutotalzip.item.ShenglongzhanItem;
 import net.mcreator.zaomengxiyoutotalzip.item.Pig8Item;
+import net.mcreator.zaomengxiyoutotalzip.item.LysItem;
+import net.mcreator.zaomengxiyoutotalzip.item.LIANYANFENGBAOItem;
 import net.mcreator.zaomengxiyoutotalzip.item.JryxItem;
+import net.mcreator.zaomengxiyoutotalzip.item.FiredemonslashItem;
 import net.mcreator.zaomengxiyoutotalzip.item.CucaodexzfItem;
 import net.mcreator.zaomengxiyoutotalzip.item.CucaodexingzhegunItem;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
@@ -116,6 +120,26 @@ public class JryxFoodEatenProcedure {
 						new ItemStack(Items.LEATHER));
 			if (entity instanceof ServerPlayerEntity)
 				((ServerPlayerEntity) entity).inventory.markDirty();
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(LIANYANFENGBAOItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(LysItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(FiredemonslashItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(ShenglongzhanItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
 	}
 }

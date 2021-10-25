@@ -14,11 +14,16 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.zaomengxiyoutotalzip.item.ThepitcherItem;
 import net.mcreator.zaomengxiyoutotalzip.item.TheinkbluesuitItem;
 import net.mcreator.zaomengxiyoutotalzip.item.TangsengItem;
+import net.mcreator.zaomengxiyoutotalzip.item.StonebrokenItem;
+import net.mcreator.zaomengxiyoutotalzip.item.RoarItem;
 import net.mcreator.zaomengxiyoutotalzip.item.Pig8StoneaxeItem;
 import net.mcreator.zaomengxiyoutotalzip.item.Pig8Item;
 import net.mcreator.zaomengxiyoutotalzip.item.JryxItem;
+import net.mcreator.zaomengxiyoutotalzip.item.DirtdemonthronItem;
+import net.mcreator.zaomengxiyoutotalzip.item.ArgillaceousshielditemItem;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
@@ -115,6 +120,31 @@ public class Pig8foodeatenProcedure {
 						new ItemStack(TheinkbluesuitItem.legs));
 			if (entity instanceof ServerPlayerEntity)
 				((ServerPlayerEntity) entity).inventory.markDirty();
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(StonebrokenItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(ThepitcherItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(RoarItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(ArgillaceousshielditemItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(DirtdemonthronItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
 	}
 }

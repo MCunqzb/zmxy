@@ -3,6 +3,7 @@ package net.mcreator.zaomengxiyoutotalzip.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.DamageSource;
@@ -74,18 +75,21 @@ public class ThornpotiontickProcedure {
 				return false;
 			}
 		}.check(entity))) {
-			sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) ((amount) * (0.1 * (new Object() {
-				int check(Entity _entity) {
-					if (_entity instanceof LivingEntity) {
-						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == ThornsPotionPotionEffect.potion)
-								return effect.getAmplifier();
+			LivingAttackEvent event = (LivingAttackEvent) dependencies.get("event");
+			if (event.getSource().getDamageType().equals("generic")) {
+				sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) ((amount) * (0.1 * (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == ThornsPotionPotionEffect.potion)
+									return effect.getAmplifier();
+							}
 						}
+						return 0;
 					}
-					return 0;
-				}
-			}.check(entity)))));
+				}.check(entity)))));
+			}
 		}
 	}
 }

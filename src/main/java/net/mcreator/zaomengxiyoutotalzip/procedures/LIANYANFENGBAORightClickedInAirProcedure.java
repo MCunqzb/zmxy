@@ -14,8 +14,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.ScoreObjective;
 import net.minecraft.scoreboard.Score;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.item.ItemEntity;
@@ -90,8 +88,19 @@ public class LIANYANFENGBAORightClickedInAirProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (entity instanceof PlayerEntity)
-					((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 60);
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("zaomengxiyou:lyfb")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("zaomengxiyou:lyfb")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				}
+				if (world instanceof ServerWorld) {
+					((ServerWorld) world).spawnParticle(LyfbdeliziParticle.particle, (x + (Math.random() * 5)), (y + 0.2), (z + (Math.random() * 5)),
+							(int) 10, 0.2, 0.2, 0.2, 0.01);
+				}
 				{
 					List<Entity> _entfound = world
 							.getEntitiesWithinAABB(Entity.class,
@@ -103,26 +112,6 @@ public class LIANYANFENGBAORightClickedInAirProcedure {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (((!(entityiterator instanceof ItemEntity)) && (!(entityiterator instanceof PlayerEntity)))) {
-							if (entity instanceof LivingEntity)
-								((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 100));
-							if (world instanceof World && !world.isRemote()) {
-								((World) world)
-										.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-												(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-														.getValue(new ResourceLocation("zaomengxiyou:lyfb")),
-												SoundCategory.NEUTRAL, (float) 1, (float) 1);
-							} else {
-								((World) world).playSound(x, y, z,
-										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-												.getValue(new ResourceLocation("zaomengxiyou:lyfb")),
-										SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-							}
-							for (int index0 = 0; index0 < (int) (10); index0++) {
-								if (world instanceof ServerWorld) {
-									((ServerWorld) world).spawnParticle(LyfbdeliziParticle.particle, (x + (Math.random() * 5)), (y + 0.2),
-											(z + (Math.random() * 5)), (int) 2, 3, 3, 3, 0.01);
-								}
-							}
 							entityiterator.setMotion((((entityiterator.getPosX()) - (entity.getPosX())) * 0.2), 0.05,
 									(((entityiterator.getPosZ()) - (entity.getPosZ())) * 0.2));
 							entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) (10 + ((new Object() {
@@ -138,29 +127,31 @@ public class LIANYANFENGBAORightClickedInAirProcedure {
 									return 0;
 								}
 							}.getScore("level_xiyou")) * 1.9)));
-							entity.rotationYaw = (float) (((entity.rotationYaw) + 180));
-							entity.setRenderYawOffset(entity.rotationYaw);
-							entity.prevRotationYaw = entity.rotationYaw;
-							if (entity instanceof LivingEntity) {
-								((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
-								((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
-								((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
-							}
-							entity.rotationPitch = (float) (0);
-							Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
-								entity.rotationYaw = (float) (((entity.rotationYaw) + 180));
-								entity.setRenderYawOffset(entity.rotationYaw);
-								entity.prevRotationYaw = entity.rotationYaw;
-								if (entity instanceof LivingEntity) {
-									((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
-									((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
-									((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
-								}
-								entity.rotationPitch = (float) (0);
-							}, 500, TimeUnit.MILLISECONDS);
 						}
 					}
 				}
+				entity.rotationYaw = (float) (((entity.rotationYaw) + 180));
+				entity.setRenderYawOffset(entity.rotationYaw);
+				entity.prevRotationYaw = entity.rotationYaw;
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
+					((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
+					((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
+				}
+				entity.rotationPitch = (float) (0);
+				Executors.newScheduledThreadPool(Runtime.getRuntime().availableProcessors()).schedule(() -> {
+					entity.rotationYaw = (float) (((entity.rotationYaw) + 180));
+					entity.setRenderYawOffset(entity.rotationYaw);
+					entity.prevRotationYaw = entity.rotationYaw;
+					if (entity instanceof LivingEntity) {
+						((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
+						((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
+						((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
+					}
+					entity.rotationPitch = (float) (0);
+				}, 400, TimeUnit.MILLISECONDS);
+				if (entity instanceof PlayerEntity)
+					((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 60);
 			}
 		} else {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
