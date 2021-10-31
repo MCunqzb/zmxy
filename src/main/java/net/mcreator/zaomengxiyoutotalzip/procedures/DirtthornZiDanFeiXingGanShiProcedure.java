@@ -10,6 +10,8 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 import java.util.function.Function;
 import java.util.Map;
 import java.util.Comparator;
+import net.minecraft.entity.LivingEntity;
+
 
 public class DirtthornZiDanFeiXingGanShiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -82,7 +84,7 @@ public class DirtthornZiDanFeiXingGanShiProcedure {
 		imediatesourceentity.getPersistentData().putDouble("dirtthron", ((imediatesourceentity.getPersistentData().getDouble("dirtthron")) + 1));
 		if ((((imediatesourceentity.getPersistentData().getDouble("dirtthron")) >= 1)
 				&& ((imediatesourceentity.getPersistentData().getDouble("dirtthron")) < 15))) {
-			imediatesourceentity.setMotion(0, 0.15, 0);
+			imediatesourceentity.setMotion(0, 0.2, 0);
 		}
 		if ((((imediatesourceentity.getPersistentData().getDouble("dirtthron")) >= 15)
 				&& ((imediatesourceentity.getPersistentData().getDouble("dirtthron")) < 30))) {
@@ -96,7 +98,7 @@ public class DirtthornZiDanFeiXingGanShiProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
 				imediatesourceentity.setMotion((ai * 0.25), (bi * 0.25), (ci * 0.25));
 			} else {
-				imediatesourceentity.setMotion(0, (-1), 0);
+				imediatesourceentity.setMotion(0, (2), 0);
 			}
 		}
 		if ((((imediatesourceentity.getPersistentData().getDouble("dirtthron")) >= 30)
@@ -109,7 +111,7 @@ public class DirtthornZiDanFeiXingGanShiProcedure {
 			imediatesourceentity.getPersistentData().putDouble("dirtthron", 0);
 			if (!imediatesourceentity.world.isRemote())
 				imediatesourceentity.remove();
+				}
 			}
 		}
 	}
-}

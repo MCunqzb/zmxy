@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/tian_sha_ancient_sword",
+  "textures": {
+    "1": "zaomengxiyou:blocks/tian_sha_ancient_sword",
+    "particle": "zaomengxiyou:items/tian_sha_ancient_sword"
+  }
+}

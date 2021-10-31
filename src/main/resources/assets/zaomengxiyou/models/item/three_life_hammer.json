@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/three_life_hammer",
+  "textures": {
+    "0": "zaomengxiyou:blocks/three_life_hammer",
+    "particle": "zaomengxiyou:items/three_life_harmmer"
+  }
+}

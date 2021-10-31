@@ -17044,6 +17044,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -17088,7 +17104,7 @@
       "type": "procedure",
       "sortid": 1034,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "thornpotiontick",
       "metadata": {
@@ -17594,6 +17610,406 @@
       "ids": {},
       "registry_name": "argillaceousshielditem",
       "path": "~/items"
+    },
+    {
+      "name": "ThreeLifeHammerDangShiTiBeiGongJuJiZhongShi",
+      "type": "procedure",
+      "sortid": 1056,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "three_life_hammer_dang_shi_ti_bei_gong_ju_ji_zhong_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ThreeLifeHammer",
+      "type": "tool",
+      "sortid": 1056,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "three_life_hammer",
+      "path": "~/weapons"
+    },
+    {
+      "name": "Threelifehammerdescribe",
+      "type": "procedure",
+      "sortid": 1057,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "threelifehammerdescribe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/weapons"
+    },
+    {
+      "name": "RochaSickleDangShiTiBeiGongJuJiZhongShi",
+      "type": "procedure",
+      "sortid": 1058,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocha_sickle_dang_shi_ti_bei_gong_ju_ji_zhong_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RochaSickle",
+      "type": "tool",
+      "sortid": 1058,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocha_sickle",
+      "path": "~/weapons"
+    },
+    {
+      "name": "Rochasickledescribe",
+      "type": "procedure",
+      "sortid": 1059,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochasickledescribe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/weapons"
+    },
+    {
+      "name": "KingKongArmor",
+      "type": "armor",
+      "sortid": 1060,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "king_kong_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/armors"
+    },
+    {
+      "name": "KingKongArmorXiongJiaShiJianMeiYouXiKe",
+      "type": "procedure",
+      "sortid": 1060,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "king_kong_armor_xiong_jia_shi_jian_mei_you_xi_ke",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TianShaancientsword",
+      "type": "item",
+      "sortid": 1061,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tian_shaancientsword",
+      "path": "~/items"
+    },
+    {
+      "name": "TianShaancientswordmob",
+      "type": "livingentity",
+      "sortid": 1062,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tian_shaancientswordmob",
+      "path": "~/mobs"
+    },
+    {
+      "name": "TianShaancientswordmobDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1063,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tian_shaancientswordmob_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TianShaancientswordmobDangWanJiaYuGaiShiTiFaShengPengZhuangShi",
+      "type": "procedure",
+      "sortid": 1064,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tian_shaancientswordmob_dang_wan_jia_yu_gai_shi_ti_fa_sheng_peng_zhuang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TianShaancientswordDangYouJianDianJiKongQiShi",
+      "type": "procedure",
+      "sortid": 1065,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tian_shaancientsword_dang_you_jian_dian_ji_kong_qi_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rochademonumbrella",
+      "type": "livingentity",
+      "sortid": 1066,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrella",
+      "path": "~/mobs"
+    },
+    {
+      "name": "RochademonumbrellaitemKeYiShiYongYuanChengWuPinDeTiaoJian",
+      "type": "procedure",
+      "sortid": 1067,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrellaitem_ke_yi_shi_yong_yuan_cheng_wu_pin_de_tiao_jian",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RochademonumbrellaitemDangZiDanJiZhongShengCunShiTiShi",
+      "type": "procedure",
+      "sortid": 1068,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrellaitem_dang_zi_dan_ji_zhong_sheng_cun_shi_ti_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RochademonumbrellaitemDangYuanChengWuPinShiYongShi",
+      "type": "procedure",
+      "sortid": 1069,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrellaitem_dang_yuan_cheng_wu_pin_shi_yong_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rochademonumbrellaitem",
+      "type": "rangeditem",
+      "sortid": 1067,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrellaitem",
+      "path": "~/items"
+    },
+    {
+      "name": "RochademonumbrellaDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1070,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrella_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RochademonumbrellaitemZiDanFeiXingGanShi",
+      "type": "procedure",
+      "sortid": 1071,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrellaitem_zi_dan_fei_xing_gan_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "imediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -17901,9 +18317,11 @@
       "mob.searcher": "§aGet the coordinates of the nearby boss at ",
       "item.zaomengxiyou.blood_demon_shell_chestplate": "Xuehaiyaoke 胸甲",
       "block.zaomengxiyou.spwanqgw": "Spwanqgw",
+      "item.zaomengxiyou.rocha_sickle": "§1Rocha Sickle",
       "block.zaomengxiyou.ghost_king_palace_brickfloor": "Ghost King Palace Brickfloor",
       "block.zaomengxiyou.bianhua": "Bianhua",
       "entity.zaomengxiyou_total_zip.nmw_3": "Nmw 3",
+      "item.zaomengxiyou.king_kong_armor_leggings": "King Kong Armor 护腿",
       "item.zaomengxiyou_total_zip.xuehaimojia_boots": "Xuehaimojia 靴子",
       "item.zaomengxiyou_total_zip.guichengxiangyuancehng": "Guichengxiangyuancehng",
       "item.zaomengxiyou.ttianshayupao_boots": "Ttianshayupao 靴子",
@@ -18148,6 +18566,7 @@
       "item.zaomengxiyou.pig_8_stoneaxe": "Pig 8 Stoneaxe",
       "block.zaomengxiyou_total_zip.ground_21": "Ground 2 1",
       "item.zaomengxiyou_total_zip.daxxxiaoguai_spawn_egg": "Daxxxiaoguai Spawn Egg",
+      "item.zaomengxiyou.tian_shaancientswordmob_spawn_egg": "Tian Shaancientswordmob Spawn Egg",
       "block.zaomengxiyou.spwanbianfushixiang": "Spwanbianfushixiang",
       "item.zaomengxiyou.qilingpao_helmet": "Qilingpao 头盔",
       "item.zaomengxiyou.whitefrostcane": "Whitefrostcane",
@@ -18275,6 +18694,7 @@
       "item.zaomengxiyou_total_zip.dishalinjei_helmet": "Dishalinjei 头盔",
       "subtitles.zmxy2": "Dream Westward Journey 2- Interface music",
       "item.minecraft.tipped_arrow.effect.dhfqxg": "Arrow of §2东海幡旗",
+      "entity.zaomengxiyou.rochademonumbrella": "Rochademonumbrella",
       "entity.zaomengxiyou_total_zip.daxx": "Daxxboss",
       "item.zaomengxiyou_total_zip.bird_spawn_egg": "Bird Spawn Egg",
       "block.zaomengxiyou.niumochiyanshi": "Niumochiyanshi",
@@ -18294,10 +18714,12 @@
       "block.zaomengxiyou_total_zip.ground_2": "Ground 2",
       "item.zaomengxiyou_total_zip.huilan_helmet": "Huilan Helmet",
       "block.zaomengxiyou_total_zip.ground_1": "Ground 1",
+      "item.whack.num": "§5whack:10%",
       "advancements.zaomengxiyoudegree.descr": "造梦之旅，现在开始！",
       "item.zaomengxiyou.baishuangxiongjia_helmet": "Baishuangxiongjia 头盔",
       "biome.zaomengxiyou_total_zip.donghaijiaomowang": "Donghaijiaomowang",
       "item.zaomengxiyou.sourcebig": "Sourcebig",
+      "item.zaomengxiyou.king_kong_armor_chestplate": "King Kong Armor 胸甲",
       "advancements.achieveofguicx.title": "龟丞相",
       "biome.zaomengxiyou_total_zip.donghailonggong": "Donghailonggong",
       "item.zaomengxiyou_total_zip.egg_spawn_egg": "Egg Spawn Egg",
@@ -18420,6 +18842,7 @@
       "item.zaomengxiyou_total_zip.jgz": "Jgz",
       "item.zaomengxiyou.tianshayupao_2_boots": "Tianshayupao 2 靴子",
       "item.zaomengxiyou.argillaceousshield_spawn_egg": "Argillaceousshield Spawn Egg",
+      "item.zaomengxiyou.rochademonumbrella_spawn_egg": "Rochademonumbrella Spawn Egg",
       "item.zaomengxiyou.judgetoken": "Judgetoken",
       "item.zaomengxiyou_total_zip.niumowang_1_spawn_egg": "Niumowang 1 Spawn Egg",
       "item.zaomengxiyou.timestopoff": "Timestopoff",
@@ -18458,6 +18881,7 @@
       "item.zaomengxiyou.pitcher_spawn_egg": "Pitcher Spawn Egg",
       "item.zaomengxiyou.bonerealm": "Bonerealm Portal Igniter",
       "block.zaomengxiyou.impregnated_mengpokettle": "Impregnated Mengpokettle",
+      "item.zaomengxiyou.rochademonumbrellaitem": "Rochademonumbrellaitem",
       "entity.zaomengxiyou.pengmowang": "Pengmowang",
       "entity.zaomengxiyou.flower_demon": "Flower Demon",
       "advancements.dabaibianfushixiang.descr": "破坏蝙蝠石像，获取其核心",
@@ -18496,6 +18920,7 @@
       "item.zaomengxiyou.tianshagulian_leggings": "Tianshagulian 护腿",
       "entity.zaomengxiyou.mobanimationtester": "Mobanimationtester",
       "item.zaomengxiyou_total_zip.jyyslv_1": "Jyyslv 1",
+      "item.zaomengxiyou.three_life_hammer": "Three Life Hammer",
       "entity.zaomengxiyou.pollen": "Pollen",
       "entity.zaomengxiyou.longwangdiffer": "Longwangdiffer",
       "item.zaomengxiyou_total_zip.qixingshouhu_boots": "Qixingshouhu 靴子",
@@ -18516,6 +18941,7 @@
       "block.zaomengxiyou.naihebridgebrick": "Naihebridgebrick",
       "item.zaomengxiyou.pollen_spawn_egg": "Pollen Spawn Egg",
       "entity.zaomengxiyou.guci_1": "Guci 1",
+      "item.zaomengxiyou.king_kong_armor_helmet": "King Kong Armor 头盔",
       "block.zaomengxiyou.ghostcityblock_1": "Ghostcityblock 1",
       "block.zaomengxiyou.ghostcityblock_3": "Ghostcityblock 3",
       "block.zaomengxiyou.ghostcityblock_2": "Ghostcityblock 2",
@@ -18545,6 +18971,7 @@
       "item.zaomengxiyou.cucaodejiasha_chestplate": "Cucaodejiasha 胸甲",
       "item.zaomengxiyou.ghostarmy_spawn_egg": "Ghostarmy Spawn Egg",
       "item.zaomengxiyou_total_zip.ptdxzg": "Ptdxzg",
+      "item.sickle.describe": "§3The sickle of death, once cut, will leave a wound that will never heal.",
       "not.professional": "Occupation does not match.",
       "item.zaomengxiyou.heiwuchang_spawn_egg": "Heiwuchang Spawn Egg",
       "advancements.mohuadedaxx.descr": "花果山里的生物遭到的魔化，击败大猩猩boss了解发生了什么。",
@@ -18575,6 +19002,7 @@
       "item.zaomengxiyou_total_zip.yxdsmz": "Yxdsmz",
       "entity.zaomengxiyou_total_zip.xiong": "Xiong",
       "block.zaomengxiyou_total_zip.spwanlongwangdiffer": "Spwanlongwangdiffer",
+      "entity.zaomengxiyou.tian_shaancientswordmob": "Tian Shaancientswordmob",
       "block.zaomengxiyou.ghost_king_palace_brick": "Ghost King Palace Brick",
       "source.bag.description.line": "Soul: ",
       "item.zaomengxiyou.ttianshayupao_helmet": "Ttianshayupao 头盔",
@@ -18641,6 +19069,7 @@
       "block.zaomengxiyou.spwanyzw": "Spwanyzw",
       "block.zaomengxiyou.spwannmxiaobing": "Spwannmxiaobing",
       "item.zaomengxiyou.runeof_yin": "Runeof Yin",
+      "item.threelifeharmmer.describe": "§5The preexistence of the cause, the fruit of this life, the fate of reincarnation, the origin of the edge out, under the hammer, collapse ice elimination.",
       "item.zaomengxiyou.theinkbluesuit_leggings": "Theinkbluesuit 护腿",
       "item.zaomengxiyou.niumoxiaobing_spawn_egg": "Niumoxiaobing Spawn Egg",
       "key.zaomengxiyou.anjianlyfb": "Anjianlyfb",
@@ -18690,6 +19119,7 @@
       "item.zaomengxiyou.baishuangxiongjia_chestplate": "Baishuangxiongjia 胸甲",
       "subtitles.suishipo": "broken stone",
       "item.zaomengxiyou.dishalingjei_2_boots": "Dishalingjei 2 靴子",
+      "item.zaomengxiyou.tian_shaancientsword": "Tian Shaancientsword",
       "item.zaomengxiyou.guci_2_spawn_egg": "Guci 2 Spawn Egg",
       "entity.zaomengxiyou.niumowang_2": "Niumowang 2",
       "block.zaomengxiyou.dhsslab": "Dhsslab",
@@ -18710,6 +19140,7 @@
       "item.zaomengxiyou.evilwaterfall_spawn_egg": "evilwaterfall Spawn Egg",
       "item.zaomengxiyou.bolanggu": "Bolanggu",
       "item.zaomengxiyou_total_zip.niumoguworld": "Niumoguworld Portal Igniter",
+      "item.zaomengxiyou.king_kong_armor_boots": "King Kong Armor 靴子",
       "block.zaomengxiyou.shuijinglan": "Shuijinglan",
       "item.zaomengxiyou.huilan_helmet": "Huilan Helmet",
       "item.zaomengxiyou.dishaquanzhang_2": "Dishaquanzhang 2",
@@ -18730,6 +19161,7 @@
       "Alchemy.furnace": "炼丹炉",
       "item.zaomengxiyou.baishuangxiongjia_helmet": "§3白霜头盔",
       "item.zaomengxiyou.sourcebig": "大灵魂",
+      "item.zaomengxiyou.king_kong_armor_chestplate": "§5金刚胸甲",
       "advancements.achieveofguicx.title": "龟丞相",
       "block.zaomengxiyou.blockofxuehaicsm": "血海传送框架",
       "block.zaomengxiyou.ghosttrapdoor": "苔蚀活板门",
@@ -18738,8 +19170,8 @@
       "biome.zaomengxiyou.shazhiwoliu": "鲨之涡流",
       "subtitles.ghost": "鬼城",
       "advancements.dabaibianfushixiang.title": "破坏蝙蝠石像",
-      "item.zaomengxiyou.awp": "AWP",
       "item.zaomengxiyou.cucaodexingzhegun": "§7粗糙的行者棍",
+      "item.zaomengxiyou.awp": "AWP",
       "advancements.puppetsobstruction.descr": "秦广王竟然出动了傀儡，这个家伙不好对付。",
       "entity.zaomengxiyou.shituowang": "狮驼王",
       "item.zaomengxiyou.ghostgeneral_spawn_egg": "生成 鬼将",
@@ -18835,11 +19267,13 @@
       "item.zaomengxiyou.xuehaiyaoke_leggings": "Xuehaiyaoke 护腿",
       "death.killed.by.judge": "§4七灯灭，魂魄散。",
       "item.minecraft.splash_potion.effect.jgzxg": "喷溅型§d金刚琢",
+      "item.zaomengxiyou.rocha_sickle": "§1罗刹镰刀",
       "block.zaomengxiyou.ghost_king_palace_brickfloor": "鬼王殿地板",
       "item.zaomengxiyou.testbow": "测试弓",
       "entity.zaomengxiyou.yama": "阎罗王",
       "item.zaomengxiyou.cucaodejiasha_leggings": "Cucaodejiasha 护腿",
       "block.zaomengxiyou.bianhua": "彼岸花",
+      "item.zaomengxiyou.king_kong_armor_leggings": "§5金刚护腿",
       "item.zaomengxiyou.qilingpao_chestplate": "§b麒麟袍",
       "item.zaomengxiyou.ttianshayupao_boots": "Ttianshayupao 靴子",
       "item.zaomengxiyou.dishayuanjia_chestplate": "§a地煞猿甲",
@@ -18914,6 +19348,7 @@
       "item.zaomengxiyou.feiping_2_spawn_egg": "生成 飞瓶",
       "item.zaomengxiyou.tianshayupao_2_boots": "Tianshayupao 2 靴子",
       "item.zaomengxiyou.argillaceousshield_spawn_egg": "Argillaceousshield Spawn Egg",
+      "item.zaomengxiyou.rochademonumbrella_spawn_egg": "Rochademonumbrella Spawn Egg",
       "item.zaomengxiyou.judgetoken": "判官令",
       "item.zaomengxiyou.thislifefragments": "今生碎片",
       "item.minecraft.lingering_potion.effect.healingreduction": "滞留型减疗药水",
@@ -18985,6 +19420,7 @@
       "entity.zaomengxiyou.daxxxiaoguai": "大猩猩小怪",
       "item.zaomengxiyou.hl_3": "月之辉煌lv.3",
       "item.zaomengxiyou.hl_4": "月之辉煌lv.4",
+      "item.zaomengxiyou.rochademonumbrellaitem": "§5罗刹妖伞",
       "item.zaomengxiyou.hl_2": "月之辉煌lv.2",
       "entity.zaomengxiyou.pengmowang": "鹏魔王",
       "entity.zaomengxiyou.flower_demon": "花妖",
@@ -19061,6 +19497,7 @@
       "key.zaomengxiyou.mnodouble": "无双爆气",
       "entity.zaomengxiyou.wangwang": "汪汪",
       "item.zaomengxiyou.yxdsmz": "§2优秀的松木杖",
+      "item.zaomengxiyou.three_life_hammer": "§5三生锤",
       "bug.vulnerabilities": "§o利用按键使用技能会有重大bug，请不要过快使用",
       "item.minecraft.potion.effect.frozen": "冻结",
       "entity.zaomengxiyou.pollen": "Pollen",
@@ -19104,6 +19541,7 @@
       "item.zaomengxiyou.pollen_spawn_egg": "Pollen Spawn Egg",
       "book.mountain.description": "花果山的生灵受魔气影响已经魔化，前往牛魔谷的道路注定充满荆棘。",
       "entity.zaomengxiyou.guci_1": "Guci 1",
+      "item.zaomengxiyou.king_kong_armor_helmet": "§5金刚头盔",
       "block.zaomengxiyou.ghostcityblock_1": "鬼城砖石",
       "item.zaomengxiyou.xuehaimojia_chestplate": "§d血海魔甲",
       "block.zaomengxiyou.ghostcityblock_3": "鬼城裂纹砖",
@@ -19141,6 +19579,7 @@
       "item.zaomengxiyou.ghostarmy_spawn_egg": "生成 鬼兵像",
       "item.zaomengxiyou.baishaungzhongjia_helmet": "Baishaungzhongjia 头盔",
       "effect.thorns_potion": "反伤",
+      "item.sickle.describe": "§3死神遗落的镰刀，一但被砍伤，将留下永远无法愈合的伤口。",
       "item.zaomengxiyou.guanzhiyonghenglv_1": "光之永恒lv.1",
       "entity.zaomengxiyou.mihouwang": "猕猴王",
       "item.minecraft.lingering_potion.effect.frozen": "滞留型冻结药水",
@@ -19189,6 +19628,7 @@
       "item.zaomengxiyou.ghostcity": "Ghostcity Portal Igniter",
       "item.zaomengxiyou.zisekulou": "紫色头颅",
       "item.zaomengxiyou.previouslifefragments": "往生碎片",
+      "entity.zaomengxiyou.tian_shaancientswordmob": "Tian Shaancientswordmob",
       "block.zaomengxiyou.ghost_king_palace_brick": "鬼王殿砖块",
       "source.bag.description.line": "灵魂：",
       "item.zaomengxiyou.ttianshayupao_helmet": "Ttianshayupao 头盔",
@@ -19199,6 +19639,7 @@
       "advancements.zaomengxiyoudegree.title": "造梦西游",
       "advancements.disalinjieachievement.descr": "§a获得弥猴王的宝物：地煞灵戒",
       "item.zaomengxiyou.pig_8_stoneaxe": "石斧",
+      "item.zaomengxiyou.tian_shaancientswordmob_spawn_egg": "Tian Shaancientswordmob Spawn Egg",
       "entity.zaomengxiyou.daxx": "大猩猩boss",
       "block.zaomengxiyou.spwanbianfushixiang": "蝙蝠石像生怪砖",
       "entity.zaomengxiyou.chain": "锁链",
@@ -19285,6 +19726,7 @@
       "block.zaomengxiyou.spwannmxiaobing": "牛魔护卫刷怪砖",
       "entity.zaomengxiyou.spell": "Spell",
       "item.zaomengxiyou.runeof_yin": "阴之符文",
+      "item.threelifeharmmer.describe": " §5前世的因，今生的果，宿命轮回，缘起缘灭，三生锤下，瓦解冰消。",
       "item.zaomengxiyou.tianshayueji": "§3天煞月戟",
       "biome.zaomengxiyou.wangchuanriverbiomes": "忘川流域",
       "item.zaomengxiyou.theinkbluesuit_leggings": "墨兰裤",
@@ -19364,6 +19806,7 @@
       "subtitles.suishipo": "碎石破",
       "item.zaomengxiyou.dishalingjei_2_boots": "Dishalingjei 2 靴子",
       "effect.on_fire": "灼烧",
+      "item.zaomengxiyou.tian_shaancientsword": "天煞古剑",
       "item.zaomengxiyou.guci_2_spawn_egg": "Guci 2 Spawn Egg",
       "item.zaomengxiyou.mengposoupbowl": "孟婆汤",
       "block.zaomengxiyou.dhsslab": "蓝色宫殿半砖",
@@ -19391,9 +19834,11 @@
       "subtitles.zmxy2": "造梦西游2-界面音乐",
       "item.minecraft.tipped_arrow.effect.dhfqxg": "Arrow of §2东海幡旗",
       "item.zaomengxiyou.evilwaterfall_spawn_egg": "Waterfall Spawn Egg",
+      "entity.zaomengxiyou.rochademonumbrella": "Rochademonumbrella",
       "item.zaomengxiyou.bolanggu": "§e拨浪鼓",
       "block.zaomengxiyou.niumochiyanshi": "牛魔炽焰石",
       "item.zaomengxiyou.jiachuanbaojian": "§a家传宝剑",
+      "item.zaomengxiyou.king_kong_armor_boots": "§5金刚鞋",
       "block.zaomengxiyou.shuijinglan": "水晶兰",
       "item.zaomengxiyou.yuzeiwang_spawn_egg": "生成 禹绒王",
       "item.zaomengxiyou.xuanbingpo": "玄冰破",
@@ -19414,6 +19859,7 @@
       "item.zaomengxiyou.watersprite_spawn_egg": "生成 水鬼",
       "item.zaomengxiyou.shixiang_1_spawn_egg": "生成 石像1",
       "item.zaomengxiyou.binglingbo": "冰龙波",
+      "item.whack.num": "§5重击：10%",
       "item.zaomengxiyou.ghost_armor_armor_helmet": "§8鬼兵头盔",
       "item.zaomengxiyou.baihuzahng": "§b白虎杖",
       "entity.zaomengxiyou.light": "阴雷",

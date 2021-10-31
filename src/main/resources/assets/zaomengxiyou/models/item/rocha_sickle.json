@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/rocha_sickle",
+  "textures": {
+    "0": "zaomengxiyou:blocks/rocha_sickle",
+    "particle": "zaomengxiyou:items/rocha_sickle"
+  }
+}

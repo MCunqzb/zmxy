@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rocha_demon_umbrella_json"
+      },
+      "name": "default"
+    }
+  }
+}

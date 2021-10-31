@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "three_life_hammer"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -135,7 +135,6 @@ public class MengpoDangShiTiGengXinKeShiProcedure {
 			}
 			if (entity instanceof MobEntity)
 				((MobEntity) entity).setNoAI((true));
-			entity.setInvulnerable((true));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 600, (int) 0));
 			if (entity instanceof LivingEntity)

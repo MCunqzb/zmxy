@@ -80,7 +80,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "block.grass.step"
     },
     "hurtSound": {
       "value": "entity.generic.hurt"

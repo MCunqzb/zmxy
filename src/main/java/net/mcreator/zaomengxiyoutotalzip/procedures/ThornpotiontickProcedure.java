@@ -3,7 +3,6 @@ package net.mcreator.zaomengxiyoutotalzip.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.DamageSource;
@@ -12,6 +11,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.zaomengxiyoutotalzip.potion.ThornsPotionPotionEffect;
+import net.mcreator.zaomengxiyoutotalzip.entity.SoilballEntity;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.Map;
@@ -63,7 +63,8 @@ public class ThornpotiontickProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double amount = dependencies.get("amount") instanceof Integer ? (int) dependencies.get("amount") : (double) dependencies.get("amount");
-		if ((new Object() {
+		if (/*dependencies.get("sourceentity") != null &&*/ dependencies.get("sourceentity") instanceof LivingEntity ) {
+		if (((new Object() {
 			boolean check(Entity _entity) {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
@@ -74,22 +75,20 @@ public class ThornpotiontickProcedure {
 				}
 				return false;
 			}
-		}.check(entity))) {
-			LivingAttackEvent event = (LivingAttackEvent) dependencies.get("event");
-			if (event.getSource().getDamageType().equals("generic")) {
-				sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) ((amount) * (0.1 * (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == ThornsPotionPotionEffect.potion)
-									return effect.getAmplifier();
-							}
+		}.check(entity)) && (!(entity instanceof SoilballEntity.CustomEntity)))) {
+			sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) ((amount) * (0.1 * (new Object() {
+				int check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == ThornsPotionPotionEffect.potion)
+								return effect.getAmplifier();
 						}
-						return 0;
 					}
-				}.check(entity)))));
-			}
+					return 0;
+				}
+			}.check(entity)))));
 		}
 	}
+}
 }

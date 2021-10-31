@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "tian_sha_ancient_sword"
+      },
+      "name": "default"
+    }
+  }
+}

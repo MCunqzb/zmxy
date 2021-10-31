@@ -18,7 +18,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -68,10 +67,10 @@ public class YechaBossEntity extends ZaomengxiyouModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.2);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 650);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 40);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 80);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 50);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2);
 			event.put(entity, ammma.create());
 		}
@@ -101,7 +100,7 @@ public class YechaBossEntity extends ZaomengxiyouModElements.ModElement {
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ArgillaceousshieldEntity.CustomEntity.class, false, false));
 		}
 
 		@Override

@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/rocha_demon_umbrella_json",
+  "textures": {
+    "0": "zaomengxiyou:blocks/rocha_demon_umbrella_json",
+    "particle": "zaomengxiyou:items/rocha_demon_umbrella_item"
+  }
+}

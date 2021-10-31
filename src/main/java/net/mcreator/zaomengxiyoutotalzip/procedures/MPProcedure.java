@@ -50,6 +50,16 @@ public class MPProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		if ((((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) < 0)) {
+			{
+				double _setval = (double) 0;
+				entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
 		return (true);
 	}
 }

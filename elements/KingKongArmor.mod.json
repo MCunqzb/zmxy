@@ -1,0 +1,76 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "king_kong_helmet",
+    "enableBody": true,
+    "textureBody": "king_kong_armor",
+    "enableLeggings": true,
+    "textureLeggings": "king_kong_legguard",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "KingKongArmorXiongJiaShiJianMeiYouXiKe"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "armorTextureFile": "king_kong_armor_-",
+    "helmetName": "King Kong Armor 头盔",
+    "bodyName": "King Kong Armor 胸甲",
+    "leggingsName": "King Kong Armor 护腿",
+    "bootsName": "King Kong Armor 靴子",
+    "helmetSpecialInfo": [
+      "§5地狱炎岩经三味真火灼烧四十九日而成的战甲，故金刚不灭。",
+      "§5Hell yan rock by three flavor true fire burning forty-nine and into armor，so king Kong is not destroyed.",
+      "§5减伤：10%",
+      "§5Reduction of injury：10%."
+    ],
+    "bodySpecialInfo": [
+      "§5地狱炎岩经三味真火灼烧四十九日而成的战甲，故金刚不灭。",
+      "§5Hell yan rock by three flavor true fire burning forty-nine and into armor，so king Kong is not destroyed.",
+      "§5减伤：10%",
+      "§5Reduction of injury：10%."
+    ],
+    "leggingsSpecialInfo": [
+      "§5地狱炎岩经三味真火灼烧四十九日而成的战甲，故金刚不灭。",
+      "§5Hell yan rock by three flavor true fire burning forty-nine and into armor，so king Kong is not destroyed.",
+      "§5减伤：10%",
+      "§5Reduction of injury：10%."
+    ],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "ModelKing_Kong_armor",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelKing_Kong_armor_chestplate",
+    "bodyModelPart": "body2",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "king_kong_armor_chestplate.png",
+    "leggingsModelName": "ModelKing_Kong_armor",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 5,
+    "damageValueBody": 12,
+    "damageValueLeggings": 10,
+    "damageValueBoots": 2,
+    "enchantability": 12,
+    "toughness": 1.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

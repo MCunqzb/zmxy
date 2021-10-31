@@ -1,0 +1,41 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "tian_sha_ancient_sword",
+    "customModelName": "tian_sha_ancient_sword:default",
+    "name": "Tian Shaancientsword",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§l拥有【御剑飞行】技能，对前方怪物造成伤害。",
+      "§lWith the skills of \"Sword Flight\" to cause damage to monsters in front of you",
+      "§lyou can \"stand\" on the sword."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "TianShaancientswordDangYouJianDianJiKongQiShi"
+    },
+    "hasDispenseBehavior": false
+  }
+}
