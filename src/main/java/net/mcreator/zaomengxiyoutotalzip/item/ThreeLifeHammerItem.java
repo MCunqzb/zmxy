@@ -45,6 +45,7 @@ public class ThreeLifeHammerItem extends ZaomengxiyouModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("sourceentity", sourceentity);
 					ThreeLifeHammerDangShiTiBeiGongJuJiZhongShiProcedure.executeProcedure($_dependencies);
 				}
 				return retval;

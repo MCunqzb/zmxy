@@ -1494,10 +1494,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -1516,10 +1512,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
             "type": "entity"
           },
           {
@@ -1544,10 +1536,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -1566,10 +1554,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
             "type": "entity"
           },
           {
@@ -1594,10 +1578,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -1619,10 +1599,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -1641,10 +1617,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
             "type": "entity"
           },
           {
@@ -3083,10 +3055,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -4059,10 +4027,6 @@
       "registry_name": "shamowang_entity_dies",
       "metadata": {
         "dependencies": [
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -7821,10 +7785,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -7843,10 +7803,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
             "type": "entity"
           },
           {
@@ -7871,10 +7827,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -7893,10 +7845,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
             "type": "entity"
           },
           {
@@ -9539,10 +9487,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -9946,10 +9890,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -10017,10 +9957,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
             "type": "entity"
           },
           {
@@ -11200,10 +11136,6 @@
             "type": "entity"
           },
           {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -12347,10 +12279,6 @@
       "registry_name": "judge_shi_ti_si_wang_shi",
       "metadata": {
         "dependencies": [
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -15607,27 +15535,6 @@
       "path": "~/mobs"
     },
     {
-      "name": "NiutouDangShiTiSiWangShi",
-      "type": "procedure",
-      "sortid": 959,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "niutou_dang_shi_ti_si_wang_shi",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "YamaDangShiTiSiWangShi",
       "type": "procedure",
       "sortid": 960,
@@ -15637,10 +15544,6 @@
       "registry_name": "yama_dang_shi_ti_si_wang_shi",
       "metadata": {
         "dependencies": [
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -15658,10 +15561,6 @@
       "registry_name": "yecha_boss_2_dang_shi_ti_si_wang_shi",
       "metadata": {
         "dependencies": [
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -15737,10 +15636,6 @@
       "metadata": {
         "return_type": "logic",
         "dependencies": [
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -18010,6 +17905,264 @@
           }
         ]
       }
+    },
+    {
+      "name": "RochademonumbrellaitemDangZiDanJiZhongFangKuaiShi",
+      "type": "procedure",
+      "sortid": 1072,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrellaitem_dang_zi_dan_ji_zhong_fang_kuai_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Luochayaosanhecehng",
+      "type": "procedure",
+      "sortid": 1073,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "luochayaosanhecehng",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WhitefrostmirroritemDangYouJianDianJiKongQiShi",
+      "type": "procedure",
+      "sortid": 1074,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whitefrostmirroritem_dang_you_jian_dian_ji_kong_qi_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Whitefrostmirroritem",
+      "type": "item",
+      "sortid": 1074,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whitefrostmirroritem",
+      "path": "~/items"
+    },
+    {
+      "name": "WhitefrostmirrorDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1075,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whitefrostmirror_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Whitefrostmirror",
+      "type": "livingentity",
+      "sortid": 1075,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whitefrostmirror",
+      "path": "~/mobs"
+    },
+    {
+      "name": "WhitefrostmirrorDangWanJiaYuGaiShiTiFaShengPengZhuangShi",
+      "type": "procedure",
+      "sortid": 1076,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whitefrostmirror_dang_wan_jia_yu_gai_shi_ti_fa_sheng_peng_zhuang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RochademonumbrellaDangWanJiaYuGaiShiTiFaShengPengZhuangShi",
+      "type": "procedure",
+      "sortid": 1077,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rochademonumbrella_dang_wan_jia_yu_gai_shi_ti_fa_sheng_peng_zhuang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Yamasrebellion",
+      "type": "achievement",
+      "sortid": 1078,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yamasrebellion",
+      "path": "~/achieve"
+    },
+    {
+      "name": "Obstructedbythenightfork",
+      "type": "achievement",
+      "sortid": 1079,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obstructedbythenightfork",
+      "path": "~/achieve"
+    },
+    {
+      "name": "Thelastblock",
+      "type": "achievement",
+      "sortid": 1080,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thelastblock",
+      "path": "~/achieve"
+    },
+    {
+      "name": "MengpoDangShiTiSiWangShi",
+      "type": "procedure",
+      "sortid": 1081,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mengpo_dang_shi_ti_si_wang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NiutouDangShiTiSiWangShi",
+      "type": "procedure",
+      "sortid": 1082,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "niutou_dang_shi_ti_si_wang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -18252,13 +18405,13 @@
       "entity.zaomengxiyou_total_zip.xhz": "Xhz",
       "subtitles.ghost": "鬼城",
       "advancements.dabaibianfushixiang.title": "破坏蝙蝠石像",
-      "item.zaomengxiyou.cucaodexingzhegun": "Cucaodexingzhegun",
       "item.zaomengxiyou.awp": "AWP",
+      "item.zaomengxiyou.cucaodexingzhegun": "Cucaodexingzhegun",
       "biome.zaomengxiyou_total_zip.shishituoling": "Shishituoling",
       "item.zaomengxiyou.ghostgeneral_spawn_egg": "Ghostgeneral Spawn Egg",
       "entity.zaomengxiyou.zisetou": "Zisetou",
-      "item.zaomengxiyou.icedragon": "Icedragon",
       "item.zaomengxiyou_total_zip.yuzeiwangdehuanbing": "Yuzeiwangdehuanbing",
+      "item.zaomengxiyou.icedragon": "Icedragon",
       "item.minecraft.potion.effect.reduce_injury_potion": "Potion of Reduce Injury Potion",
       "item.zaomengxiyou.jgz": "Jgz",
       "entity.zaomengxiyou.piranha": "Piranha",
@@ -18281,15 +18434,15 @@
       "item.zaomengxiyou_total_zip.yujingping": "YUJINGPING.lv.1",
       "block.zaomengxiyou.spwanniumowang": "Spwanniumowang",
       "entity.zaomengxiyou.kuilei": "Kuilei",
-      "key.zaomengxiyou.anjianshipinglan": "Anjianshipinglan",
       "wether.health": "Health overlay on/off.",
+      "key.zaomengxiyou.anjianshipinglan": "Anjianshipinglan",
       "biome.zaomengxiyou_total_zip.bianfuku": "Bianfuku",
       "item.zaomengxiyou_total_zip.mhwdsource": "Mhwdsource",
       "block.zaomengxiyou.s_pwandaxxxiaoguai": "SPwandaxxxiaoguai",
       "no.skill": "No skills,",
       "block.zaomengxiyou.underdirt": "Underdirt",
-      "source.bag.description": "A bag to store the soul in.Press Shift to save soul.",
       "item.zaomengxiyou.jiachuanshouhuan_chestplate": "Jiachuanshouhuan 胸甲",
+      "source.bag.description": "A bag to store the soul in.Press Shift to save soul.",
       "block.zaomengxiyou.spwanhwc": "Spwanhwc",
       "entity.zaomengxiyou.niumoxiaobing": "Niumoxiaobing",
       "entity.zaomengxiyou.shixiang_2": "Shixiang 2",
@@ -18307,17 +18460,17 @@
       "item.zaomengxiyou.zhuquerong_chestplate": "Zhuquerong 胸甲",
       "entity.zaomengxiyou_total_zip.mihouwang": "Mihouwang",
       "item.zaomengxiyou.ttianshayupao_chestplate": "Ttianshayupao 胸甲",
-      "item.zaomengxiyou.binglongbo_spawn_egg": "Binglongbo Spawn Egg",
       "item.zaomengxiyou.huilan_boots": "Huilan Boots",
+      "item.zaomengxiyou.binglongbo_spawn_egg": "Binglongbo Spawn Egg",
       "entity.zaomengxiyou.feiping_2": "Feiping 2",
       "entity.zaomengxiyou_total_zip.egg": "Egg",
       "block.zaomengxiyou.ghosteave_2": "Ghosteave 2",
       "entity.zaomengxiyou.evil_sunwukong": "Evil Sunwukong",
       "subtitles.lys": "lys",
-      "mob.searcher": "§aGet the coordinates of the nearby boss at ",
       "item.zaomengxiyou.blood_demon_shell_chestplate": "Xuehaiyaoke 胸甲",
+      "mob.searcher": "§aGet the coordinates of the nearby boss at ",
       "block.zaomengxiyou.spwanqgw": "Spwanqgw",
-      "item.zaomengxiyou.rocha_sickle": "§1Rocha Sickle",
+      "item.zaomengxiyou.rocha_sickle": "Rocha Sickle",
       "block.zaomengxiyou.ghost_king_palace_brickfloor": "Ghost King Palace Brickfloor",
       "block.zaomengxiyou.bianhua": "Bianhua",
       "entity.zaomengxiyou_total_zip.nmw_3": "Nmw 3",
@@ -18326,8 +18479,8 @@
       "item.zaomengxiyou_total_zip.guichengxiangyuancehng": "Guichengxiangyuancehng",
       "item.zaomengxiyou.ttianshayupao_boots": "Ttianshayupao 靴子",
       "item.zaomengxiyou.dishayuanjia_chestplate": "Dishayuanjia 胸甲",
-      "mp.low": "Low MP",
       "item.zaomengxiyou.tianshayupao_2_chestplate": "Tianshayupao 2 胸甲",
+      "mp.low": "Low MP",
       "subtitles.bonerealm": "bonerealmmusic",
       "item.minecraft.tipped_arrow.effect.frozen": "Arrow of Frozen",
       "item.zaomengxiyou.dirtdemonthron": "Dirtdemonthron",
@@ -18357,12 +18510,12 @@
       "item.zaomengxiyou.ghostarmorfragments": "Ghostarmorfragments",
       "item.zaomengxiyou_total_zip.zhuquerong_helmet": "Zhuquerong 头盔",
       "item.zaomengxiyou_total_zip.sourcebig": "Sourcebig",
-      "block.zaomengxiyou.yecha": "Yecha",
       "item.zaomengxiyou.longwang_spawn_egg": "Longwang Spawn Egg",
+      "block.zaomengxiyou.yecha": "Yecha",
       "entity.zaomengxiyou.niutou": "Niutou",
       "item.zaomengxiyou_total_zip.huilan_leggings": "Huilan Leggings",
-      "entity.zaomengxiyou.pitcher": "Pitcher",
       "block.zaomengxiyou.spwanlsh": "Spwanlsh",
+      "entity.zaomengxiyou.pitcher": "Pitcher",
       "item.zaomengxiyou_total_zip.tangseng": "Tangseng",
       "enchantment.zaomengxiyou.playerlevel": "Playerlevel",
       "item.zaomengxiyou.feiping_2_spawn_egg": "Feiping 2 Spawn Egg",
@@ -18370,6 +18523,7 @@
       "item.zaomengxiyou.thislifefragments": "This Life Fragments",
       "item.minecraft.lingering_potion.effect.healingreduction": "Lingering Healing reduction",
       "subtitles.jieyindian": "接引殿",
+      "advancements.thelastblock.title": "The last block!",
       "item.zaomengxiyou.zmxy_2": "造梦西游2-界面音乐",
       "block.zaomengxiyou.slabofglodenpaluse": "Slabofglodenpaluse",
       "block.zaomengxiyou_total_zip.slabofglodenpaluse": "Slabofglodenpaluse",
@@ -18393,8 +18547,8 @@
       "item.zaomengxiyou_total_zip.baihuzahng": "Baihuzahng",
       "item.zaomengxiyou.cucaodexzf_chestplate": "Cucaodexzf 胸甲",
       "entity.zaomengxiyou.mhwgun": "Mhwgun",
-      "item.zaomengxiyou.xuanwujia_chestplate": "Xuanwujia 胸甲",
       "entity.zaomengxiyou.shituoxiaobing": "Shituoxiaobing",
+      "item.zaomengxiyou.xuanwujia_chestplate": "Xuanwujia 胸甲",
       "entity.zaomengxiyou.ghostanger": "Ghostblue",
       "entity.zaomengxiyou_total_zip.longwangdiffer": "Longwangdiffer",
       "entity.zaomengxiyou.ghostblue": "Ghostblue",
@@ -18441,8 +18595,8 @@
       "death.attack.killed.by.judge": "§4The seven lights are out, and the soul is scattered.",
       "item.minecraft.lingering_potion.effect.increasethe_damage_potion": "Lingering Potion of Increasethe Damage Potion",
       "item.zaomengxiyou.dishagun_1": "Dishagun 1",
-      "item.zaomengxiyou.testcycle": "Testcycle",
       "entity.zaomengxiyou.mamian": "Mamian",
+      "item.zaomengxiyou.testcycle": "Testcycle",
       "item.zaomengxiyou.baishuangxiongjia_leggings": "Baishuangxiongjia 护腿",
       "item.zaomengxiyou.kingqingguang_token": "Kingqingguang Token",
       "item.zaomengxiyou.niumowang_2_spawn_egg": "Niumowang 2 Spawn Egg",
@@ -18475,8 +18629,8 @@
       "item.zaomengxiyou.yxdsmz": "Yxdsmz",
       "block.zaomengxiyou_total_zip.spwanshituoxiaobing": "Spwanshituoxiaobing",
       "entity.zaomengxiyou_total_zip.guichengxiang": "Guichengxiang",
-      "bug.vulnerabilities": "§oThere will be major bugs in using the keys to use skills, please don’t use them too quickly",
       "item.minecraft.potion.effect.frozen": "Frozen",
+      "bug.vulnerabilities": "§oThere will be major bugs in using the keys to use skills, please don’t use them too quickly",
       "item.zaomengxiyou.jiachuanjiasha_helmet": "Jiachuanjiasha 头盔",
       "item.zaomengxiyou.bloodevilemperor": "Xuehaixiehuang",
       "effect.healingreduction": "Healing reduction",
@@ -18496,12 +18650,12 @@
       "item.zaomengxiyou.ghostkingswordreal": "Ghostkingswordreal",
       "entity.zaomengxiyou.ghostarmylive": "Ghostarmylive",
       "item.minecraft.lingering_potion.effect.reduce_injury_potion": "Lingering Potion of Reduce Injury Potion",
-      "item.minecraft.potion.effect.jgzxg": "金刚琢",
       "block.zaomengxiyou.ghostroomawall_1": "Ghostroomawall 1",
+      "item.minecraft.potion.effect.jgzxg": "金刚琢",
       "item.zaomengxiyou.xuehaimojia_helmet": "Xuehaimojia 头盔",
       "biome.zaomengxiyou.ghost": "Ghost",
-      "item.zaomengxiyou.raksha_ghost_clothes_chestplate": "Raksha Ghost Clothes 胸甲",
       "book.mountain.description": "The creatures of the mountain of flowers and fruits have been affected by magic gas magic, the road to the valley of cattle magic is destined to be full of thorns.",
+      "item.zaomengxiyou.raksha_ghost_clothes_chestplate": "Raksha Ghost Clothes 胸甲",
       "item.zaomengxiyou.xuehaimojia_chestplate": "§5Xuehaimojia 胸甲",
       "block.zaomengxiyou.chainblock": "Chainblock",
       "entity.zaomengxiyou.nmw_3": "Nmw 3",
@@ -18514,11 +18668,11 @@
       "subtitles.awp": "awp",
       "item.zaomengxiyou.longwangice": "Longwangice",
       "item.zaomengxiyou.jiachuanjiasha_boots": "Jiachuanjiasha 靴子",
-      "item.zaomengxiyou.runeof_yang": "Runeof Yang",
       "biome.zaomengxiyou_total_zip.qiantan": "Qiantan",
+      "item.zaomengxiyou.runeof_yang": "Runeof Yang",
       "item.zaomengxiyou.purplepetals": "Purple Petals",
-      "effect.thorns_potion": "Thorns Potion",
       "item.zaomengxiyou.baishaungzhongjia_helmet": "Baishaungzhongjia 头盔",
+      "effect.thorns_potion": "Thorns Potion",
       "block.zaomengxiyou_total_zip.spwanbird": "Spwanbird",
       "entity.zaomengxiyou_total_zip.windofmhw": "Windofmhw",
       "item.zaomengxiyou.guanzhiyonghenglv_1": "Guanzhiyonghenglv 1",
@@ -18575,6 +18729,7 @@
       "item.zaomengxiyou.cucaodesongmuzhang": "Cucaodesongmuzhang",
       "item.zaomengxiyou_total_zip.yxdxzg": "Yxdxzg",
       "mob.notfind": "§4Not found Boss within 100 block.",
+      "advancements.obstructedbythenightfork.title": "Obstructed by the night fork.",
       "ghost.army.live.hurt": "§lThe weapon clanged on the armor, and the rock below seemed not strong.",
       "entity.zaomengxiyou_total_zip.niumowang_1": "Niumowang 1",
       "entity.zaomengxiyou_total_zip.niumowang_2": "Niumowang 2",
@@ -18631,6 +18786,7 @@
       "entity.zaomengxiyou.spell": "Spell",
       "item.zaomengxiyou.tianshayueji": "Tianshayueji",
       "biome.zaomengxiyou.wangchuanriverbiomes": "Wangchuanriverbiomes",
+      "advancements.obstructedbythenightfork.descr": "Knowing the king\u0027s plan, he went to the wheel hall and encountered the obstruction of the night fork at Nai He Bridge.",
       "entity.zaomengxiyou.watersprite": "Watersprite",
       "item.minecraft.splash_potion.effect.dhfqxg": "Splash §2东海幡旗",
       "entity.zaomengxiyou_total_zip.mhwgun": "Mhwgun",
@@ -18714,6 +18870,7 @@
       "block.zaomengxiyou_total_zip.ground_2": "Ground 2",
       "item.zaomengxiyou_total_zip.huilan_helmet": "Huilan Helmet",
       "block.zaomengxiyou_total_zip.ground_1": "Ground 1",
+      "item.zaomengxiyou.whitefrostmirror_spawn_egg": "Whitefrostmirror Spawn Egg",
       "item.whack.num": "§5whack:10%",
       "advancements.zaomengxiyoudegree.descr": "造梦之旅，现在开始！",
       "item.zaomengxiyou.baishuangxiongjia_helmet": "Baishuangxiongjia 头盔",
@@ -18757,6 +18914,7 @@
       "block.zaomengxiyou.yechastair": "Yechastair",
       "block.zaomengxiyou.naihe_bridge_stair": "Naihe Bridge Stair",
       "key.zaomengxiyou.anjianlys": "Anjianlys",
+      "advancements.yamasrebellion.descr": "Yama and the men in Black conspire against heaven to stop him.",
       "item.zaomengxiyou_total_zip.qixingshouhu_helmet": "§e七星守护",
       "block.zaomengxiyou.brazier": "Brazier",
       "entity.zaomengxiyou.jiaomowang": "Jiaomowang",
@@ -18805,6 +18963,7 @@
       "block.zaomengxiyou.spwantangzombie": "Spwantangzombie",
       "block.zaomengxiyou.spwankuilei": "Spwankuilei",
       "itemGroup.tabzaomengxiyou": "造梦西游",
+      "entity.zaomengxiyou.whitefrostmirror": "Whitefrostmirror",
       "item.zaomengxiyou.thepitcher": "Thepitcher",
       "item.zaomengxiyou_total_zip.jryx": "Jryx",
       "block.zaomengxiyou.ground_2": "Ground 2",
@@ -18881,6 +19040,7 @@
       "item.zaomengxiyou.pitcher_spawn_egg": "Pitcher Spawn Egg",
       "item.zaomengxiyou.bonerealm": "Bonerealm Portal Igniter",
       "block.zaomengxiyou.impregnated_mengpokettle": "Impregnated Mengpokettle",
+      "advancements.thelastblock.descr": "The soul of the dead cow demon king will stay in wangxiang bridge, Meng Bo soup will let these souls reborn, see if you can save the soul of the cow demon king!",
       "item.zaomengxiyou.rochademonumbrellaitem": "Rochademonumbrellaitem",
       "entity.zaomengxiyou.pengmowang": "Pengmowang",
       "entity.zaomengxiyou.flower_demon": "Flower Demon",
@@ -18951,6 +19111,7 @@
       "item.zaomengxiyou.theinkbluesuit_boots": "Theinkbluesuit 靴子",
       "block.zaomengxiyou_total_zip.guichencsmblock": "Guichencsmblock",
       "item.zaomengxiyou.baigujingkilled_spawn_egg": "Baigujingkilled Spawn Egg",
+      "advancements.yamasrebellion.title": "Yama\u0027s rebellion",
       "block.zaomengxiyou_total_zip.guihunshi": "Guihunshi",
       "block.zaomengxiyou.spwanguideng": "Spwanguideng",
       "block.zaomengxiyou.donghaishistair": "Donghaishistair",
@@ -18982,6 +19143,7 @@
       "block.zaomengxiyou.bone_rift_portal_block": "Bone Rift Portal Block",
       "entity.zaomengxiyou.shamowang": "Shamowang",
       "biome.zaomengxiyou.donghailonggong": "Donghailonggong",
+      "item.zaomengxiyou.whitefrostmirroritem": "Whitefrostmirroritem",
       "item.zaomengxiyou.qinglongdao": "Qinglongdao",
       "block.zaomengxiyou.ghostkingpalacefloorslab": "Ghostkingpalacefloorslab",
       "item.zaomengxiyou.baigujing_2_spawn_egg": "Baigujing 2 Spawn Egg",
@@ -19170,8 +19332,8 @@
       "biome.zaomengxiyou.shazhiwoliu": "鲨之涡流",
       "subtitles.ghost": "鬼城",
       "advancements.dabaibianfushixiang.title": "破坏蝙蝠石像",
-      "item.zaomengxiyou.cucaodexingzhegun": "§7粗糙的行者棍",
       "item.zaomengxiyou.awp": "AWP",
+      "item.zaomengxiyou.cucaodexingzhegun": "§7粗糙的行者棍",
       "advancements.puppetsobstruction.descr": "秦广王竟然出动了傀儡，这个家伙不好对付。",
       "entity.zaomengxiyou.shituowang": "狮驼王",
       "item.zaomengxiyou.ghostgeneral_spawn_egg": "生成 鬼将",
@@ -19209,6 +19371,7 @@
       "block.zaomengxiyou.guihunshi": "鬼魂石",
       "entity.zaomengxiyou.yecha_boss_2": "夜叉（形态2）",
       "key.zaomengxiyou.anjianlys": "烈焰闪/玄冰破",
+      "advancements.yamasrebellion.descr": "阎罗王和黑衣人勾结企图反抗天庭，阻止他。",
       "block.zaomengxiyou.brazier": "火盆",
       "entity.zaomengxiyou.xhz": "小猴子",
       "entity.zaomengxiyou.jiaomowang": "蛟魔王",
@@ -19295,6 +19458,7 @@
       "block.zaomengxiyou.spwankuilei": "傀儡生怪砖",
       "itemGroup.tabzaomengxiyou": "造梦西游",
       "item.zaomengxiyou.snakedemon_spawn_egg": "生成 蛇妖",
+      "entity.zaomengxiyou.whitefrostmirror": "§5白霜镜",
       "item.zaomengxiyou.windofmhw_spawn_egg": "生成 风",
       "item.zaomengxiyou.thepitcher": "地滚球",
       "block.zaomengxiyou.ground_2": "洞穴地面",
@@ -19357,6 +19521,7 @@
       "subtitles.jieyindian": "接引殿",
       "item.zaomengxiyou.batinxiyou_spawn_egg": "生成 蝙蝠（西游）",
       "item.minecraft.tipped_arrow.effect.prohibitionoftreatment": "禁疗之箭",
+      "advancements.thelastblock.title": "最后的阻拦。",
       "advancements.enterniumogu.descr": "历经多难，终于进入了牛魔谷。",
       "item.minecraft.splash_potion.effect.mp_devour_potion": "喷溅型噬魂药水",
       "block.zaomengxiyou.donghaicss": "东海传送门框架",
@@ -19418,6 +19583,7 @@
       "entity.zaomengxiyou.windofmhw": "风",
       "block.zaomengxiyou.impregnated_mengpokettle": "浸染的孟婆釜",
       "entity.zaomengxiyou.daxxxiaoguai": "大猩猩小怪",
+      "advancements.thelastblock.descr": "死去的牛魔王的灵魂会在望乡桥停留，孟婆汤会让这些灵魂转生，看看能不能挽救牛魔王的灵魂！",
       "item.zaomengxiyou.hl_3": "月之辉煌lv.3",
       "item.zaomengxiyou.hl_4": "月之辉煌lv.4",
       "item.zaomengxiyou.rochademonumbrellaitem": "§5罗刹妖伞",
@@ -19554,6 +19720,7 @@
       "item.zaomengxiyou.theinkbluesuit_boots": "Theinkbluesuit 靴子",
       "item.zaomengxiyou.baigujingkilled_spawn_egg": "生成 白骨堆1",
       "entity.zaomengxiyou.ghostgeneral": "鬼将",
+      "advancements.yamasrebellion.title": "阎罗王的反叛",
       "subtitles.naiheriver": "奈何桥",
       "block.zaomengxiyou.csmofniumogu": "牛魔谷传送框架",
       "block.zaomengxiyou.spwanguideng": "鬼灯生怪砖",
@@ -19597,6 +19764,7 @@
       "entity.zaomengxiyou.shamowang": "鲨魔王",
       "biome.zaomengxiyou.donghailonggong": "龙宫",
       "item.zaomengxiyou.gutengbang": "§2古藤棒",
+      "item.zaomengxiyou.whitefrostmirroritem": "§5白霜镜",
       "effect.vertigo": "眩晕",
       "item.zaomengxiyou.theinkbluesuit_helmet": "Theinkbluesuit 头盔",
       "item.zaomengxiyou.ghostblue_spawn_egg": "生成 贪鬼",
@@ -19651,6 +19819,7 @@
       "item.zaomengxiyou.sourceformihouwang": "禹绒王的灵魂",
       "mob.notfind": "§4在范围100格内未找到boss。",
       "item.zaomengxiyou.jiachuanjiasha_leggings": "Jiachuanjiasha 护腿",
+      "advancements.obstructedbythenightfork.title": "遭遇夜叉的阻挠.",
       "ghost.army.live.hurt": "§l武器在盔甲上铛铛作响，下方的岩石似乎并不牢固。",
       "subtitles.brg": "拨浪鼓",
       "entity.zaomengxiyou.evil_tangseng": "邪唐僧",
@@ -19731,6 +19900,7 @@
       "biome.zaomengxiyou.wangchuanriverbiomes": "忘川流域",
       "item.zaomengxiyou.theinkbluesuit_leggings": "墨兰裤",
       "item.zaomengxiyou.niumoxiaobing_spawn_egg": "生成 牛魔小兵",
+      "advancements.obstructedbythenightfork.descr": "了解到转轮王的计划，前往转轮殿，在奈何桥遇到夜叉的阻挠。",
       "entity.zaomengxiyou.watersprite": "水鬼",
       "item.minecraft.splash_potion.effect.dhfqxg": "喷溅型 §2东海幡旗",
       "block.zaomengxiyou.spwanshituoxiaobing": "狮驼小兵生怪砖",
@@ -19806,7 +19976,7 @@
       "subtitles.suishipo": "碎石破",
       "item.zaomengxiyou.dishalingjei_2_boots": "Dishalingjei 2 靴子",
       "effect.on_fire": "灼烧",
-      "item.zaomengxiyou.tian_shaancientsword": "天煞古剑",
+      "item.zaomengxiyou.tian_shaancientsword": "§5天煞古剑",
       "item.zaomengxiyou.guci_2_spawn_egg": "Guci 2 Spawn Egg",
       "item.zaomengxiyou.mengposoupbowl": "孟婆汤",
       "block.zaomengxiyou.dhsslab": "蓝色宫殿半砖",
@@ -19858,6 +20028,7 @@
       "item.zaomengxiyou.wangchuanboatitem": "忘川船",
       "item.zaomengxiyou.watersprite_spawn_egg": "生成 水鬼",
       "item.zaomengxiyou.shixiang_1_spawn_egg": "生成 石像1",
+      "item.zaomengxiyou.whitefrostmirror_spawn_egg": "Whitefrostmirror Spawn Egg",
       "item.zaomengxiyou.binglingbo": "冰龙波",
       "item.whack.num": "§5重击：10%",
       "item.zaomengxiyou.ghost_armor_armor_helmet": "§8鬼兵头盔",

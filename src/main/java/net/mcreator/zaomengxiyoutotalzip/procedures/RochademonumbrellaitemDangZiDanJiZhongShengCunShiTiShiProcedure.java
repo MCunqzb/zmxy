@@ -33,7 +33,7 @@ public class RochademonumbrellaitemDangZiDanJiZhongShengCunShiTiShiProcedure {
 						}
 						return 0;
 					}
-				}.check(entity)) + 100), (int) ((new Object() {
+				}.check(entity)) + 150), (int) ((new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
@@ -57,7 +57,7 @@ public class RochademonumbrellaitemDangZiDanJiZhongShengCunShiTiShiProcedure {
 						}
 						return 0;
 					}
-				}.check(entity)) + 100), (int) ((new Object() {
+				}.check(entity)) + 150), (int) ((new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
@@ -69,7 +69,9 @@ public class RochademonumbrellaitemDangZiDanJiZhongShengCunShiTiShiProcedure {
 						return 0;
 					}
 				}.check(entity)) + 2)));
-			entity.attackEntityFrom(DamageSource.MAGIC, (float) 20);
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 1, (false), (false)));
+			entity.attackEntityFrom(DamageSource.MAGIC, (float) (entity.getPersistentData().getDouble("level")));
 		}
 	}
 }

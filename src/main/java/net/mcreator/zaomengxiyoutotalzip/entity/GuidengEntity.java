@@ -45,6 +45,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.GuidengZiRanShiTiShengChengTiaoJianProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.GuidengShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.GuidengDangWanJiaYuGaiShiTiXiangZhuangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.GuidengDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
@@ -235,6 +236,22 @@ public class GuidengEntity extends ZaomengxiyouModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				GuidengShiTiSiWangShiProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

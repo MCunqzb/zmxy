@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "white_frost_mirror_item",
+    "customModelName": "white_frost_mirror_item:default",
+    "name": "Whitefrostmirroritem",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§l拥有【邪灵寄生】技能，向最近的怪物吸取少许生命，15秒后返回所吸取的生命。",
+      "§lHave the skills of \"evil parasite\" to draw a little life from the nearest monster and return to the life you've learned in 15 seconds."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "WhitefrostmirroritemDangYouJianDianJiKongQiShi"
+    },
+    "hasDispenseBehavior": false
+  }
+}

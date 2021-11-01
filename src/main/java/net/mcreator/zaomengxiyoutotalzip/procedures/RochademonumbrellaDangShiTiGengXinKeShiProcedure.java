@@ -23,25 +23,23 @@ public class RochademonumbrellaDangShiTiGengXinKeShiProcedure {
 			if (!entity.world.isRemote())
 				entity.remove();
 		}
-		if ((((entity.getPersistentData().getDouble("timetick")) % 1) == 0)) {
-			entity.rotationYaw = (float) (((entity.rotationYaw) + 22.5));
-			entity.setRenderYawOffset(entity.rotationYaw);
-			entity.prevRotationYaw = entity.rotationYaw;
-			if (entity instanceof LivingEntity) {
-				((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
-				((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
-				((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
-			}
-			entity.rotationPitch = (float) (40);
-			if (entity instanceof LivingEntity) {
-				Entity _ent = entity;
-				if (!_ent.world.isRemote()) {
-					RochademonumbrellaitemItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 0);
-				}
+		entity.rotationYaw = (float) (((entity.rotationYaw) + 22.5));
+		entity.setRenderYawOffset(entity.rotationYaw);
+		entity.prevRotationYaw = entity.rotationYaw;
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
+			((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
+			((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
+		}
+		entity.rotationPitch = (float) (30);
+		if (entity instanceof LivingEntity) {
+			Entity _ent = entity;
+			if (!_ent.world.isRemote()) {
+				RochademonumbrellaitemItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1, (float) 0, (int) 0);
 			}
 		}
 		if ((((entity.getPersistentData().getDouble("timetick")) % 3) == 0)) {
-			entity.rotationYaw = (float) (((entity.rotationYaw) + 22.5));
+			entity.rotationYaw = (float) ((entity.rotationYaw));
 			entity.setRenderYawOffset(entity.rotationYaw);
 			entity.prevRotationYaw = entity.rotationYaw;
 			if (entity instanceof LivingEntity) {
@@ -49,11 +47,11 @@ public class RochademonumbrellaDangShiTiGengXinKeShiProcedure {
 				((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
 				((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
 			}
-			entity.rotationPitch = (float) ((40 + (Math.random() * 40)));
+			entity.rotationPitch = (float) ((60 + (Math.random() * 20)));
 			if (entity instanceof LivingEntity) {
 				Entity _ent = entity;
 				if (!_ent.world.isRemote()) {
-					RochademonumbrellaitemItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 0);
+					RochademonumbrellaitemItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1, (float) 0, (int) 0);
 				}
 			}
 		}

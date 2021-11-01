@@ -24,20 +24,14 @@ public class QingguangwangShiTiSiWangShiProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency entity for procedure QingguangwangShiTiSiWangShi!");
 			return;
 		}
-		if (dependencies.get("imediatesourceentity") == null) {
-			if (!dependencies.containsKey("imediatesourceentity"))
-				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure QingguangwangShiTiSiWangShi!");
-			return;
-		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure QingguangwangShiTiSiWangShi!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
 			{
 				Entity _ent = ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null);
 				if (_ent instanceof PlayerEntity) {

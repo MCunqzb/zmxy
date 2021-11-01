@@ -3,6 +3,9 @@ package net.mcreator.zaomengxiyoutotalzip.procedures;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,9 +15,12 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.zaomengxiyoutotalzip.entity.RochademonumbrellaEntity;
+import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
+import java.util.function.Function;
 import java.util.Map;
+import java.util.Comparator;
 
 public class RochademonumbrellaitemDangYuanChengWuPinShiYongShiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -54,17 +60,41 @@ public class RochademonumbrellaitemDangYuanChengWuPinShiYongShiProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 140);
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new RochademonumbrellaEntity.CustomEntity(RochademonumbrellaEntity.entity, (World) world);
-			entityToSpawn.setLocationAndAngles(x, (y + 6), z, (float) 0, (float) 0);
-			entityToSpawn.setRenderYawOffset((float) 0);
-			entityToSpawn.setRotationYawHead((float) 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if ((((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) > 150)) {
+			if ((!(((Entity) world
+					.getEntitiesWithinAABB(RochademonumbrellaEntity.CustomEntity.class,
+							new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null))) {
+				if (entity instanceof PlayerEntity)
+					((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 140);
+				if (world instanceof ServerWorld) {
+					Entity entityToSpawn = new RochademonumbrellaEntity.CustomEntity(RochademonumbrellaEntity.entity, (World) world);
+					entityToSpawn.setLocationAndAngles(x, (y + 7), z, (float) 0, (float) 0);
+					entityToSpawn.setRenderYawOffset((float) 0);
+					entityToSpawn.setRotationYawHead((float) 0);
+					if (entityToSpawn instanceof MobEntity)
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					world.addEntity(entityToSpawn);
+				}
+				{
+					double _setval = (double) (((entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) - 150);
+					entity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.mp = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		} else {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((new TranslationTextComponent("low.mp").getString())), (false));
+			}
 		}
 	}
 }

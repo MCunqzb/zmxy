@@ -17,19 +17,13 @@ import com.google.common.collect.ImmutableMap;
 
 public class NiutouDangShiTiSiWangShiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("imediatesourceentity") == null) {
-			if (!dependencies.containsKey("imediatesourceentity"))
-				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure NiutouDangShiTiSiWangShi!");
-			return;
-		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure NiutouDangShiTiSiWangShi!");
 			return;
 		}
-		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
 			{
 				Entity _ent = sourceentity;
 				if (_ent instanceof PlayerEntity) {

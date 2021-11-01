@@ -2,27 +2,28 @@ package net.mcreator.zaomengxiyoutotalzip.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.ScoreObjective;
 import net.minecraft.scoreboard.ScoreCriteria;
 import net.minecraft.scoreboard.Score;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.Map;
+import java.util.Iterator;
 
 import com.google.common.collect.ImmutableMap;
 
 public class JudgeShiTiSiWangShiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("imediatesourceentity") == null) {
-			if (!dependencies.containsKey("imediatesourceentity"))
-				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure JudgeShiTiSiWangShi!");
-			return;
-		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure JudgeShiTiSiWangShi!");
@@ -33,12 +34,11 @@ public class JudgeShiTiSiWangShiProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency world for procedure JudgeShiTiSiWangShi!");
 			return;
 		}
-		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		IWorld world = (IWorld) dependencies.get("world");
 		ZaomengxiyouModVariables.MapVariables.get(world).deathjudge = (double) 0;
 		ZaomengxiyouModVariables.MapVariables.get(world).syncData(world);
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
 			{
 				Entity _ent = sourceentity;
 				if (_ent instanceof PlayerEntity) {
@@ -70,6 +70,18 @@ public class JudgeShiTiSiWangShiProcedure {
 					capability.mp = _setval;
 					capability.syncPlayerVariables(sourceentity);
 				});
+			}
+			if (sourceentity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
+						.getAdvancement(new ResourceLocation("zaomengxiyou:thejudgesnegligence"));
+				AdvancementProgress _ap = ((ServerPlayerEntity) sourceentity).getAdvancements().getProgress(_adv);
+				if (!_ap.isDone()) {
+					Iterator _iterator = _ap.getRemaningCriteria().iterator();
+					while (_iterator.hasNext()) {
+						String _criterion = (String) _iterator.next();
+						((ServerPlayerEntity) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
+					}
+				}
 			}
 		}
 	}

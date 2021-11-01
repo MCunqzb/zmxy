@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:yecha"
+    },
+    "title": {
+      "translate": "advancements.obstructedbythenightfork.title"
+    },
+    "description": {
+      "translate": "advancements.obstructedbythenightfork.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obstructedbythenightfork": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "zaomengxiyou:yamasrebellion"
+}

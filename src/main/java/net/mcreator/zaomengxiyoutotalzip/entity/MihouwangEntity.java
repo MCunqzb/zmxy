@@ -40,6 +40,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.MihouwangOnEntityTickUpdateProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.MihouwangEntityDiesProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
 import net.mcreator.zaomengxiyoutotalzip.item.MhwdsourceItem;
@@ -157,6 +158,22 @@ public class MihouwangEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				MihouwangEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

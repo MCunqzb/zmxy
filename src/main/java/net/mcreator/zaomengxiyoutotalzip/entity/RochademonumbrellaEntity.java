@@ -28,6 +28,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.zaomengxiyoutotalzip.procedures.RochademonumbrellaDangWanJiaYuGaiShiTiFaShengPengZhuangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.RochademonumbrellaDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.RochademonumbrellaRenderer;
@@ -92,6 +93,11 @@ public class RochademonumbrellaEntity extends ZaomengxiyouModElements.ModElement
 		}
 
 		@Override
+		public double getMountedYOffset() {
+			return super.getMountedYOffset() + 1.5;
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 		}
@@ -143,6 +149,24 @@ public class RochademonumbrellaEntity extends ZaomengxiyouModElements.ModElement
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				RochademonumbrellaDangShiTiGengXinKeShiProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onCollideWithPlayer(PlayerEntity sourceentity) {
+			super.onCollideWithPlayer(sourceentity);
+			Entity entity = this;
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				RochademonumbrellaDangWanJiaYuGaiShiTiFaShengPengZhuangShiProcedure.executeProcedure($_dependencies);
 			}
 		}
 

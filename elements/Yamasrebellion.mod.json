@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Yama's rebellion",
+    "achievementDescription": "Yama and the men in Black conspire against heaven to stop him.",
+    "achievementIcon": {
+      "value": "CUSTOM:Thislifefragments"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Makebianhuaqiu",
+      "Makemobsearch",
+      "Ghost_armorArmorHelmetRecipe",
+      "Ghost_armorArmorBodyRecipe",
+      "WangchaunGrains",
+      "Makewangcuanruck",
+      "MakeBoat",
+      "Makesourcebigger",
+      "Releasesoulbigger",
+      "Releasesoulbig",
+      "MakingSoulBag"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Thejudgesnegligence"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"29\" y=\"49\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

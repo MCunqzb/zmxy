@@ -10,6 +10,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -28,9 +30,11 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.RochademonumbrellaitemZiDanFeiXingGanShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.RochademonumbrellaitemDangZiDanJiZhongShengCunShiTiShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.RochademonumbrellaitemDangZiDanJiZhongFangKuaiShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.RochademonumbrellaitemDangYuanChengWuPinShiYongShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.RochademonumbrellaitemRenderer;
@@ -38,6 +42,7 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
 
 import java.util.Random;
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
@@ -67,6 +72,15 @@ public class RochademonumbrellaitemItem extends ZaomengxiyouModElements.ModEleme
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent(
+					"\u00A7l\u62E5\u6709\u3010\u66B4\u96E8\u68A8\u82B1\u3011\u6280\u80FD\uFF0C\u5BF9\u5468\u56F4\u602A\u7269\u9020\u6210\u4E2D\u6BD2\u6548\u679C\uFF0C\u5E76\u51CF\u7F13\u5176\u79FB\u52A8\u901F\u5EA6\u3002"));
+			list.add(new StringTextComponent(
+					"\u00A7lHave the \"Rainstorm Pear Flower\" skills to poison surrounding monsters and slow their movement."));
 		}
 
 		@Override
@@ -175,6 +189,15 @@ public class RochademonumbrellaitemItem extends ZaomengxiyouModElements.ModEleme
 				RochademonumbrellaitemZiDanFeiXingGanShiProcedure.executeProcedure($_dependencies);
 			}
 			if (this.inGround) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					RochademonumbrellaitemDangZiDanJiZhongFangKuaiShiProcedure.executeProcedure($_dependencies);
+				}
 				this.remove();
 			}
 		}

@@ -35,12 +35,17 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.NiutouZiRanShiTiShengChengTiaoJianProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.NiutouDangShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.NiutouRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -169,6 +174,21 @@ public class NiutouEntity extends ZaomengxiyouModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("sourceentity", sourceentity);
+				NiutouDangShiTiSiWangShiProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

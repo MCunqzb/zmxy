@@ -23,18 +23,12 @@ public class DaxxEntityDiesProcedure {
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency entity for procedure DaxxEntityDies!");
 			return;
 		}
-		if (dependencies.get("imediatesourceentity") == null) {
-			if (!dependencies.containsKey("imediatesourceentity"))
-				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency imediatesourceentity for procedure DaxxEntityDies!");
-			return;
-		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure DaxxEntityDies!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		Entity imediatesourceentity = (Entity) dependencies.get("imediatesourceentity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		{
 			Entity _ent = ((entity instanceof MobEntity) ? ((MobEntity) entity).getAttackTarget() : null);
@@ -64,7 +58,7 @@ public class DaxxEntityDiesProcedure {
 				}.getScore("killmob")) + 7));
 			}
 		}
-		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("imediatesourceentity", imediatesourceentity, "sourceentity", sourceentity))) {
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
 			{
 				double _setval = (double) (((sourceentity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) + 3);

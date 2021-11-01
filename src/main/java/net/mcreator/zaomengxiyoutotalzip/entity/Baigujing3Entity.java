@@ -38,6 +38,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.zaomengxiyoutotalzip.procedures.Baigujing3ShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.Baigujing3DangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
@@ -148,6 +149,22 @@ public class Baigujing3Entity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.CACTUS)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				Baigujing3ShiTiSiWangShiProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

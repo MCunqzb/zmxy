@@ -44,6 +44,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.zaomengxiyoutotalzip.procedures.MengpoDangShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.MengpoDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.MengpoChuShiShiTiShengChengProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
@@ -145,6 +146,21 @@ public class MengpoEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("sourceentity", sourceentity);
+				MengpoDangShiTiSiWangShiProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

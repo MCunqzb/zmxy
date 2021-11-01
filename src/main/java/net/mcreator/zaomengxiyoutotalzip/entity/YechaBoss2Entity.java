@@ -38,6 +38,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.zaomengxiyoutotalzip.procedures.YechaBoss2DangShiTiSiWangShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.YechaBoss2DangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.procedures.YechaBoss2ChuShiShiTiShengChengProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
@@ -121,6 +122,21 @@ public class YechaBoss2Entity extends ZaomengxiyouModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("sourceentity", sourceentity);
+				YechaBoss2DangShiTiSiWangShiProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

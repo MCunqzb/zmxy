@@ -1,0 +1,79 @@
+package net.mcreator.zaomengxiyoutotalzip.procedures;
+
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.scoreboard.Scoreboard;
+import net.minecraft.scoreboard.ScoreObjective;
+import net.minecraft.scoreboard.ScoreCriteria;
+import net.minecraft.scoreboard.Score;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
+
+import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
+import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
+
+import java.util.Map;
+import java.util.Iterator;
+
+import com.google.common.collect.ImmutableMap;
+
+public class MengpoDangShiTiSiWangShiProcedure {
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				ZaomengxiyouMod.LOGGER.warn("Failed to load dependency sourceentity for procedure MengpoDangShiTiSiWangShi!");
+			return;
+		}
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		if (DiethjudgeProcedure.executeProcedure(ImmutableMap.of("sourceentity", sourceentity))) {
+			{
+				Entity _ent = sourceentity;
+				if (_ent instanceof PlayerEntity) {
+					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
+					ScoreObjective _so = _sc.getObjective("killmob");
+					if (_so == null) {
+						_so = _sc.addObjective("killmob", ScoreCriteria.DUMMY, new StringTextComponent("killmob"), ScoreCriteria.RenderType.INTEGER);
+					}
+					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
+					_scr.setScorePoints((int) ((new Object() {
+						public int getScore(String score) {
+							if (sourceentity instanceof PlayerEntity) {
+								Scoreboard _sc = ((PlayerEntity) sourceentity).getWorldScoreboard();
+								ScoreObjective _so = _sc.getObjective(score);
+								if (_so != null) {
+									Score _scr = _sc.getOrCreateScore(((PlayerEntity) sourceentity).getScoreboardName(), _so);
+									return _scr.getScorePoints();
+								}
+							}
+							return 0;
+						}
+					}.getScore("killmob")) + 300));
+				}
+			}
+			{
+				double _setval = (double) (((sourceentity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ZaomengxiyouModVariables.PlayerVariables())).mp) + 230);
+				sourceentity.getCapability(ZaomengxiyouModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mp = _setval;
+					capability.syncPlayerVariables(sourceentity);
+				});
+			}
+			if (sourceentity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
+						.getAdvancement(new ResourceLocation("zaomengxiyou:thelastblock"));
+				AdvancementProgress _ap = ((ServerPlayerEntity) sourceentity).getAdvancements().getProgress(_adv);
+				if (!_ap.isDone()) {
+					Iterator _iterator = _ap.getRemaningCriteria().iterator();
+					while (_iterator.hasNext()) {
+						String _criterion = (String) _iterator.next();
+						((ServerPlayerEntity) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
+					}
+				}
+			}
+		}
+	}
+}

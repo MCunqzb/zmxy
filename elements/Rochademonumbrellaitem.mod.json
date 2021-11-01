@@ -6,7 +6,10 @@
     "texture": "rocha_demon_umbrella_item",
     "customModelName": "rocha_demon_umbrella_json:default",
     "name": "Rochademonumbrellaitem",
-    "specialInfo": [],
+    "specialInfo": [
+      "§l拥有【暴雨梨花】技能，对周围怪物造成中毒效果，并减缓其移动速度。",
+      "§lHave the \"Rainstorm Pear Flower\" skills to poison surrounding monsters and slow their movement."
+    ],
     "creativeTab": {
       "value": "CUSTOM:Zaomengxiyou"
     },
@@ -36,6 +39,9 @@
     },
     "bulletModel": "ModelPoison_needles",
     "customBulletModelTexture": "poison_needles.png",
+    "onBulletHitsBlock": {
+      "name": "RochademonumbrellaitemDangZiDanJiZhongFangKuaiShi"
+    },
     "onBulletHitsEntity": {
       "name": "RochademonumbrellaitemDangZiDanJiZhongShengCunShiTiShi"
     },

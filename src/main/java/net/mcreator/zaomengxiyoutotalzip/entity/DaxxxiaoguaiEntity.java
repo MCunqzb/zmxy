@@ -35,9 +35,11 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
+import net.mcreator.zaomengxiyoutotalzip.procedures.DaxxxiaoguaiEntityDiesProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
 import net.mcreator.zaomengxiyoutotalzip.item.SourcefordaxxItem;
@@ -45,6 +47,9 @@ import net.mcreator.zaomengxiyoutotalzip.item.HuoluoboItem;
 import net.mcreator.zaomengxiyoutotalzip.item.CucaodexingzhegunItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.DaxxxiaoguaiRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
 public class DaxxxiaoguaiEntity extends ZaomengxiyouModElements.ModElement {
@@ -141,6 +146,22 @@ public class DaxxxiaoguaiEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				DaxxxiaoguaiEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

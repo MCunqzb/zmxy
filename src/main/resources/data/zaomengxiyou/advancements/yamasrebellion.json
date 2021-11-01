@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "zaomengxiyou:thislifefragments"
+    },
+    "title": {
+      "translate": "advancements.yamasrebellion.title"
+    },
+    "description": {
+      "translate": "advancements.yamasrebellion.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yamasrebellion": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "zaomengxiyou:makebianhuaqiu",
+      "zaomengxiyou:makemobsearch",
+      "zaomengxiyou:ghost_armor_armor_helmet_recipe",
+      "zaomengxiyou:ghost_armor_armor_body_recipe",
+      "zaomengxiyou:wangchaun_grains",
+      "zaomengxiyou:makewangcuanruck",
+      "zaomengxiyou:make_boat",
+      "zaomengxiyou:makesourcebigger",
+      "zaomengxiyou:releasesoulbigger",
+      "zaomengxiyou:releasesoulbig",
+      "zaomengxiyou:making_soul_bag"
+    ]
+  },
+  "parent": "zaomengxiyou:thejudgesnegligence"
+}

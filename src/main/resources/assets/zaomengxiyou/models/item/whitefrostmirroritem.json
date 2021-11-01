@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/white_frost_mirror_item",
+  "textures": {
+    "0": "zaomengxiyou:blocks/white_frost_mirror",
+    "particle": "zaomengxiyou:items/white_frost_mirror_item"
+  }
+}

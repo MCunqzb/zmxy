@@ -32,6 +32,7 @@ import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
+import java.util.HashMap;
 
 public class DishahuluProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -1765,6 +1766,11 @@ public class DishahuluProcedure {
 					}
 				}
 			}
+		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			LuochayaosanhecehngProcedure.executeProcedure($_dependencies);
 		}
 	}
 }
