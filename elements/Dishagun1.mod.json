@@ -27,7 +27,7 @@
     "bulletDamage": 0.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
-    "bulletIgnitesFire": false,
+    "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "Blocks.FIRE"
     },

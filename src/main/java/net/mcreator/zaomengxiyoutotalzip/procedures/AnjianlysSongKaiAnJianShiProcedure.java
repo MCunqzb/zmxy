@@ -20,6 +20,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
@@ -460,7 +461,7 @@ public class AnjianlysSongKaiAnJianShiProcedure {
 									}
 								}.compareDistOf(x, y, z)).collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
-							if ((!(((entity.getDisplayName().getString())).equals((entityiterator.getDisplayName().getString()))))) {
+							if ((entityiterator instanceof MonsterEntity)) {
 								entityiterator.setMotion((((entity.getPosX()) - (entityiterator.getPosX())) * i),
 										((((entity.getPosY()) + 2) - (entityiterator.getPosY())) * i),
 										(((entity.getPosZ()) - (entityiterator.getPosZ())) * i));

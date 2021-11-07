@@ -27,22 +27,22 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:Thislifefragments"
     },
     "equipmentOffHand": {
-      "value": ""
+      "value": "CUSTOM:Previouslifefragments"
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "CUSTOM:Afterlifefragments"
     },
     "equipmentBody": {
-      "value": ""
+      "value": "CUSTOM:Huoluobo"
     },
     "equipmentLeggings": {
-      "value": ""
+      "value": "CUSTOM:YUJINGPING"
     },
     "equipmentBoots": {
-      "value": ""
+      "value": "CUSTOM:Sourcebig"
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
@@ -68,7 +68,7 @@
     "immuneToFallDamage": true,
     "immuneToCactus": false,
     "immuneToDrowning": true,
-    "immuneToLightning": true,
+    "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "immuneToExplosion": false,

@@ -152,6 +152,7 @@ public class Dishagun1Item extends ZaomengxiyouModElements.ModElement {
 		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
+		entityarrow.setFire(100);
 		world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
@@ -172,6 +173,7 @@ public class Dishagun1Item extends ZaomengxiyouModElements.ModElement {
 		entityarrow.setDamage(0);
 		entityarrow.setKnockbackStrength(0);
 		entityarrow.setIsCritical(false);
+		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();

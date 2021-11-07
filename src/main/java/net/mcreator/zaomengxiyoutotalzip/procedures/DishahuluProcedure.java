@@ -19,13 +19,13 @@ import net.mcreator.zaomengxiyoutotalzip.item.RuneofYinItem;
 import net.mcreator.zaomengxiyoutotalzip.item.RuneofYangItem;
 import net.mcreator.zaomengxiyoutotalzip.item.PreviouslifefragmentsItem;
 import net.mcreator.zaomengxiyoutotalzip.item.GuihuoItem;
+import net.mcreator.zaomengxiyoutotalzip.item.GroundevilgourditemItem;
 import net.mcreator.zaomengxiyoutotalzip.item.GhostpalaceItem;
 import net.mcreator.zaomengxiyoutotalzip.item.GhostkingswordrealItem;
 import net.mcreator.zaomengxiyoutotalzip.item.GhostkingswordItem;
 import net.mcreator.zaomengxiyoutotalzip.item.Dishayuanjia2Item;
 import net.mcreator.zaomengxiyoutotalzip.item.Dishaquanzhang2Item;
 import net.mcreator.zaomengxiyoutotalzip.item.Dishalingjei2Item;
-import net.mcreator.zaomengxiyoutotalzip.item.DishajiguanqiangItem;
 import net.mcreator.zaomengxiyoutotalzip.item.BianhuapollenItem;
 import net.mcreator.zaomengxiyoutotalzip.item.AfterlifefragmentsItem;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
@@ -123,7 +123,7 @@ public class DishahuluProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(DishajiguanqiangItem.block);
+						ItemStack _setstack = new ItemStack(GroundevilgourditemItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -232,7 +232,7 @@ public class DishahuluProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(DishajiguanqiangItem.block);
+						ItemStack _setstack = new ItemStack(GroundevilgourditemItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -341,7 +341,7 @@ public class DishahuluProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(DishajiguanqiangItem.block);
+						ItemStack _setstack = new ItemStack(GroundevilgourditemItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -450,7 +450,7 @@ public class DishahuluProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(DishajiguanqiangItem.block);
+						ItemStack _setstack = new ItemStack(GroundevilgourditemItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -559,7 +559,7 @@ public class DishahuluProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(DishajiguanqiangItem.block);
+						ItemStack _setstack = new ItemStack(GroundevilgourditemItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -668,7 +668,7 @@ public class DishahuluProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(DishajiguanqiangItem.block);
+						ItemStack _setstack = new ItemStack(GroundevilgourditemItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();

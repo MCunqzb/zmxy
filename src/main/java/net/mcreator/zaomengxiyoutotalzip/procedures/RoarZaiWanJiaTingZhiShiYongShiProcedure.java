@@ -7,6 +7,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModVariables;
@@ -85,7 +86,7 @@ public class RoarZaiWanJiaTingZhiShiYongShiProcedure {
 								}
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if ((!(((entity.getDisplayName().getString())).equals((entityiterator.getDisplayName().getString()))))) {
+						if ((entityiterator instanceof MonsterEntity)) {
 							entityiterator.setMotion((((entity.getPosX()) - (entityiterator.getPosX())) * i),
 									((((entity.getPosY()) + 2) - (entityiterator.getPosY())) * i),
 									(((entity.getPosZ()) - (entityiterator.getPosZ())) * i));

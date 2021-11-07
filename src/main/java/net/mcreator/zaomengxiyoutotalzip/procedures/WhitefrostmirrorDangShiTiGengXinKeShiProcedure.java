@@ -1,7 +1,11 @@
 package net.mcreator.zaomengxiyoutotalzip.procedures;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.potion.Effects;
@@ -12,6 +16,8 @@ import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 
 import net.mcreator.zaomengxiyoutotalzip.entity.WhitefrostmirrorEntity;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouMod;
@@ -60,6 +66,67 @@ public class WhitefrostmirrorDangShiTiGengXinKeShiProcedure {
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 5, (false), (false)));
 		if (((entity.getPersistentData().getDouble("timetick")) <= 299)) {
 			entity.getPersistentData().putDouble("timetick", ((entity.getPersistentData().getDouble("timetick")) + 1));
+			if (((entity.getPersistentData().getDouble("timetick")) > 10)) {
+				if ((((Entity) world
+						.getEntitiesWithinAABB(MonsterEntity.class,
+								new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)) == null)) {
+					{
+						Entity _ent = entity;
+						_ent.setPositionAndUpdate(x, (y + 0.01), z);
+						if (_ent instanceof ServerPlayerEntity) {
+							((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 0.01), z, _ent.rotationYaw, _ent.rotationPitch,
+									Collections.emptySet());
+						}
+					}
+				} else {
+					if ((((entity.getPersistentData().getDouble("timetick")) % 20) == 0)) {
+						entity.setMotion((((((Entity) world.getEntitiesWithinAABB(MonsterEntity.class,
+								new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPosX()) - (entity.getPosX())) * 0.2), 1.2,
+								(((((Entity) world.getEntitiesWithinAABB(MonsterEntity.class,
+										new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)),
+										null).stream().sorted(new Object() {
+											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+												return Comparator
+														.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+											}
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPosZ()) - (entity.getPosZ())) * 0.2));
+					} else {
+						entity.setMotion((((((Entity) world.getEntitiesWithinAABB(MonsterEntity.class,
+								new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPosX()) - (entity.getPosX())) * 0.1),
+								(((((Entity) world.getEntitiesWithinAABB(MonsterEntity.class,
+										new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)),
+										null).stream().sorted(new Object() {
+											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+												return Comparator
+														.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+											}
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPosY()) - (entity.getPosY())) * 0.1),
+								(((((Entity) world.getEntitiesWithinAABB(MonsterEntity.class,
+										new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)),
+										null).stream().sorted(new Object() {
+											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+												return Comparator
+														.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+											}
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPosZ()) - (entity.getPosZ())) * 0.1));
+					}
+				}
+			}
 			if (((((entity.getPersistentData().getDouble("timetick")) % 20) == 0) && (((Entity) world
 					.getEntitiesWithinAABB(MonsterEntity.class,
 							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
@@ -74,7 +141,7 @@ public class WhitefrostmirrorDangShiTiGengXinKeShiProcedure {
 				{
 					List<Entity> _entfound = world
 							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+									new AxisAlignedBB(x - (3 / 2d), y - (3 / 2d), z - (3 / 2d), x + (3 / 2d), y + (3 / 2d), z + (3 / 2d)), null)
 							.stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -86,6 +153,12 @@ public class WhitefrostmirrorDangShiTiGengXinKeShiProcedure {
 								((ServerWorld) world).spawnParticle(ParticleTypes.FALLING_LAVA, x, y, z, (int) 5, 0.2, 0.2, 0.2, 0.5);
 							}
 							entityiterator.attackEntityFrom(DamageSource.MAGIC, (float) ((entity.getPersistentData().getDouble("level")) * 0.6));
+							if (world instanceof ServerWorld) {
+								((World) world).getServer().getCommandManager().handleCommand(
+										new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+												new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+										"particle block minecraft:redstone_block ^ ^ ^-0.5 0.5 0.5 0.5 0.2 15");
+							}
 						}
 					}
 				}

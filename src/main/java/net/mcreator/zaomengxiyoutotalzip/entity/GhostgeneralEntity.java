@@ -40,8 +40,8 @@ import net.minecraft.entity.CreatureAttribute;
 import net.mcreator.zaomengxiyoutotalzip.procedures.GhostgeneralDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
-import net.mcreator.zaomengxiyoutotalzip.item.Sourcelv1Item;
-import net.mcreator.zaomengxiyoutotalzip.item.SourcebigItem;
+import net.mcreator.zaomengxiyoutotalzip.item.RuneofYinItem;
+import net.mcreator.zaomengxiyoutotalzip.item.RuneofYangItem;
 import net.mcreator.zaomengxiyoutotalzip.item.HuoluoboItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.GhostgeneralRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
@@ -107,10 +107,10 @@ public class GhostgeneralEntity extends ZaomengxiyouModElements.ModElement {
 			setNoAI(false);
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(HuoluoboItem.block));
 			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(YUJINGPINGItem.block));
-			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(SourcebigItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(RuneofYangItem.block));
 			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(YUJINGPINGItem.block));
 			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(HuoluoboItem.block));
-			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(Sourcelv1Item.block));
+			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(RuneofYinItem.block));
 		}
 
 		@Override

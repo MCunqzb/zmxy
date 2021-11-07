@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "blood",
+    "customModelName": "bloody_sea_demon_child_item:default",
+    "name": "Bloody Sea Demon Childitem",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zaomengxiyou"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§l拥有【邪恶净化】技能，清除自身负面状态，并对前方怪物造成伤害。",
+      "§lHave the \"Evil Purification\" skills to clear up your negative state and cause damage to monsters ahead."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "BloodySeaDemonChilditemDangYouJianDianJiKongQiShi"
+    },
+    "hasDispenseBehavior": false
+  }
+}

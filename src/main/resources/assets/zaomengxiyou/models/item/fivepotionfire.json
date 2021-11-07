@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "zaomengxiyou:items/five_potion_ietm_yuanc"
+  }
+}

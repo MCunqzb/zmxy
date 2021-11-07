@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/bloody_sea_demon_child_item",
+  "textures": {
+    "0": "zaomengxiyou:blocks/bloody_sea_demon_child",
+    "particle": "zaomengxiyou:items/blood"
+  }
+}

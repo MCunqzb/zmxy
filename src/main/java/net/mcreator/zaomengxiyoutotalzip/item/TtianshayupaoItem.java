@@ -107,7 +107,6 @@ public class TtianshayupaoItem extends ZaomengxiyouModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
-					$_dependencies.put("world", world);
 					TtianshayupaoXiongJiaShiJianMeiYouXiKeProcedure.executeProcedure($_dependencies);
 				}
 			}

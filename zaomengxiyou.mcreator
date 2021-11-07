@@ -5811,10 +5811,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -8609,41 +8605,6 @@
       "path": "~/weapons"
     },
     {
-      "name": "DishajiguanqiangDangYouJianDianJiKongQiShi",
-      "type": "procedure",
-      "sortid": 633,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dishajiguanqiang_dang_you_jian_dian_ji_kong_qi_shi",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Dishajiguanqiang",
-      "type": "item",
-      "sortid": 138,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dishajiguanqiang",
-      "path": "~/items"
-    },
-    {
       "name": "Dishahulu",
       "type": "procedure",
       "sortid": 634,
@@ -9666,10 +9627,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -18163,6 +18120,487 @@
           }
         ]
       }
+    },
+    {
+      "name": "BloodySeaDemonChild",
+      "type": "livingentity",
+      "sortid": 1083,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bloody_sea_demon_child",
+      "path": "~/mobs"
+    },
+    {
+      "name": "BloodySeaDemonChilditemDangYouJianDianJiKongQiShi",
+      "type": "procedure",
+      "sortid": 1084,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bloody_sea_demon_childitem_dang_you_jian_dian_ji_kong_qi_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodySeaDemonChilditem",
+      "type": "item",
+      "sortid": 1084,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bloody_sea_demon_childitem",
+      "path": "~/items"
+    },
+    {
+      "name": "BloodySeaDemonChildDangWanJiaYuGaiShiTiFaShengPengZhuangShi",
+      "type": "procedure",
+      "sortid": 1085,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bloody_sea_demon_child_dang_wan_jia_yu_gai_shi_ti_fa_sheng_peng_zhuang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodySeaDemonChildDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1086,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bloody_sea_demon_child_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Groundevilgourditemrightclick",
+      "type": "procedure",
+      "sortid": 1087,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "groundevilgourditemrightclick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Groundevilgourditem",
+      "type": "item",
+      "sortid": 1087,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "groundevilgourditem",
+      "path": "~/items"
+    },
+    {
+      "name": "FivepoisonbeastsDangWanJiaYuGaiShiTiFaShengPengZhuangShi",
+      "type": "procedure",
+      "sortid": 1088,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepoisonbeasts_dang_wan_jia_yu_gai_shi_ti_fa_sheng_peng_zhuang_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fivepoisonbeasts",
+      "type": "livingentity",
+      "sortid": 1088,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepoisonbeasts",
+      "path": "~/mobs"
+    },
+    {
+      "name": "FivepoisonbeastsDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1089,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepoisonbeasts_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FivepotionDangZiDanJiZhongShengCunShiTiShi",
+      "type": "procedure",
+      "sortid": 1090,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotion_dang_zi_dan_ji_zhong_sheng_cun_shi_ti_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FivepotionZiDanFeiXingGanShi",
+      "type": "procedure",
+      "sortid": 1091,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotion_zi_dan_fei_xing_gan_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "imediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fivepotion",
+      "type": "rangeditem",
+      "sortid": 1090,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotion",
+      "path": "~/weapons"
+    },
+    {
+      "name": "FivepoisonbeastsDangYouJianDianJiShiTi",
+      "type": "procedure",
+      "sortid": 1092,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepoisonbeasts_dang_you_jian_dian_ji_shi_ti",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FivepotionDangYuanChengWuPinShiYongShi",
+      "type": "procedure",
+      "sortid": 1093,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotion_dang_yuan_cheng_wu_pin_shi_yong_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fivepotiontype",
+      "type": "procedure",
+      "sortid": 1094,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotiontype",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/weapons"
+    },
+    {
+      "name": "Fivepotiondescription",
+      "type": "procedure",
+      "sortid": 1095,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotiondescription",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/weapons"
+    },
+    {
+      "name": "Fivepotionlight",
+      "type": "item",
+      "sortid": 1096,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotionlight",
+      "path": "~/items"
+    },
+    {
+      "name": "Fivepotionfire",
+      "type": "item",
+      "sortid": 1097,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotionfire",
+      "path": "~/items"
+    },
+    {
+      "name": "FivepotionfireDangYouJianDianJiKongQiShi",
+      "type": "procedure",
+      "sortid": 1098,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fivepotionfire_dang_you_jian_dian_ji_kong_qi_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FivePotionBeastFire",
+      "type": "livingentity",
+      "sortid": 1099,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "five_potion_beast_fire",
+      "path": "~/mobs"
+    },
+    {
+      "name": "FivePotionBeastFireDangYouJianDianJiShiTi",
+      "type": "procedure",
+      "sortid": 1100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "five_potion_beast_fire_dang_you_jian_dian_ji_shi_ti",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FivePotionBeastFireDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 1101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "five_potion_beast_fire_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -18410,6 +18848,7 @@
       "biome.zaomengxiyou_total_zip.shishituoling": "Shishituoling",
       "item.zaomengxiyou.ghostgeneral_spawn_egg": "Ghostgeneral Spawn Egg",
       "entity.zaomengxiyou.zisetou": "Zisetou",
+      "entity.zaomengxiyou.fivepoisonbeasts": "Five poison beasts light",
       "item.zaomengxiyou_total_zip.yuzeiwangdehuanbing": "Yuzeiwangdehuanbing",
       "item.zaomengxiyou.icedragon": "Icedragon",
       "item.minecraft.potion.effect.reduce_injury_potion": "Potion of Reduce Injury Potion",
@@ -18488,6 +18927,7 @@
       "item.minecraft.lingering_potion.effect.mp_devour_potion": "Lingering Potion of Mp Devour ",
       "item.zaomengxiyou.baigujing_3_spawn_egg": "Baigujing 3 Spawn Egg",
       "item.zaomengxiyou.cucaodexzf_boots": "Cucaodexzf 靴子",
+      "entity.zaomengxiyou.five_potion_beast_fire": "Five poison beasts light",
       "item.zaomengxiyou_total_zip.guanzhiyonghenglv_1": "Guanzhiyonghenglv 1",
       "biome.zaomengxiyou.shishituoling": "Shishituoling",
       "item.zaomengxiyou.snakedemon_spawn_egg": "Snake Demon Spawn Egg",
@@ -18600,6 +19040,7 @@
       "item.zaomengxiyou.baishuangxiongjia_leggings": "Baishuangxiongjia 护腿",
       "item.zaomengxiyou.kingqingguang_token": "Kingqingguang Token",
       "item.zaomengxiyou.niumowang_2_spawn_egg": "Niumowang 2 Spawn Egg",
+      "item.zaomengxiyou.bloody_sea_demon_childitem": "Bloody Sea Demon Childitem",
       "item.zaomengxiyou.sourcelv_1": "Sourcelv 1",
       "entity.zaomengxiyou.batinxiyou": "Batinxiyou",
       "block.zaomengxiyou.spwan_white_boned_demon": "Spwan White Boned Demon",
@@ -18608,6 +19049,7 @@
       "item.zaomengxiyou_total_zip.tianshagulian_boots": "Tianshagulian 靴子",
       "item.zaomengxiyou.laozhepao_chestplate": "Laozhepao 胸甲",
       "item.zaomengxiyou_total_zip.batinxiyou_spawn_egg": "Batinxiyou Spawn Egg",
+      "item.zaomengxiyou.fivepotionfire": "Fivepotionlight",
       "item.minecraft.potion.effect.increasethe_damage_potion": "Potion of Increasethe Damage Potion",
       "item.zaomengxiyou_total_zip.nmw_3_spawn_egg": "Nmw 3 Spawn Egg",
       "item.zaomengxiyou_total_zip.mihouwang_spawn_egg": "Mihouwang Spawn Egg",
@@ -18729,7 +19171,7 @@
       "item.zaomengxiyou.cucaodesongmuzhang": "Cucaodesongmuzhang",
       "item.zaomengxiyou_total_zip.yxdxzg": "Yxdxzg",
       "mob.notfind": "§4Not found Boss within 100 block.",
-      "advancements.obstructedbythenightfork.title": "Obstructed by the night fork.",
+      "advancements.obstructedbythenightfork.title": "Obstructed by the night fork",
       "ghost.army.live.hurt": "§lThe weapon clanged on the armor, and the rock below seemed not strong.",
       "entity.zaomengxiyou_total_zip.niumowang_1": "Niumowang 1",
       "entity.zaomengxiyou_total_zip.niumowang_2": "Niumowang 2",
@@ -18854,7 +19296,10 @@
       "entity.zaomengxiyou_total_zip.daxx": "Daxxboss",
       "item.zaomengxiyou_total_zip.bird_spawn_egg": "Bird Spawn Egg",
       "block.zaomengxiyou.niumochiyanshi": "Niumochiyanshi",
+      "five_poton_description_3": "fire",
       "item.zaomengxiyou.jiachuanbaojian": "Jiachuanbaojian",
+      "five_poton_description_2": "light",
+      "five_poton_description_1": "attribute: ",
       "item.zaomengxiyou.yuzeiwang_spawn_egg": "Yuzeiwang Spawn Egg",
       "item.zaomengxiyou.xuanbingpo": "Xuanbingpo",
       "subtitles.firedemon": "slash",
@@ -18903,8 +19348,10 @@
       "item.zaomengxiyou.baishaungzhongjia_leggings": "Baishaungzhongjia 护腿",
       "key.zaomengxiyou.shop": "Shop",
       "item.zaomengxiyou.baishaungzhongjia_chestplate": "Baishaungzhongjia 胸甲",
+      "item.zaomengxiyou.fivepotionlight": "Fivepotionlight",
       "fluid.zaomengxiyou.wangchuanriver": "Wangchuanriver",
       "item.zaomengxiyou.ryjgb": "Ryjgb",
+      "item.zaomengxiyou.fivepotion": "Fivepotion",
       "item.zaomengxiyou.qiedan": "Qiedan",
       "item.minecraft.splash_potion.effect.healingreduction": "Splash Healing reduction",
       "item.zaomengxiyou_total_zip.dishayuanjia_boots": "Dishayuanjia 靴子",
@@ -18918,6 +19365,7 @@
       "item.zaomengxiyou_total_zip.qixingshouhu_helmet": "§e七星守护",
       "block.zaomengxiyou.brazier": "Brazier",
       "entity.zaomengxiyou.jiaomowang": "Jiaomowang",
+      "five_poton_description": "It is made up of the power of five poisons.",
       "item.zaomengxiyou.dapengniaodanke": "Dapengniaodanke",
       "entity.zaomengxiyou_total_zip.shamowang": "Shamowang",
       "key.mcreator.shop": "Shop",
@@ -18940,6 +19388,7 @@
       "item.zaomengxiyou.shituowansource": "Shituowansource",
       "item.zaomengxiyou_total_zip.cucaodesongmuzhang": "Cucaodesongmuzhang",
       "item.zaomengxiyou.evilxuanbing_spawn_egg": "evilxuanbing Spawn Egg",
+      "entity.zaomengxiyou.bloody_sea_demon_child": "Bloody Sea Demon Child",
       "entity.zaomengxiyou.soilball": "Soilball",
       "entity.zaomengxiyou_total_zip.jiaomowang": "Jiaomowang",
       "item.zaomengxiyou_total_zip.shituowansource": "Shituowansource",
@@ -18959,6 +19408,7 @@
       "block.zaomengxiyou.shenhaishi": "Shenhaishi",
       "entity.zaomengxiyou.ghostgate": "Ghostgate",
       "item.zaomengxiyou.tianshagulian_2_chestplate": "Tianshagulian 2 胸甲",
+      "item.zaomengxiyou.fivepoisonbeasts_spawn_egg": "Five poison beasts light Spawn Egg",
       "item.zaomengxiyou.cucaodexzf_helmet": "Cucaodexzf 头盔",
       "block.zaomengxiyou.spwantangzombie": "Spwantangzombie",
       "block.zaomengxiyou.spwankuilei": "Spwankuilei",
@@ -19053,6 +19503,7 @@
       "entity.zaomengxiyou.waterboomcircle": "Waterboomcircle",
       "item.zaomengxiyou_total_zip.xuehaixiehuang": "Xuehaixiehuang",
       "item.zaomengxiyou.zisetou_spawn_egg": "Zisetou Spawn Egg",
+      "item.zaomengxiyou.five_potion_beast_fire_spawn_egg": "Five poison beasts light Spawn Egg",
       "block.zaomengxiyou.mengpo_kettle_stair": "Mengpo Kettle Slab",
       "item.zaomengxiyou.wangwang_spawn_egg": "Wangwang Spawn Egg",
       "item.zaomengxiyou.yxdxzg": "Yxdxzg",
@@ -19164,6 +19615,7 @@
       "item.zaomengxiyou_total_zip.yxdsmz": "Yxdsmz",
       "entity.zaomengxiyou_total_zip.xiong": "Xiong",
       "block.zaomengxiyou_total_zip.spwanlongwangdiffer": "Spwanlongwangdiffer",
+      "item.zaomengxiyou.bloody_sea_demon_child_spawn_egg": "Bloody Sea Demon Child Spawn Egg",
       "entity.zaomengxiyou.tian_shaancientswordmob": "Tian Shaancientswordmob",
       "block.zaomengxiyou.ghost_king_palace_brick": "Ghost King Palace Brick",
       "source.bag.description.line": "Soul: ",
@@ -19186,7 +19638,6 @@
       "item.zaomengxiyou.daxx_spawn_egg": "Daxxboss Spawn Egg",
       "item.zaomengxiyou.shamowangbingmao": "Shamowangbingmao",
       "block.zaomengxiyou.mengposoup": "Mengposoup",
-      "item.zaomengxiyou.dishajiguanqiang": "Dishajiguanqiang",
       "item.zaomengxiyou.lys": "Lys",
       "item.zaomengxiyou.shixiangxiaochu": "Shixiangxiaochu",
       "item.zaomengxiyou.testuv": "Testuv",
@@ -19204,6 +19655,7 @@
       "block.zaomengxiyou_total_zip.spwanxiong": "Spwanxiong",
       "block.zaomengxiyou_total_zip.niumochiyanshi": "Niumochiyanshi",
       "item.zaomengxiyou.pig_8": "Jryx",
+      "item.zaomengxiyou.groundevilgourditem": "Groundevilgourditem",
       "item.zaomengxiyou.gutengqiang": "Gutengqiang",
       "advancements.achieveofpmw.descr": "鹏魔王：混天魔王，死后化为大鹏蛋，如不打破届时重生！",
       "item.zaomengxiyou_total_zip.sourcelv_1": "Sourcelv 1",
@@ -19341,6 +19793,7 @@
       "entity.zaomengxiyou.argillaceousshield": "Argillaceousshield",
       "item.zaomengxiyou.shixiang_2_spawn_egg": "生成 石像2",
       "entity.zaomengxiyou.zisetou": "头骨",
+      "entity.zaomengxiyou.fivepoisonbeasts": "Fivepoisonbeasts",
       "item.zaomengxiyou.jiachuanshouhuan_boots": "Jiachuanshouhuan 靴子",
       "item.zaomengxiyou.waterboomcircle_spawn_egg": "Waterboomcircle Spawn Egg",
       "item.zaomengxiyou.icedragon": "冰龙波",
@@ -19355,6 +19808,7 @@
       "key.zaomengxiyou.shop": "灵魂商店",
       "entity.zaomengxiyou.piranha": "食人鱼",
       "item.zaomengxiyou.baishaungzhongjia_chestplate": "§3白霜重甲",
+      "item.zaomengxiyou.fivepotionlight": "五毒兽",
       "fluid.zaomengxiyou.wangchuanriver": "Wangchuanriver",
       "item.zaomengxiyou.duqiu_spawn_egg": "生成 毒球",
       "item.zaomengxiyou.dishalinjei_boots": "Dishalinjei 靴子",
@@ -19362,6 +19816,7 @@
       "item.zaomengxiyou.ryjgb": "§e如意金箍棒",
       "item.minecraft.lingering_potion.effect.vertigo": "滞留型眩晕药水",
       "block.zaomengxiyou.mengpokettle": "孟婆釜",
+      "item.zaomengxiyou.fivepotion": "五毒兽",
       "item.zaomengxiyou.qiedan": "§c切蛋",
       "item.minecraft.splash_potion.effect.healingreduction": "喷溅型减疗药水",
       "advancements.asking_king_qin_guangforanexplanation.title": "向秦广王寻求解释。",
@@ -19376,6 +19831,7 @@
       "entity.zaomengxiyou.xhz": "小猴子",
       "entity.zaomengxiyou.jiaomowang": "蛟魔王",
       "item.zaomengxiyou.dapengniaodanke": "§4大鹏鸟蛋壳",
+      "five_poton_description": "由五毒之力融合而成。",
       "key.mcreator.shop": "灵魂商店",
       "biome.zaomengxiyou.niumogu": "牛魔谷",
       "item.minecraft.tipped_arrow.effect.vertigo": "眩晕箭",
@@ -19420,6 +19876,7 @@
       "item.zaomengxiyou.binglongbo_spawn_egg": "生成 冰龙波",
       "entity.zaomengxiyou.feiping_2": "飞瓶",
       "item.zaomengxiyou.evilxuanbing_spawn_egg": "Xxuanbing Spawn Egg",
+      "entity.zaomengxiyou.bloody_sea_demon_child": "Bloody Sea Demon Child",
       "entity.zaomengxiyou.soilball": "Soilball",
       "block.zaomengxiyou.ghosteave_2": "鬼城半屋檐",
       "entity.zaomengxiyou.evil_sunwukong": "邪悟空",
@@ -19451,8 +19908,10 @@
       "item.zaomengxiyou.mengposoup_bucket": "桶装孟婆汤",
       "item.minecraft.lingering_potion.effect.mp_devour_potion": "滞留型噬魂药水",
       "item.zaomengxiyou.baigujing_3_spawn_egg": "生成 白骨精（形态3）",
+      "item.zaomengxiyou.fivepoisonbeasts_spawn_egg": "Fivepoisonbeasts Spawn Egg",
       "item.zaomengxiyou.cucaodexzf_helmet": "Cucaodexzf 头盔",
       "item.zaomengxiyou.cucaodexzf_boots": "Cucaodexzf 靴子",
+      "entity.zaomengxiyou.five_potion_beast_fire": "Five poison beasts light",
       "block.zaomengxiyou.spwantangzombie": "唐朝僵尸生怪砖",
       "biome.zaomengxiyou.shishituoling": "狮驼小兵",
       "block.zaomengxiyou.spwankuilei": "傀儡生怪砖",
@@ -19615,6 +20074,7 @@
       "item.zaomengxiyou.zisetou_spawn_egg": "生成 头骨",
       "death.attack.killed.by.judge": "§4七灯灭，魂魄散。",
       "item.minecraft.lingering_potion.effect.increasethe_damage_potion": "滞留型增伤药水",
+      "item.zaomengxiyou.five_potion_beast_fire_spawn_egg": "Five poison beasts light Spawn Egg",
       "block.zaomengxiyou.mengpo_kettle_stair": "孟婆釜楼梯",
       "item.zaomengxiyou.wangwang_spawn_egg": "生成 汪汪",
       "item.zaomengxiyou.dishagun_1": "地煞葫芦",
@@ -19624,6 +20084,7 @@
       "item.zaomengxiyou.baishuangxiongjia_leggings": "§3白霜护腿",
       "item.zaomengxiyou.kingqingguang_token": "广王令",
       "item.zaomengxiyou.niumowang_2_spawn_egg": "生成 牛魔王2",
+      "item.zaomengxiyou.bloody_sea_demon_childitem": "§5血海魔童",
       "entity.zaomengxiyou.batinxiyou": "蝙蝠（西游）",
       "item.zaomengxiyou.sourcelv_1": "灵魂一级",
       "block.zaomengxiyou.spwan_white_boned_demon": "白霜祭坛",
@@ -19637,6 +20098,7 @@
       "item.zaomengxiyou.laozhepao_chestplate": "§a老者袈裟",
       "block.zaomengxiyou.spwanshixiang": "石像生怪砖",
       "item.zaomengxiyou.shamowang_spawn_egg": "生成 鲨魔王",
+      "item.zaomengxiyou.fivepotionfire": "五毒兽",
       "biome.zaomengxiyou.underghost": "地府",
       "item.zaomengxiyou.niumowang_1_spawn_egg": "生成 牛魔王1",
       "item.minecraft.potion.effect.increasethe_damage_potion": "增伤药水",
@@ -19795,6 +20257,7 @@
       "block.zaomengxiyou.ghostkingpalaceslab": "鬼王殿半砖",
       "item.zaomengxiyou.ghostcity": "Ghostcity Portal Igniter",
       "item.zaomengxiyou.zisekulou": "紫色头颅",
+      "item.zaomengxiyou.bloody_sea_demon_child_spawn_egg": "Bloody Sea Demon Child Spawn Egg",
       "item.zaomengxiyou.previouslifefragments": "往生碎片",
       "entity.zaomengxiyou.tian_shaancientswordmob": "Tian Shaancientswordmob",
       "block.zaomengxiyou.ghost_king_palace_brick": "鬼王殿砖块",
@@ -19828,7 +20291,6 @@
       "item.minecraft.tipped_arrow.effect.jgzxg": "Arrow of §d金刚琢",
       "item.zaomengxiyou.shamowangbingmao": "鲨魔王鬓毛",
       "block.zaomengxiyou.mengposoup": "孟婆汤",
-      "item.zaomengxiyou.dishajiguanqiang": "地煞葫芦",
       "item.zaomengxiyou.source_64": "超大灵魂",
       "book.entry.first.task": "打败魔化的大猩猩，拯救花果山。",
       "item.zaomengxiyou.lys": "§e烈焰闪",
@@ -19857,6 +20319,7 @@
       "item.zaomengxiyou.pig_8": "猪八戒（暂时无效）",
       "block.zaomengxiyou.blockofsanchaji": "青色水晶方块",
       "item.zaomengxiyou.flower_demon_spawn_egg": "生成 花妖",
+      "item.zaomengxiyou.groundevilgourditem": "§1地煞葫芦",
       "item.zaomengxiyou.gutengqiang": "§2古藤枪",
       "effect.prohibitionoftreatment": "禁疗",
       "advancements.achieveofpmw.descr": "§d鹏魔王：混天魔王，死后化为大鹏蛋，欲火重生！",
@@ -20007,8 +20470,11 @@
       "entity.zaomengxiyou.rochademonumbrella": "Rochademonumbrella",
       "item.zaomengxiyou.bolanggu": "§e拨浪鼓",
       "block.zaomengxiyou.niumochiyanshi": "牛魔炽焰石",
+      "five_poton_description_3": "火",
       "item.zaomengxiyou.jiachuanbaojian": "§a家传宝剑",
       "item.zaomengxiyou.king_kong_armor_boots": "§5金刚鞋",
+      "five_poton_description_2": "雷",
+      "five_poton_description_1": "属性： ",
       "block.zaomengxiyou.shuijinglan": "水晶兰",
       "item.zaomengxiyou.yuzeiwang_spawn_egg": "生成 禹绒王",
       "item.zaomengxiyou.xuanbingpo": "玄冰破",

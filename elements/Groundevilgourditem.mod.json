@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "dishahulu",
-    "customModelName": "Normal",
-    "name": "Dishajiguanqiang",
-    "rarity": "RARE",
+    "customModelName": "ground_evil_gourd_item:default",
+    "name": "Groundevilgourditem",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Zaomengxiyou"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -19,20 +19,21 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§1地煞机关枪"
+      "§l拥有【烈火咒】技能，对前方怪物造成伤害。",
+      "§lHave the \"Fire Curse\" skills to cause damage to the monsters ahead."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "DishajiguanqiangDangYouJianDianJiKongQiShi"
+      "name": "Groundevilgourditemrightclick"
     },
     "hasDispenseBehavior": false
   }

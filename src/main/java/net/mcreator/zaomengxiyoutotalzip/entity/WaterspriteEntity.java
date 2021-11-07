@@ -18,7 +18,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -39,6 +41,12 @@ import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.zaomengxiyoutotalzip.procedures.WaterspriteDangShiTiGengXinKeShiProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
+import net.mcreator.zaomengxiyoutotalzip.item.YUJINGPINGItem;
+import net.mcreator.zaomengxiyoutotalzip.item.ThislifefragmentsItem;
+import net.mcreator.zaomengxiyoutotalzip.item.SourcebigItem;
+import net.mcreator.zaomengxiyoutotalzip.item.PreviouslifefragmentsItem;
+import net.mcreator.zaomengxiyoutotalzip.item.HuoluoboItem;
+import net.mcreator.zaomengxiyoutotalzip.item.AfterlifefragmentsItem;
 import net.mcreator.zaomengxiyoutotalzip.entity.renderer.WaterspriteRenderer;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
 
@@ -101,6 +109,12 @@ public class WaterspriteEntity extends ZaomengxiyouModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(ThislifefragmentsItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(PreviouslifefragmentsItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(AfterlifefragmentsItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(HuoluoboItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(YUJINGPINGItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(SourcebigItem.block));
 		}
 
 		@Override
@@ -145,8 +159,6 @@ public class WaterspriteEntity extends ZaomengxiyouModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			if (source == DamageSource.DROWN)
-				return false;
-			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
 			if (source == DamageSource.ANVIL)
 				return false;

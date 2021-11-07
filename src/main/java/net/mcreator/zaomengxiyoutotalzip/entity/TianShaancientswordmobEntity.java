@@ -7,12 +7,8 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
@@ -26,13 +22,11 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
@@ -55,7 +49,6 @@ public class TianShaancientswordmobEntity extends ZaomengxiyouModElements.ModEle
 		super(instance, 1062);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TianShaancientswordmobRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -65,15 +58,8 @@ public class TianShaancientswordmobEntity extends ZaomengxiyouModElements.ModEle
 				.setRegistryName("tian_shaancientswordmob_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
-	}
-
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent

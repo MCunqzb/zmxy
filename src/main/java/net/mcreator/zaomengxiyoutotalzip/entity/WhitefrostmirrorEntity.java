@@ -27,10 +27,8 @@ import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.FollowOwnerGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -104,11 +102,9 @@ public class WhitefrostmirrorEntity extends ZaomengxiyouModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, MonsterEntity.class, false, false));
-			this.goalSelector.addGoal(5, new FollowOwnerGoal(this, 1, (float) 20, (float) 4, false));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, MonsterEntity.class, false, false));
+			this.goalSelector.addGoal(2, new FollowOwnerGoal(this, 1, (float) 100, (float) 20, false));
+			this.goalSelector.addGoal(3, new LookAtGoal(this, MonsterEntity.class, (float) 6));
 		}
 
 		@Override
@@ -123,7 +119,7 @@ public class WhitefrostmirrorEntity extends ZaomengxiyouModElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break"));
 		}
 
 		@Override

@@ -15,7 +15,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.zaomengxiyoutotalzip.procedures.DishajiguanqiangDangYouJianDianJiKongQiShiProcedure;
+import net.mcreator.zaomengxiyoutotalzip.procedures.GroundevilgourditemrightclickProcedure;
 import net.mcreator.zaomengxiyoutotalzip.itemgroup.ZaomengxiyouItemGroup;
 import net.mcreator.zaomengxiyoutotalzip.ZaomengxiyouModElements;
 
@@ -24,11 +24,11 @@ import java.util.List;
 import java.util.HashMap;
 
 @ZaomengxiyouModElements.ModElement.Tag
-public class DishajiguanqiangItem extends ZaomengxiyouModElements.ModElement {
-	@ObjectHolder("zaomengxiyou:dishajiguanqiang")
+public class GroundevilgourditemItem extends ZaomengxiyouModElements.ModElement {
+	@ObjectHolder("zaomengxiyou:groundevilgourditem")
 	public static final Item block = null;
-	public DishajiguanqiangItem(ZaomengxiyouModElements instance) {
-		super(instance, 138);
+	public GroundevilgourditemItem(ZaomengxiyouModElements instance) {
+		super(instance, 1087);
 	}
 
 	@Override
@@ -37,8 +37,8 @@ public class DishajiguanqiangItem extends ZaomengxiyouModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ZaomengxiyouItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.RARE));
-			setRegistryName("dishajiguanqiang");
+			super(new Item.Properties().group(ZaomengxiyouItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
+			setRegistryName("groundevilgourditem");
 		}
 
 		@Override
@@ -59,7 +59,9 @@ public class DishajiguanqiangItem extends ZaomengxiyouModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A71\u5730\u715E\u673A\u5173\u67AA"));
+			list.add(new StringTextComponent(
+					"\u00A7l\u62E5\u6709\u3010\u70C8\u706B\u5492\u3011\u6280\u80FD\uFF0C\u5BF9\u524D\u65B9\u602A\u7269\u9020\u6210\u4F24\u5BB3\u3002"));
+			list.add(new StringTextComponent("\u00A7lHave the \"Fire Curse\" skills to cause damage to the monsters ahead."));
 		}
 
 		@Override
@@ -73,8 +75,7 @@ public class DishajiguanqiangItem extends ZaomengxiyouModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("itemstack", itemstack);
-				$_dependencies.put("world", world);
-				DishajiguanqiangDangYouJianDianJiKongQiShiProcedure.executeProcedure($_dependencies);
+				GroundevilgourditemrightclickProcedure.executeProcedure($_dependencies);
 			}
 			return ar;
 		}

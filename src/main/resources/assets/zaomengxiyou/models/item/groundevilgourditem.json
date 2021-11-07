@@ -1,0 +1,7 @@
+{
+  "parent": "zaomengxiyou:custom/ground_evil_gourd_item",
+  "textures": {
+    "0": "zaomengxiyou:blocks/earth_evil_gourd",
+    "particle": "zaomengxiyou:items/dishahulu"
+  }
+}
